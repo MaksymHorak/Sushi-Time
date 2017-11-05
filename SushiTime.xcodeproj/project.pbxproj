@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E3117C24CB52EA9CC3CEE50 /* Pods_SushiTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */; };
+		63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA539C1FAE3FB7001E3D6B /* AppDelegate.swift */; };
+		63DA53A41FAE3FB7001E3D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DA53A31FAE3FB7001E3D6B /* Assets.xcassets */; };
+		63DA53A71FAE3FB7001E3D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DA53A51FAE3FB7001E3D6B /* LaunchScreen.storyboard */; };
+		63DA53B61FAE46ED001E3D6B /* GreetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */; };
+		63DA53B81FAE4778001E3D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DA53B71FAE4778001E3D6B /* Main.storyboard */; };
+		63DA53BA1FAE49CF001E3D6B /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DA53B91FAE49CF001E3D6B /* SideMenu.storyboard */; };
+		63DA53BC1FAE4AC8001E3D6B /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */; };
+		63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */; };
+		63DA53C01FAE4CFB001E3D6B /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D6C6C2AA5632DF6B0116899 /* Pods-SushiTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SushiTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime.release.xcconfig"; sourceTree = "<group>"; };
+		32CB20B26BFAD4D872CC5002 /* Pods-SushiTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SushiTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime.debug.xcconfig"; sourceTree = "<group>"; };
+		63DA53991FAE3FB7001E3D6B /* SushiTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DA539C1FAE3FB7001E3D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63DA53A31FAE3FB7001E3D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63DA53A61FAE3FB7001E3D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63DA53A81FAE3FB7001E3D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreetingsViewController.swift; path = SushiTime/Controllers/GreetingsViewController.swift; sourceTree = SOURCE_ROOT; };
+		63DA53B71FAE4778001E3D6B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = SushiTime/Views/Main.storyboard; sourceTree = "<group>"; };
+		63DA53B91FAE49CF001E3D6B /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SideMenu.storyboard; path = SushiTime/Views/SideMenu.storyboard; sourceTree = "<group>"; };
+		63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = SushiTime/Controllers/SideMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewCell.swift; path = SushiTime/Views/SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SushiTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63DA53961FAE3FB7001E3D6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3117C24CB52EA9CC3CEE50 /* Pods_SushiTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1355037A374E64B345C32C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63DA53901FAE3FB7001E3D6B = {
+			isa = PBXGroup;
+			children = (
+				63DA539B1FAE3FB7001E3D6B /* SushiTime */,
+				63DA539A1FAE3FB7001E3D6B /* Products */,
+				7ED185AB62186DD4FD1A9286 /* Pods */,
+				0A1355037A374E64B345C32C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63DA539A1FAE3FB7001E3D6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53991FAE3FB7001E3D6B /* SushiTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63DA539B1FAE3FB7001E3D6B /* SushiTime */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53B01FAE4549001E3D6B /* Controllers */,
+				63DA53B11FAE457B001E3D6B /* Views */,
+				63DA53B41FAE4607001E3D6B /* Models */,
+				63DA53B31FAE45E3001E3D6B /* Resources */,
+				63DA53B21FAE45B1001E3D6B /* Supporting Files */,
+			);
+			path = SushiTime;
+			sourceTree = "<group>";
+		};
+		63DA53B01FAE4549001E3D6B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */,
+				63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */,
+			);
+			name = Controllers;
+			path = Contr;
+			sourceTree = "<group>";
+		};
+		63DA53B11FAE457B001E3D6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53B71FAE4778001E3D6B /* Main.storyboard */,
+				63DA53B91FAE49CF001E3D6B /* SideMenu.storyboard */,
+				63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63DA53B21FAE45B1001E3D6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53A81FAE3FB7001E3D6B /* Info.plist */,
+				63DA539C1FAE3FB7001E3D6B /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63DA53B31FAE45E3001E3D6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53A31FAE3FB7001E3D6B /* Assets.xcassets */,
+				63DA53A51FAE3FB7001E3D6B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63DA53B41FAE4607001E3D6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7ED185AB62186DD4FD1A9286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32CB20B26BFAD4D872CC5002 /* Pods-SushiTime.debug.xcconfig */,
+				2D6C6C2AA5632DF6B0116899 /* Pods-SushiTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63DA53981FAE3FB7001E3D6B /* SushiTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DA53AB1FAE3FB7001E3D6B /* Build configuration list for PBXNativeTarget "SushiTime" */;
+			buildPhases = (
+				3100E2877AC00DB8B1120CF0 /* [CP] Check Pods Manifest.lock */,
+				63DA53951FAE3FB7001E3D6B /* Sources */,
+				63DA53961FAE3FB7001E3D6B /* Frameworks */,
+				63DA53971FAE3FB7001E3D6B /* Resources */,
+				59433D2065D41AF94BC1ADDA /* [CP] Embed Pods Frameworks */,
+				D24466AE867A4946A10AFD5E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SushiTime;
+			productName = SushiTime;
+			productReference = 63DA53991FAE3FB7001E3D6B /* SushiTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63DA53911FAE3FB7001E3D6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Self;
+				TargetAttributes = {
+					63DA53981FAE3FB7001E3D6B = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63DA53941FAE3FB7001E3D6B /* Build configuration list for PBXProject "SushiTime" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63DA53901FAE3FB7001E3D6B;
+			productRefGroup = 63DA539A1FAE3FB7001E3D6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63DA53981FAE3FB7001E3D6B /* SushiTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63DA53971FAE3FB7001E3D6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DA53BA1FAE49CF001E3D6B /* SideMenu.storyboard in Resources */,
+				63DA53B81FAE4778001E3D6B /* Main.storyboard in Resources */,
+				63DA53A71FAE3FB7001E3D6B /* LaunchScreen.storyboard in Resources */,
+				63DA53A41FAE3FB7001E3D6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3100E2877AC00DB8B1120CF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SushiTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59433D2065D41AF94BC1ADDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D24466AE867A4946A10AFD5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63DA53951FAE3FB7001E3D6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */,
+				63DA53BC1FAE4AC8001E3D6B /* SideMenuTableViewController.swift in Sources */,
+				63DA53B61FAE46ED001E3D6B /* GreetingsViewController.swift in Sources */,
+				63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */,
+				63DA53C01FAE4CFB001E3D6B /* SideMenuModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63DA53A51FAE3FB7001E3D6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63DA53A61FAE3FB7001E3D6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63DA53A91FAE3FB7001E3D6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63DA53AA1FAE3FB7001E3D6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63DA53AC1FAE3FB7001E3D6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CB20B26BFAD4D872CC5002 /* Pods-SushiTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J99NN4783K;
+				INFOPLIST_FILE = "$(SRCROOT)/SushiTime/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.SushiTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63DA53AD1FAE3FB7001E3D6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6C6C2AA5632DF6B0116899 /* Pods-SushiTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J99NN4783K;
+				INFOPLIST_FILE = "$(SRCROOT)/SushiTime/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.SushiTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63DA53941FAE3FB7001E3D6B /* Build configuration list for PBXProject "SushiTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DA53A91FAE3FB7001E3D6B /* Debug */,
+				63DA53AA1FAE3FB7001E3D6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63DA53AB1FAE3FB7001E3D6B /* Build configuration list for PBXNativeTarget "SushiTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DA53AC1FAE3FB7001E3D6B /* Debug */,
+				63DA53AD1FAE3FB7001E3D6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63DA53911FAE3FB7001E3D6B /* Project object */;
+}
