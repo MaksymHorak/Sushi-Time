@@ -16,11 +16,12 @@ class SideMenuTableViewController: UITableViewController {
     }
     
     var items: [SideMenuModel] {
-        return [SideMenuModel(imageName: "", name: ""), SideMenuModel(imageName: "", name: ""), SideMenuModel(imageName: "", name: "")]
+        return [SideMenuModel(imageName: "Home", name: "HomeName"), SideMenuModel(imageName: "", name: ""), SideMenuModel(imageName: "", name: "")]
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView() 
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,9 +31,14 @@ class SideMenuTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as? SideMenuTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as? SideMenuTableViewCell else { return UITableViewCell()
+        }
 
-        // Configure the cell...
+        // Configure the cell..
+        let currentItem = items[indexPath.row]
+        let image = UIImage(named: currentItem.imageName)
+        cell.itemLbl.text = currentItem.name
+        cell.itemImageView.image = image
 
         return cell
     }
