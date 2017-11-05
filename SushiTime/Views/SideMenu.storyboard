@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0fh-ii-aVR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu Table View Controller-->
+        <scene sceneID="lPa-yg-pAL">
+            <objects>
+                <tableViewController id="0fh-ii-aVR" customClass="SideMenuTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q3e-ip-1li">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideMenuCell" id="rXT-x5-OWg" customClass="SideMenuTableViewCell" customModule="SushiTime" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rXT-x5-OWg" id="Od8-E4-oj1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaIcon" translatesAutoresizingMaskIntoConstraints="NO" id="puN-xD-Hq8">
+                                            <rect key="frame" x="20" y="12" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="YWM-wf-Ye7"/>
+                                                <constraint firstAttribute="width" constant="20" id="mgf-cV-G8k"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eJ-Yc-hc5">
+                                            <rect key="frame" x="48" y="11.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3eJ-Yc-hc5" firstAttribute="centerY" secondItem="Od8-E4-oj1" secondAttribute="centerY" id="0J2-5X-WAS"/>
+                                        <constraint firstItem="3eJ-Yc-hc5" firstAttribute="leading" secondItem="puN-xD-Hq8" secondAttribute="trailing" constant="8" symbolic="YES" id="66q-z7-Q7H"/>
+                                        <constraint firstItem="puN-xD-Hq8" firstAttribute="centerY" secondItem="Od8-E4-oj1" secondAttribute="centerY" id="cHH-J0-13j"/>
+                                        <constraint firstItem="puN-xD-Hq8" firstAttribute="leading" secondItem="Od8-E4-oj1" secondAttribute="leading" constant="20" symbolic="YES" id="dTy-nw-61D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemImageView" destination="puN-xD-Hq8" id="Ql2-4E-rwv"/>
+                                    <outlet property="itemLbl" destination="3eJ-Yc-hc5" id="yTG-do-Ojd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0fh-ii-aVR" id="HVy-ir-P40"/>
+                            <outlet property="delegate" destination="0fh-ii-aVR" id="AV6-Em-OJf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ki-Y4-jiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.8" y="1417.2413793103449"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PizzaIcon" width="168" height="168"/>
+    </resources>
+</document>
