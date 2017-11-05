@@ -17,6 +17,7 @@
 		63DA53BC1FAE4AC8001E3D6B /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */; };
 		63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */; };
 		63DA53C01FAE4CFB001E3D6B /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */; };
+		63DA53C21FAFB0B5001E3D6B /* SlideMenuItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53C11FAFB0B4001E3D6B /* SlideMenuItemType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = SushiTime/Controllers/SideMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewCell.swift; path = SushiTime/Views/SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		63DA53C11FAFB0B4001E3D6B /* SlideMenuItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItemType.swift; sourceTree = "<group>"; };
 		A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SushiTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */,
+				63DA53C11FAFB0B4001E3D6B /* SlideMenuItemType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */,
+				63DA53C21FAFB0B5001E3D6B /* SlideMenuItemType.swift in Sources */,
 				63DA53BC1FAE4AC8001E3D6B /* SideMenuTableViewController.swift in Sources */,
 				63DA53B61FAE46ED001E3D6B /* GreetingsViewController.swift in Sources */,
 				63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */,

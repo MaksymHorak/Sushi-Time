@@ -11,4 +11,27 @@ import Foundation
 struct SideMenuModel {
     var imageName: String
     var name: String
+    var type: SlideMenuItemType
+}
+
+extension SideMenuModel {
+    
+    init(type: SlideMenuItemType) {
+        self.type = type
+        switch type {
+            
+        case .home:
+            imageName = "Home"
+            name  = "Home"
+            
+        case .aboutUs:
+            imageName = ""
+            name  = ""
+            
+        case .menu:
+            imageName = ""
+            name  = ""
+            
+        }
+    }
 }
