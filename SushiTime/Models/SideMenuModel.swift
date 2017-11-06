@@ -20,17 +20,25 @@ extension SideMenuModel {
         self.type = type
         switch type {
             
-        case .home:
-            imageName = "Home"
-            name  = "Home"
+        case .menu:
+            imageName = "MenuIcon"
+            name  = "Меню"
+            
+        case .shares:
+            imageName = "SharesIcon"
+            name  = "Акции"
+            
+        case .contacts:
+            imageName = "PhoneIcon"
+            name  = "Контакты"
             
         case .aboutUs:
             imageName = ""
-            name  = ""
+            name  = "О нас"
             
-        case .menu:
-            imageName = ""
-            name  = ""
+        case .webSite:
+            imageName = "WebIcon"
+            name  = "Наш сайт"
             
         }
     }

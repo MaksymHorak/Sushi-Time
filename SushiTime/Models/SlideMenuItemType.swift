@@ -10,5 +10,5 @@ import Foundation
 
 enum SlideMenuItemType {
     
-    case home, menu, aboutUs
+    case menu, shares, contacts, aboutUs, webSite
 }

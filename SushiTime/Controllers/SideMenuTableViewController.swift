@@ -19,9 +19,11 @@ class SideMenuTableViewController: UITableViewController {
     }
     
     var items: [SideMenuModel] {
-        return [SideMenuModel(type: .home),
-                SideMenuModel(type: .menu),
-        SideMenuModel(type: .aboutUs)]
+        return [SideMenuModel(type: .menu),
+                SideMenuModel(type: .shares),
+                SideMenuModel(type: .contacts),
+                SideMenuModel(type: .aboutUs),
+                SideMenuModel(type: .webSite)]
     }
     weak var delegate: SideMenuTableViewControllerDelegate?
     

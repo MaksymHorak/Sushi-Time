@@ -12,9 +12,11 @@ import SideMenu
 class GreetingsViewController: UIViewController {
     
     fileprivate enum Constants {
-        static let homeSegueIdentifire = "Home"
         static let menuSegueIdentifire = "Menu"
+        static let sharesSegueIdentifire = "Shares"
+        static let contactsSegueIdentifire = "Contacts"
         static let aboutUsSegueIdentifire = "AboutUs"
+        static let webSiteSegueIdentifire = "WebSite"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +46,16 @@ extension GreetingsViewController: SideMenuTableViewControllerDelegate {
     func didSelectCellWithType(type: SlideMenuItemType) {
         var identifire: String!
         switch type {
-        case .home: identifire = Constants.homeSegueIdentifire
+            
+        case .menu: identifire = Constants.menuSegueIdentifire
+            
+        case .shares: identifire = Constants.sharesSegueIdentifire
+            
+        case .contacts: identifire = Constants.contactsSegueIdentifire
             
         case .aboutUs: identifire = Constants.aboutUsSegueIdentifire
             
-        case .menu: identifire = Constants.menuSegueIdentifire
+        case .webSite: identifire = Constants.webSiteSegueIdentifire
             
         }
         performSegue(withIdentifier: identifire, sender: self)
