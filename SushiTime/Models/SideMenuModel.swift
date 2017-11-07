@@ -26,15 +26,15 @@ extension SideMenuModel {
             
         case .shares:
             imageName = "SharesIcon"
-            name  = "Акции"
+            name  = "Акції"
             
         case .contacts:
             imageName = "PhoneIcon"
-            name  = "Контакты"
+            name  = "Контакти"
             
         case .aboutUs:
             imageName = ""
-            name  = "О нас"
+            name  = "Про нас"
             
         case .webSite:
             imageName = "WebIcon"

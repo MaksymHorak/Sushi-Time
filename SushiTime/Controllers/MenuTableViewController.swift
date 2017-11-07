@@ -16,7 +16,7 @@ class MenuTableViewController: UIViewController {
     }
 
     var items: [MenuModel]{
-        return [MenuModel(name: "Name", imageName: "Home"), MenuModel(name: "Misha", imageName: "Home"), MenuModel(name: "Maaaaa", imageName: "Home")]
+        return [MenuModel(name: "Суши", imageName: "SushiIcon"), MenuModel(name: "Пицца", imageName: "PizzaIcon"), MenuModel(name: "Напитки", imageName: "DrinksIcon")]
     }
 }
 
