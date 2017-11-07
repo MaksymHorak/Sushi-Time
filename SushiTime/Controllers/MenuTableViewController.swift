@@ -14,7 +14,6 @@ class MenuTableViewController: UIViewController {
         static let cellIdentifire = "MenuTableViewCell"
 
     }
-
     var items: [MenuModel]{
         return [MenuModel(name: "Суши", imageName: "SushiIcon"), MenuModel(name: "Пицца", imageName: "PizzaIcon"), MenuModel(name: "Напитки", imageName: "DrinksIcon")]
     }

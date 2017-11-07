@@ -171,6 +171,73 @@
             </objects>
             <point key="canvasLocation" x="1751" y="758"/>
         </scene>
+        <!--Sushi-->
+        <scene sceneID="RE8-Fu-uZY">
+            <objects>
+                <viewController title="Sushi" id="MfV-Kp-FNL" customClass="SushiTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="elZ-dl-BB5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-qe-NHz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SushiTableViewCell" rowHeight="75" id="zuV-Bc-ggr" customClass="SushiTableViewCell" customModule="SushiTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zuV-Bc-ggr" id="g7I-Kj-aGR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ctB-1z-1gc">
+                                                    <rect key="frame" x="20" y="12.5" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="pc6-CX-U4h"/>
+                                                        <constraint firstAttribute="height" constant="50" id="v7g-YL-tdq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-AC-Dwx">
+                                                    <rect key="frame" x="78" y="27" width="277" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ctB-1z-1gc" firstAttribute="centerY" secondItem="g7I-Kj-aGR" secondAttribute="centerY" id="3AN-fR-wBD"/>
+                                                <constraint firstItem="RfF-AC-Dwx" firstAttribute="centerY" secondItem="g7I-Kj-aGR" secondAttribute="centerY" id="6bA-8I-p87"/>
+                                                <constraint firstAttribute="trailing" secondItem="RfF-AC-Dwx" secondAttribute="trailing" constant="20" symbolic="YES" id="buB-GB-o7F"/>
+                                                <constraint firstItem="RfF-AC-Dwx" firstAttribute="leading" secondItem="ctB-1z-1gc" secondAttribute="trailing" constant="8" symbolic="YES" id="dDG-Qn-HgZ"/>
+                                                <constraint firstItem="ctB-1z-1gc" firstAttribute="leading" secondItem="g7I-Kj-aGR" secondAttribute="leading" constant="20" symbolic="YES" id="xPF-NF-b0v"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="shushiItemImageView" destination="ctB-1z-1gc" id="P30-If-P7k"/>
+                                            <outlet property="sushiItemNameLabel" destination="RfF-AC-Dwx" id="Jcg-5o-vIn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MfV-Kp-FNL" id="Rpk-CB-Z1g"/>
+                                    <outlet property="delegate" destination="MfV-Kp-FNL" id="77m-EM-CSR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HTD-QV-BLD" firstAttribute="bottom" secondItem="6v1-qe-NHz" secondAttribute="bottom" id="71Y-5q-QVG"/>
+                            <constraint firstItem="HTD-QV-BLD" firstAttribute="trailing" secondItem="6v1-qe-NHz" secondAttribute="trailing" id="MNj-wp-0vI"/>
+                            <constraint firstItem="6v1-qe-NHz" firstAttribute="top" secondItem="HTD-QV-BLD" secondAttribute="top" id="Ndg-qA-Qk9"/>
+                            <constraint firstItem="6v1-qe-NHz" firstAttribute="leading" secondItem="HTD-QV-BLD" secondAttribute="leading" id="dV0-Va-A2U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HTD-QV-BLD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNy-ri-75X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2141.5999999999999" y="1346.176911544228"/>
+        </scene>
         <!--Menu-->
         <scene sceneID="a8f-Or-tXS">
             <objects>
@@ -233,6 +300,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7A8-2M-FE9"/>
                     </view>
+                    <connections>
+                        <segue destination="MfV-Kp-FNL" kind="show" identifier="Shushi" id="Pej-k5-2X8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zuw-J3-op2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
