@@ -10,22 +10,30 @@ import UIKit
 
 class MenuTableViewController: UIViewController {
 
-    fileprivate enum Constants {
-        static let cellIdentifire = "MenuTableViewCell"
+    fileprivate enum ConstantsCell {
+        static let cellIdentifier = "MenuTableViewCell"
+    }
+    
+    fileprivate enum Constantss {
+        static let sushiSegueIdentifire = "Sushi"
+        static let pizzaSegueIdentifire = "Pizza"
+        static let drinksSegueIdentifire = "Drinks"
 
     }
     var items: [MenuModel]{
-        return [MenuModel(name: "Суши", imageName: "SushiIcon"), MenuModel(name: "Пицца", imageName: "PizzaIcon"), MenuModel(name: "Напитки", imageName: "DrinksIcon")]
+        return [MenuModel(type: .sushi),
+                MenuModel(type: .pizza),
+                MenuModel(type: .drinks)]
     }
 }
-
-extension MenuTableViewController: UITableViewDataSource {
+extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifire, for: indexPath) as? MenuTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifier, for: indexPath) as? MenuTableViewCell else {
             return UITableViewCell()
         }
         let currentItem = items[indexPath.row]
@@ -34,7 +42,24 @@ extension MenuTableViewController: UITableViewDataSource {
         
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        didSelectCellWithType(type: item.type)
+    }
     
-    //menuItemNameLable
-    
+    func didSelectCellWithType(type: MenuItemType) {
+        var identifire: String!
+        switch type {
+            
+        case .sushi: identifire = Constantss.sushiSegueIdentifire
+            
+        case .pizza: identifire = Constantss.pizzaSegueIdentifire
+            
+        case .drinks: identifire = Constantss.drinksSegueIdentifire
+        }
+        
+        performSegue(withIdentifier: identifire, sender: self)
+    }
 }
+

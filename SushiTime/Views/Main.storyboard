@@ -238,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="-2141.5999999999999" y="1346.176911544228"/>
         </scene>
-        <!--Menu-->
+        <!--Menu Table View Controller-->
         <scene sceneID="a8f-Or-tXS">
             <objects>
-                <viewController title="Menu" id="SQp-gQ-Sac" customClass="MenuTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SQp-gQ-Sac" customClass="MenuTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gbz-Sf-FPQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +301,7 @@
                         <viewLayoutGuide key="safeArea" id="7A8-2M-FE9"/>
                     </view>
                     <connections>
-                        <segue destination="MfV-Kp-FNL" kind="show" identifier="Shushi" id="Pej-k5-2X8"/>
+                        <segue destination="MfV-Kp-FNL" kind="show" identifier="Sushi" animates="NO" id="Pej-k5-2X8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zuw-J3-op2" userLabel="First Responder" sceneMemberID="firstResponder"/>

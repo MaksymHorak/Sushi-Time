@@ -9,7 +9,7 @@
 import UIKit
 import SideMenu
 
-class GreetingsViewController: UIViewController {
+class GreetingsViewController: UIViewController  {
     
     fileprivate enum Constants {
         static let menuSegueIdentifire = "Menu"
@@ -62,7 +62,5 @@ extension GreetingsViewController: SideMenuTableViewControllerDelegate {
         SideMenuManager.default.menuLeftNavigationController?.dismiss(animated: true, completion: nil)
 
     }
-    
-    
     
 }

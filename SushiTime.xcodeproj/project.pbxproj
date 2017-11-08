@@ -37,10 +37,10 @@
 		63DA53A31FAE3FB7001E3D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DA53A61FAE3FB7001E3D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DA53A81FAE3FB7001E3D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreetingsViewController.swift; path = SushiTime/Controllers/GreetingsViewController.swift; sourceTree = SOURCE_ROOT; };
+		63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreetingsViewController.swift; path = "SushiTime/Contr/Side menu controller/GreetingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		63DA53B71FAE4778001E3D6B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = SushiTime/Views/Main.storyboard; sourceTree = "<group>"; };
 		63DA53B91FAE49CF001E3D6B /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SideMenu.storyboard; path = SushiTime/Views/SideMenu.storyboard; sourceTree = "<group>"; };
-		63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = SushiTime/Controllers/SideMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = "SushiTime/Contr/Side menu controller/SideMenuTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewCell.swift; path = SushiTime/Views/SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		63DA53BF1FAE4CFB001E3D6B /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		63DA53C11FAFB0B4001E3D6B /* SlideMenuItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItemType.swift; sourceTree = "<group>"; };
@@ -68,6 +68,15 @@
 				A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6395232F1FB2362D0080CCD9 /* Side menu controller */ = {
+			isa = PBXGroup;
+			children = (
+				63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */,
+				63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */,
+			);
+			path = "Side menu controller";
 			sourceTree = "<group>";
 		};
 		63DA53901FAE3FB7001E3D6B = {
@@ -103,8 +112,7 @@
 		63DA53B01FAE4549001E3D6B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				63DA53B51FAE46ED001E3D6B /* GreetingsViewController.swift */,
-				63DA53BB1FAE4AC8001E3D6B /* SideMenuTableViewController.swift */,
+				6395232F1FB2362D0080CCD9 /* Side menu controller */,
 				63DA53D51FB128D6001E3D6B /* MenuTableViewController.swift */,
 				639523291FB219A70080CCD9 /* SushiTableViewController.swift */,
 			);

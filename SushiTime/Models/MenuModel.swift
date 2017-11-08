@@ -8,11 +8,35 @@
 
 import Foundation
 
+enum MenuItemType {
+
+    case sushi, pizza, drinks
+}
 
 struct MenuModel {
     var name: String
     var imageName: String
-    
-    
-    
+    var type: MenuItemType
 }
+
+extension MenuModel {
+    
+    init(type: MenuItemType) {
+        self.type = type
+        switch type {
+            
+        case .sushi:
+            imageName = "SushiIcon"
+            name  = "Суші"
+            
+        case .pizza:
+            imageName = "PizzaIcon"
+            name  = "Піцца"
+            
+        case .drinks:
+            imageName = "DrinksIcon"
+            name  = "Напої"
+        }
+    }
+}
+
