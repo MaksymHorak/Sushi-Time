@@ -10,22 +10,27 @@ import UIKit
 
 class SushiTableViewController: UIViewController {
 
-    fileprivate enum Constants {
+    fileprivate enum ConstantsCell{
         static let cellIdentifire = "SushiTableViewCell"
         
     }
+    
+    fileprivate enum Constants {
+        static let nigiriSegueIdentifire = "Nigiri"
+  
+    }
     var items: [SushiModel]{
-        return [SushiModel(name: "1", imageName: "Home"), SushiModel(name: "2", imageName: "Home"), SushiModel(name: "3", imageName: "Home ")]
+        return [SushiModel(type: .nigiri)]
     }
 }
 
-extension SushiTableViewController: UITableViewDataSource {
+extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifire, for: indexPath) as? SushiTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifire, for: indexPath) as? SushiTableViewCell else{
             
             return UITableViewCell()
         }
@@ -36,6 +41,19 @@ extension SushiTableViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        didSelectCellWithType(type: item.type)
+    }
     
+    func didSelectCellWithType(type: SushiItemType) {
+        var identifire: String!
+        switch type {
+            
+        case .nigiri: identifire = Constants.nigiriSegueIdentifire
+        }
+        
+        performSegue(withIdentifier: identifire, sender: self)
+    }
     
 }

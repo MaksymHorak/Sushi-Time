@@ -7,9 +7,27 @@
 //
 
 import Foundation
+enum SushiItemType {
+    
+    case nigiri
+}
 
 struct SushiModel {
     
     var name: String
     var imageName: String
+    var type: SushiItemType
+}
+
+extension SushiModel {
+    
+    init(type: SushiItemType) {
+        self.type = type
+        switch type {
+            
+        case .nigiri:
+            imageName = "SushiIcon"
+            name  = "Нігірі"
+        }
+    }
 }
