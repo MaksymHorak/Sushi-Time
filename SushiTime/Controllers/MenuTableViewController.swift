@@ -36,9 +36,12 @@ extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifier, for: indexPath) as? MenuTableViewCell else {
             return UITableViewCell()
         }
+        
+        cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
         let currentItem = items[indexPath.row]
         cell.menuItemImageView.image = UIImage(named: currentItem.imageName)
         cell.menuItemNameLable.text = currentItem.name
+        cell.menuItemImageView.layer.cornerRadius = cell.menuItemImageView.frame.height / 2 
         
         return cell
     }

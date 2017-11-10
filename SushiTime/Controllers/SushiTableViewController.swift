@@ -16,11 +16,15 @@ class SushiTableViewController: UIViewController {
     }
     
     fileprivate enum Constants {
-        static let nigiriSegueIdentifire = "Nigiri"
+        static let syrnyiSegueIdentifire = "syrnyi"
+        static let veganSegueIdentifire = "vegan"
+        static let futomakiSegueIdentifire = "futomaki"
   
     }
     var items: [SushiModel]{
-        return [SushiModel(type: .nigiri)]
+        return [SushiModel(type: .syrnyi),
+                SushiModel(type: .vegan),
+                SushiModel(type: .futomaki)]
     }
 }
 
@@ -31,12 +35,17 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifire, for: indexPath) as? SushiTableViewCell else{
+
             
             return UITableViewCell()
         }
+        cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
+        
         let currentItem = items[indexPath.row]
         cell.shushiItemImageView.image = UIImage(named: currentItem.imageName)
         cell.sushiItemNameLabel.text = currentItem.name
+        
+        cell.shushiItemImageView.layer.cornerRadius = cell.shushiItemImageView.frame.height / 2 
         
         return cell
     }
@@ -50,7 +59,9 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         var identifire: String!
         switch type {
             
-        case .nigiri: identifire = Constants.nigiriSegueIdentifire
+        case .syrnyi: identifire = Constants.syrnyiSegueIdentifire
+        case .vegan: identifire = Constants.veganSegueIdentifire
+        case .futomaki: identifire = Constants.futomakiSegueIdentifire
         }
         
         performSegue(withIdentifier: identifire, sender: self)

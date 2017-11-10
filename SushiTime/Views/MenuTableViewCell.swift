@@ -10,7 +10,8 @@ import UIKit
 
 class MenuTableViewCell: UITableViewCell {
 
-
+    @IBOutlet var cellView: UIView!
+    
     @IBOutlet var menuItemImageView: UIImageView!
     
     @IBOutlet var menuItemNameLable: UILabel!

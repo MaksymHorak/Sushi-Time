@@ -11,6 +11,9 @@
 		6395232A1FB219A70080CCD9 /* SushiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523291FB219A70080CCD9 /* SushiTableViewController.swift */; };
 		6395232C1FB21C8F0080CCD9 /* SushiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395232B1FB21C8F0080CCD9 /* SushiModel.swift */; };
 		6395232E1FB229B20080CCD9 /* SushiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */; };
+		639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */; };
+		639523391FB624850080CCD9 /* PizzaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523381FB624850080CCD9 /* PizzaTableViewController.swift */; };
+		6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395233A1FB624CA0080CCD9 /* PizzaModel.swift */; };
 		63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA539C1FAE3FB7001E3D6B /* AppDelegate.swift */; };
 		63DA53A41FAE3FB7001E3D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DA53A31FAE3FB7001E3D6B /* Assets.xcassets */; };
 		63DA53A71FAE3FB7001E3D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DA53A51FAE3FB7001E3D6B /* LaunchScreen.storyboard */; };
@@ -32,6 +35,9 @@
 		639523291FB219A70080CCD9 /* SushiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SushiTableViewController.swift; path = SushiTime/Controllers/SushiTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		6395232B1FB21C8F0080CCD9 /* SushiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiModel.swift; sourceTree = "<group>"; };
 		6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SushiTableViewCell.swift; path = SushiTime/Views/SushiTableViewCell.swift; sourceTree = "<group>"; };
+		639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaTableViewCell.swift; path = SushiTime/Views/PizzaTableViewCell.swift; sourceTree = "<group>"; };
+		639523381FB624850080CCD9 /* PizzaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaTableViewController.swift; path = SushiTime/Controllers/PizzaTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6395233A1FB624CA0080CCD9 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		63DA53991FAE3FB7001E3D6B /* SushiTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DA539C1FAE3FB7001E3D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DA53A31FAE3FB7001E3D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 				6395232F1FB2362D0080CCD9 /* Side menu controller */,
 				63DA53D51FB128D6001E3D6B /* MenuTableViewController.swift */,
 				639523291FB219A70080CCD9 /* SushiTableViewController.swift */,
+				639523381FB624850080CCD9 /* PizzaTableViewController.swift */,
 			);
 			name = Controllers;
 			path = Contr;
@@ -128,6 +135,7 @@
 				63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */,
 				63DA53D31FB127B2001E3D6B /* MenuTableViewCell.swift */,
 				6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */,
+				639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -158,6 +166,7 @@
 				63DA53C11FAFB0B4001E3D6B /* SlideMenuItemType.swift */,
 				63DA53D71FB12A9B001E3D6B /* MenuModel.swift */,
 				6395232B1FB21C8F0080CCD9 /* SushiModel.swift */,
+				6395233A1FB624CA0080CCD9 /* PizzaModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,7 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639523391FB624850080CCD9 /* PizzaTableViewController.swift in Sources */,
 				63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */,
+				6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */,
 				63DA53C21FAFB0B5001E3D6B /* SlideMenuItemType.swift in Sources */,
 				6395232A1FB219A70080CCD9 /* SushiTableViewController.swift in Sources */,
 				63DA53D41FB127B2001E3D6B /* MenuTableViewCell.swift in Sources */,
@@ -311,6 +322,7 @@
 				63DA53D61FB128D6001E3D6B /* MenuTableViewController.swift in Sources */,
 				6395232E1FB229B20080CCD9 /* SushiTableViewCell.swift in Sources */,
 				63DA53B61FAE46ED001E3D6B /* GreetingsViewController.swift in Sources */,
+				639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */,
 				6395232C1FB21C8F0080CCD9 /* SushiModel.swift in Sources */,
 				63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */,
 				63DA53D81FB12A9B001E3D6B /* MenuModel.swift in Sources */,

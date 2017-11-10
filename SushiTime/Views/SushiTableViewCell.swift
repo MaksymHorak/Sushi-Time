@@ -11,6 +11,9 @@ import UIKit
 class SushiTableViewCell: UITableViewCell {
 
 
+
+    @IBOutlet var cellView: UIView!
+    
     @IBOutlet var shushiItemImageView: UIImageView!
     
     @IBOutlet var sushiItemNameLabel: UILabel!

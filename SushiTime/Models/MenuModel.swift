@@ -26,11 +26,11 @@ extension MenuModel {
         switch type {
             
         case .sushi:
-            imageName = "SushiIcon"
+            imageName = "SushiInInMenuImage"
             name  = "Суші"
             
         case .pizza:
-            imageName = "PizzaIcon"
+            imageName = "PizzaInMenuImage"
             name  = "Піцца"
             
         case .drinks:
