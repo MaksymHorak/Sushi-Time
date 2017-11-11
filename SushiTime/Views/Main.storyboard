@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVu-Gr-Jwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="821.73913043478262"/>
+            <point key="canvasLocation" x="1047" y="758"/>
         </scene>
         <!--WebSite-->
         <scene sceneID="k27-dk-njK">
@@ -183,26 +183,13 @@
                     <view key="view" contentMode="scaleToFill" id="uM3-i3-fcs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gV8-TQ-V2u">
-                                <rect key="frame" x="67" y="42" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5s-UE-Qjb">
-                                <rect key="frame" x="0.0" y="293" width="375" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="n1V-gF-qz7"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEA-6o-a5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2850" y="-3"/>
+            <point key="canvasLocation" x="-1135" y="2301"/>
         </scene>
         <!--2-->
         <scene sceneID="up1-Uv-6d4">
@@ -217,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNH-PX-DgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3609" y="-3"/>
+            <point key="canvasLocation" x="-466" y="2301"/>
         </scene>
         <!--3-->
         <scene sceneID="aac-Oc-tLY">
@@ -232,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgF-XG-1lM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4492" y="-3"/>
+            <point key="canvasLocation" x="286" y="2301"/>
         </scene>
         <!--Sushi-->
         <scene sceneID="RE8-Fu-uZY">
@@ -318,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNy-ri-75X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2007.2" y="-3.1484257871064472"/>
+            <point key="canvasLocation" x="-1135" y="1524"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fZV-WG-Uey">
@@ -342,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C75-yO-D6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2850" y="758"/>
+            <point key="canvasLocation" x="-1898" y="2301"/>
         </scene>
         <!--Pizza-->
         <scene sceneID="AY1-dF-znT">
@@ -426,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YrF-Bs-WTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2007" y="758"/>
+            <point key="canvasLocation" x="-1898" y="1525"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="a8f-Or-tXS">
@@ -526,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXK-21-cjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="842"/>
+            <point key="canvasLocation" x="-466" y="758"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="cK7-DJ-GNu">
@@ -541,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SH-U1-soK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286" y="915"/>
+            <point key="canvasLocation" x="286" y="758"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w6r-Rd-oDT">
@@ -568,7 +555,7 @@
         <image name="222" width="1298" height="536"/>
         <image name="333" width="1296" height="538"/>
         <image name="ImageAboutUs" width="890" height="575"/>
-        <image name="PizzaInMenuImage" width="416" height="416"/>
+        <image name="PizzaInMenuImage" width="208" height="208"/>
         <image name="SushiTimePage" width="354" height="354"/>
     </resources>
 </document>
