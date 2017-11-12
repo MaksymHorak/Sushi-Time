@@ -1,34 +1,34 @@
 //
-//  PizzaModel.swift
+//  SoupModel.swift
 //  SushiTime
 //
-//  Created by 1 on 10.11.17.
+//  Created by 1 on 12.11.17.
 //  Copyright © 2017 Self. All rights reserved.
 //
 
 import Foundation
 
-enum PizzaItemType {
+enum SoupItemType {
     
     case first
 }
 
-struct PizzaModel {
+struct SoupModel {
     
     var name: String
     var imageName: String
-    var type: PizzaItemType
+    var type: SoupItemType
 }
 
-extension PizzaModel {
+extension SoupModel {
     
-    init(type: PizzaItemType) {
+    init(type: SoupItemType) {
         self.type = type
         switch type {
             
         case .first:
             imageName = "syrnyi"
-            name  = "Some pizza"
+            name  = "Гарячі страви"
         }
     }
 }

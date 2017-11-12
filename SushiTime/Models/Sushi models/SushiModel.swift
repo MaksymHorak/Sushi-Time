@@ -10,7 +10,7 @@ import Foundation
 
 enum SushiItemType {
     
-    case syrnyi, vegan, futomaki
+    case hotDishes, soups, makiRolls
 }
 
 struct SushiModel {
@@ -26,17 +26,17 @@ extension SushiModel {
         self.type = type
         switch type {
             
-        case .syrnyi:
+        case .hotDishes:
             imageName = "syrnyi"
-            name  = "Сирний рол"
+            name  = "Гарячі страви"
             
-        case .vegan:
+        case .soups:
             imageName = "vegan"
-            name  = "Вегетеріанський"
+            name  = "Супи"
             
-        case .futomaki:
+        case .makiRolls:
             imageName = "futomaki"
-            name  = "Футомаки"
+            name  = "Маки роли"
         }
     }
 }

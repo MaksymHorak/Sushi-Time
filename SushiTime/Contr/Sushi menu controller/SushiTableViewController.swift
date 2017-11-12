@@ -16,18 +16,18 @@ class SushiTableViewController: UIViewController {
     }
     
     fileprivate enum Constants {
-        static let syrnyiSegueIdentifire = "syrnyi"
-        static let veganSegueIdentifire = "vegan"
-        static let futomakiSegueIdentifire = "futomaki"
+        static let hotDishesSegueIdentifire = "HotDishes"
+        static let soupsSegueIdentifire = "soups"
+        static let makiRollsSegueIdentifire = "makiRolls"
   
     }
     var items: [SushiModel]{
-        return [SushiModel(type: .syrnyi),
-                SushiModel(type: .vegan),
-                SushiModel(type: .futomaki)]
+        return [SushiModel(type: .hotDishes),
+                SushiModel(type: .soups),
+                SushiModel(type: .makiRolls)]
     }
 }
-
+ // case hotDishes, soups, makiRolls
 extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -59,9 +59,9 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         var identifire: String!
         switch type {
             
-        case .syrnyi: identifire = Constants.syrnyiSegueIdentifire
-        case .vegan: identifire = Constants.veganSegueIdentifire
-        case .futomaki: identifire = Constants.futomakiSegueIdentifire
+        case .hotDishes: identifire = Constants.hotDishesSegueIdentifire
+        case .soups: identifire = Constants.soupsSegueIdentifire
+        case .makiRolls: identifire = Constants.makiRollsSegueIdentifire
         }
         
         performSegue(withIdentifier: identifire, sender: self)
