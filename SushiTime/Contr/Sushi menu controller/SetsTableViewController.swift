@@ -1,17 +1,17 @@
 //
-//  MakiRollsTableViewController.swift
+//  SetsTableViewController.swift
 //  SushiTime
 //
-//  Created by 1 on 12.11.17.
+//  Created by 1 on 14.11.17.
 //  Copyright © 2017 Self. All rights reserved.
 //
 
 import UIKit
 
-class MakiRollsTableViewController: UIViewController {
+class SetsTableViewController: UIViewController {
     
     fileprivate enum ConstantsCell{
-        static let cellIdentifire = "MakiRollsTableViewCell"
+        static let cellIdentifire = "SetsTableViewCell"
         
     }
     
@@ -19,18 +19,18 @@ class MakiRollsTableViewController: UIViewController {
         static let secondSegueIdentifire = "second"
         
     }
-    var items: [MakiRollsModel]{
-        return [MakiRollsModel(type: .second)]
+    var items: [SetsModel]{
+        return [SetsModel(type: .second)]
     }
 }
 
-extension MakiRollsTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension SetsTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifire, for: indexPath) as? MakiRollsTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifire, for: indexPath) as? SetsTableViewCell else{
             
             
             return UITableViewCell()
@@ -38,10 +38,10 @@ extension MakiRollsTableViewController: UITableViewDelegate, UITableViewDataSour
         cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
         
         let currentItem = items[indexPath.row]
-        cell.makiRollsItemImageView.image = UIImage(named: currentItem.imageName)
-        cell.makiRollsItemNameLabel.text = currentItem.name
+        cell.setsItemImageView.image = UIImage(named: currentItem.imageName)
+        cell.setsItemNameLabel.text = currentItem.name
         
-        cell.makiRollsItemImageView.layer.cornerRadius = cell.makiRollsItemImageView.frame.height / 2
+        cell.setsItemImageView.layer.cornerRadius = cell.setsItemImageView.frame.height / 2
         
         return cell
     }
@@ -52,7 +52,7 @@ extension MakiRollsTableViewController: UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func didSelectCellWithType(type: MakiRollsItemType) {
+    func didSelectCellWithType(type: SetsItemType) {
         var identifire: String!
         switch type {
             
@@ -63,6 +63,3 @@ extension MakiRollsTableViewController: UITableViewDelegate, UITableViewDataSour
     }
     
 }
-
-
-

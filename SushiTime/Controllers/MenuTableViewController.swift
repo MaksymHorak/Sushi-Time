@@ -49,6 +49,8 @@ extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         didSelectCellWithType(type: item.type)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
     func didSelectCellWithType(type: MenuItemType) {

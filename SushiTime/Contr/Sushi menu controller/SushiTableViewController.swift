@@ -19,12 +19,16 @@ class SushiTableViewController: UIViewController {
         static let hotDishesSegueIdentifire = "HotDishes"
         static let soupsSegueIdentifire = "soups"
         static let makiRollsSegueIdentifire = "makiRolls"
+        static let rollsSegueIdentifire = "rolls"
+        static let setsSegueIdentifire = "sets"
   
     }
     var items: [SushiModel]{
         return [SushiModel(type: .hotDishes),
                 SushiModel(type: .soups),
-                SushiModel(type: .makiRolls)]
+                SushiModel(type: .makiRolls),
+                SushiModel(type: .rolls),
+                SushiModel(type: .sets)]
     }
 }
  // case hotDishes, soups, makiRolls
@@ -53,6 +57,7 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         didSelectCellWithType(type: item.type)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func didSelectCellWithType(type: SushiItemType) {
@@ -62,6 +67,8 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         case .hotDishes: identifire = Constants.hotDishesSegueIdentifire
         case .soups: identifire = Constants.soupsSegueIdentifire
         case .makiRolls: identifire = Constants.makiRollsSegueIdentifire
+        case .rolls: identifire = Constants.rollsSegueIdentifire
+        case .sets: identifire = Constants.setsSegueIdentifire
         }
         
         performSegue(withIdentifier: identifire, sender: self)
