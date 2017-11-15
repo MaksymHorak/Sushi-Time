@@ -7,18 +7,14 @@
 //
 
 import UIKit
-import WebKit
+import SafariServices
 
 class WebSiteTableViewController: UIViewController {
 
-    @IBOutlet var webView: WKWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = URL(string: "http://www.sushitime.lviv.ua/men")
-        let reqest = URLRequest(url: url!)
-        
-        webView.load(reqest)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,5 +22,37 @@ class WebSiteTableViewController: UIViewController {
         // Dispose of any resources that can be recreated.
         //http://www.sushitime.lviv.ua
     }
+ 
+    
+    @IBAction func openWebSite(_ sender: Any) {
+        let svc = SFSafariViewController(url: URL(string: "http://www.sushitime.lviv.ua/men")!)
+        self.present(svc, animated: true, completion: nil)
+    }
 
-}
+    }
+
+
+
+//import UIKit
+//import WebKit
+//
+//class WebSiteTableViewController: UIViewController {
+//
+//    @IBOutlet var webView: WKWebView!
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        let url = URL(string: "http://www.sushitime.lviv.ua/men")
+//        let reqest = URLRequest(url: url!)
+//
+//        webView.load(reqest)
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//        //http://www.sushitime.lviv.ua
+//    }
+//
+//}
+
