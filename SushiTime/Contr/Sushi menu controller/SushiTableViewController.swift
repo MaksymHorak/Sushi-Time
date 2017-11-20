@@ -21,6 +21,7 @@ class SushiTableViewController: UIViewController {
         static let makiRollsSegueIdentifire = "makiRolls"
         static let rollsSegueIdentifire = "rolls"
         static let setsSegueIdentifire = "sets"
+        static let sushiSegueIdentifire = "Sushi"
   
     }
     var items: [SushiModel]{
@@ -28,7 +29,8 @@ class SushiTableViewController: UIViewController {
                 SushiModel(type: .soups),
                 SushiModel(type: .makiRolls),
                 SushiModel(type: .rolls),
-                SushiModel(type: .sets)]
+                SushiModel(type: .sets),
+                SushiModel(type: .sushi)]
     }
 }
  // case hotDishes, soups, makiRolls
@@ -69,6 +71,7 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         case .makiRolls: identifire = Constants.makiRollsSegueIdentifire
         case .rolls: identifire = Constants.rollsSegueIdentifire
         case .sets: identifire = Constants.setsSegueIdentifire
+        case .sushi: identifire = Constants.sushiSegueIdentifire
         }
         
         performSegue(withIdentifier: identifire, sender: self)

@@ -15,15 +15,15 @@ class MenuTableViewController: UIViewController {
     }
     
     fileprivate enum Constantss {
-        static let sushiSegueIdentifire = "Sushi"
-        static let pizzaSegueIdentifire = "Pizza"
-        static let drinksSegueIdentifire = "Drinks"
+        static let sushiViewControllerSegueIdentifire = "SushiViewController"
+        static let pizzaViewControllerSegueIdentifire = "PizzaViewController"
+        static let drinksViewControllerSegueIdentifire = "DrinksViewController"
 
     }
     var items: [MenuModel]{
-        return [MenuModel(type: .sushi),
-                MenuModel(type: .pizza),
-                MenuModel(type: .drinks)]
+        return [MenuModel(type: .sushiViewController),
+                MenuModel(type: .pizzaViewController),
+                MenuModel(type: .drinksViewController)]
     }
 }
 extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -57,11 +57,11 @@ extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
         var identifire: String!
         switch type {
             
-        case .sushi: identifire = Constantss.sushiSegueIdentifire
+        case .sushiViewController: identifire = Constantss.sushiViewControllerSegueIdentifire
             
-        case .pizza: identifire = Constantss.pizzaSegueIdentifire
+        case .pizzaViewController: identifire = Constantss.pizzaViewControllerSegueIdentifire
             
-        case .drinks: identifire = Constantss.drinksSegueIdentifire
+        case .drinksViewController: identifire = Constantss.drinksViewControllerSegueIdentifire
         }
         
         performSegue(withIdentifier: identifire, sender: self)

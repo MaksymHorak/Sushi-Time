@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N3s-c4-CdZ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,11 +22,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GreetingsViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SushiTimePage" translatesAutoresizingMaskIntoConstraints="NO" id="Zn0-0a-fP0">
-                                <rect key="frame" x="10" y="49" width="354" height="354"/>
+                                <rect key="frame" x="10" y="81.666666666666629" width="354" height="354"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,7 +60,7 @@
             <objects>
                 <viewController title="Про нас" id="Hug-Fg-nbd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRY-v6-ApV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-AM-MIK">
@@ -167,11 +167,11 @@
             <objects>
                 <viewController title="WebSite" id="P3l-4b-lHT" customClass="WebSiteTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqE-ZQ-2V6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVP-PE-HMY">
-                                <rect key="frame" x="87" y="251" width="200" height="100"/>
+                                <rect key="frame" x="87" y="312" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nVP-PE-HMY" secondAttribute="height" multiplier="2:1" id="ZtS-mG-t91"/>
                                     <constraint firstAttribute="height" constant="100" id="duV-jD-ia2"/>
@@ -200,11 +200,11 @@
             <objects>
                 <viewController title="Sushi" id="MfV-Kp-FNL" customClass="SushiTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="elZ-dl-BB5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-qe-NHz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="SushiTableViewCell" rowHeight="100" id="zuV-Bc-ggr" customClass="SushiTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -215,17 +215,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijW-hX-KRA">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-FE-86Q">
-                                                            <rect key="frame" x="0.0" y="4.5" width="80" height="80.5"/>
+                                                            <rect key="frame" x="0.0" y="4.6666666666666643" width="80" height="80.333333333333343"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="SRQ-nE-w4C"/>
                                                                 <constraint firstAttribute="height" constant="80" id="riB-YX-0ax"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGO-vs-kku">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -277,6 +277,7 @@
                         <segue destination="zVe-zo-clH" kind="show" identifier="HotDishes" id="5m5-1h-fdn"/>
                         <segue destination="k3i-w9-nA3" kind="show" identifier="rolls" id="vrV-Yw-eTn"/>
                         <segue destination="5vy-li-EKe" kind="show" identifier="sets" id="wc8-Gi-Zac"/>
+                        <segue destination="iyd-xm-oLM" kind="show" identifier="Sushi" id="Ztj-MH-A17"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNy-ri-75X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,7 +289,7 @@
             <objects>
                 <viewController id="gBB-68-XL7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sL-SU-5oc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOx-h8-Np9">
@@ -312,11 +313,11 @@
             <objects>
                 <viewController title="Pizza" id="rsn-ew-Ycz" customClass="PizzaTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbZ-i5-okG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cYg-g4-fvd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="PizzaTableViewCell" rowHeight="100" id="enD-cz-CiW" customClass="PizzaTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -327,7 +328,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-TV-5we">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UUK-mF-lpL">
                                                             <rect key="frame" x="0.0" y="5" width="80" height="80"/>
@@ -337,7 +338,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C61-eh-kUu">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -396,11 +397,11 @@
             <objects>
                 <viewController id="SQp-gQ-Sac" customClass="MenuTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gbz-Sf-FPQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35U-YT-eUe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="100" id="MTk-ZN-Tc4" customClass="MenuTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -411,17 +412,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChQ-M3-5VK">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaInMenuImage" translatesAutoresizingMaskIntoConstraints="NO" id="xOv-xq-e1X">
-                                                            <rect key="frame" x="0.0" y="4" width="80" height="80.5"/>
+                                                            <rect key="frame" x="0.0" y="4" width="80" height="80.666666666666671"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="MYQ-D2-xda"/>
                                                                 <constraint firstAttribute="width" constant="80" id="gyK-da-xbj"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYB-FX-Uoy">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -468,8 +469,8 @@
                         <viewLayoutGuide key="safeArea" id="7A8-2M-FE9"/>
                     </view>
                     <connections>
-                        <segue destination="MfV-Kp-FNL" kind="show" identifier="Sushi" id="Pej-k5-2X8"/>
-                        <segue destination="rsn-ew-Ycz" kind="show" identifier="Pizza" id="JW9-RN-bly"/>
+                        <segue destination="MfV-Kp-FNL" kind="show" identifier="SushiViewController" id="Pej-k5-2X8"/>
+                        <segue destination="rsn-ew-Ycz" kind="show" identifier="PizzaViewController" id="JW9-RN-bly"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zuw-J3-op2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -481,7 +482,7 @@
             <objects>
                 <viewController title="Shares" id="QBM-v5-Vwi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ora-A8-Dcs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="FT9-vX-1El"/>
@@ -496,7 +497,7 @@
             <objects>
                 <viewController title="Contacts" id="ItS-Ew-REi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yu-Ag-bCW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="CNA-ab-QnL"/>
@@ -513,7 +514,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="RXy-Gz-ZiV">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -530,11 +531,11 @@
             <objects>
                 <viewController title="Маки роли" id="5sW-AZ-NcA" customClass="MakiRollsTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I6f-KU-Y91">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jyt-ZJ-Xrv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="MakiRollsTableViewCell" rowHeight="100" id="viW-gD-YPV" customClass="MakiRollsTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -545,17 +546,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFq-6t-ADh">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DX0-XI-qnj">
-                                                            <rect key="frame" x="0.0" y="4.5" width="80" height="80.5"/>
+                                                            <rect key="frame" x="0.0" y="4.6666666666666643" width="80" height="80.333333333333343"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="7wn-7S-VYY"/>
                                                                 <constraint firstAttribute="width" constant="80" id="J2T-UI-aKb"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-bk-PEu">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -614,7 +615,7 @@
             <objects>
                 <viewController title="hot" id="zJb-wk-12o" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fP5-d0-IcI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HotDishes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51q-Nv-C0X">
@@ -638,7 +639,7 @@
             <objects>
                 <viewController id="67K-yO-vW7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21G-ph-tip">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTn-N7-3Fe">
@@ -662,7 +663,7 @@
             <objects>
                 <viewController id="jJX-23-Ez7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PHB-fv-1FL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="maki Rolls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-Qd-mTh">
@@ -686,11 +687,11 @@
             <objects>
                 <viewController title="Гарячі страви" id="zVe-zo-clH" customClass="HotDishesTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ch-73-Cnx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I1E-3j-lcT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HotDishesTableViewCell" id="w3j-KV-E8k" customClass="HotDishesTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -701,7 +702,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfw-Ab-SZH">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zyW-Kk-Xjp">
                                                             <rect key="frame" x="0.0" y="5" width="80" height="80"/>
@@ -711,7 +712,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afp-2X-xFY">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -770,11 +771,11 @@
             <objects>
                 <viewController title="Супи" id="acY-1s-UPu" customClass="SoupTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3GL-ef-r8m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4et-6q-pWR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="SoupTableViewCell" rowHeight="100" id="a7q-Wg-Dua" customClass="SoupTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -785,17 +786,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rq-RW-qzN">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-YE-nAo">
-                                                            <rect key="frame" x="0.0" y="4.5" width="80" height="80.5"/>
+                                                            <rect key="frame" x="0.0" y="4.6666666666666643" width="80" height="80.333333333333343"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="LMe-6k-5Zf"/>
                                                                 <constraint firstAttribute="width" constant="80" id="tqq-WP-NUz"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCX-ZN-LHM">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -854,11 +855,11 @@
             <objects>
                 <viewController title="Роли" id="k3i-w9-nA3" customClass="RollsTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="etv-mg-g94">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nLB-le-XcW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="RollsTableViewCell" rowHeight="100" id="5Kj-T1-LGc" customClass="RollsTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -869,17 +870,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytd-SV-uT1">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ni-Fm-EC3">
-                                                            <rect key="frame" x="0.0" y="4.5" width="80" height="80.5"/>
+                                                            <rect key="frame" x="0.0" y="4.6666666666666643" width="80" height="80.333333333333343"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="bLv-TD-Uky"/>
                                                                 <constraint firstAttribute="height" constant="80" id="cN6-xE-slu"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9Y-5B-Yma">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -930,16 +931,16 @@
             </objects>
             <point key="canvasLocation" x="972" y="2301"/>
         </scene>
-        <!--Сети-->
+        <!--Набори-->
         <scene sceneID="4On-dF-S4y">
             <objects>
-                <viewController title="Сети" id="5vy-li-EKe" customClass="SetsTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Набори" id="5vy-li-EKe" customClass="SetsTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRr-PU-Eqm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jVQ-hB-CIG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="SetsTableViewCell" rowHeight="100" id="jej-Vg-Gw4" customClass="SetsTableViewCell" customModule="SushiTime" customModuleProvider="target">
@@ -950,17 +951,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-tL-vQf">
-                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dE-4m-4Cm">
-                                                            <rect key="frame" x="0.0" y="4.5" width="80" height="80.5"/>
+                                                            <rect key="frame" x="0.0" y="4.6666666666666643" width="80" height="80.333333333333343"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="50j-vY-ZHX"/>
                                                                 <constraint firstAttribute="width" constant="80" id="Vcp-cV-cU8"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nim-uE-i3P">
-                                                            <rect key="frame" x="88" y="8" width="259" height="73.5"/>
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1009,7 +1010,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjY-dR-XCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="2301"/>
+            <point key="canvasLocation" x="1654" y="2301"/>
+        </scene>
+        <!--Суші-->
+        <scene sceneID="gSd-Ma-hah">
+            <objects>
+                <viewController title="Суші" id="iyd-xm-oLM" customClass="SushiInSushiTableViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gT-9O-Qnm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3wo-BN-7bV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="SushiInSushiTableViewCell" rowHeight="100" id="ONF-St-RD5" customClass="SushiInSushiTableViewCell" customModule="SushiTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ONF-St-RD5" id="hPR-pd-yAU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-WC-3eB">
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.666666666666671"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vms-BO-9KG">
+                                                            <rect key="frame" x="0.0" y="4.6666666666666643" width="80" height="80.333333333333343"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="80" id="psc-4L-8UF"/>
+                                                                <constraint firstAttribute="width" constant="80" id="qin-da-7xe"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdg-oe-shc">
+                                                            <rect key="frame" x="88" y="8" width="259" height="73.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="sdg-oe-shc" firstAttribute="leading" secondItem="vms-BO-9KG" secondAttribute="trailing" constant="8" id="FZ6-y5-erJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sdg-oe-shc" secondAttribute="bottom" constant="8" id="Q4K-Yg-YAf"/>
+                                                        <constraint firstItem="vms-BO-9KG" firstAttribute="centerY" secondItem="bLy-WC-3eB" secondAttribute="centerY" id="cXi-Wv-g5e"/>
+                                                        <constraint firstItem="vms-BO-9KG" firstAttribute="leading" secondItem="bLy-WC-3eB" secondAttribute="leading" id="qob-2q-Czb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sdg-oe-shc" secondAttribute="trailing" constant="8" id="upj-u6-vkS"/>
+                                                        <constraint firstItem="sdg-oe-shc" firstAttribute="top" secondItem="bLy-WC-3eB" secondAttribute="top" constant="8" id="yF6-BG-PmO"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bLy-WC-3eB" firstAttribute="top" secondItem="hPR-pd-yAU" secondAttribute="top" constant="5" id="Mdr-Tj-5Zz"/>
+                                                <constraint firstAttribute="bottom" secondItem="bLy-WC-3eB" secondAttribute="bottom" constant="5" id="c9f-k1-ElL"/>
+                                                <constraint firstItem="bLy-WC-3eB" firstAttribute="leading" secondItem="hPR-pd-yAU" secondAttribute="leading" constant="10" id="wkR-tV-q5S"/>
+                                                <constraint firstAttribute="trailing" secondItem="bLy-WC-3eB" secondAttribute="trailing" constant="10" id="xsK-dc-Ueu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellView" destination="hPR-pd-yAU" id="Usf-56-BZa"/>
+                                            <outlet property="sushiInSushiItemImageView" destination="vms-BO-9KG" id="jfQ-a6-OCx"/>
+                                            <outlet property="sushiInSushiItemNameLabel" destination="sdg-oe-shc" id="bC6-cl-hs2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iyd-xm-oLM" id="anz-BC-V4j"/>
+                                    <outlet property="delegate" destination="iyd-xm-oLM" id="miC-xG-7ME"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3wo-BN-7bV" firstAttribute="top" secondItem="uw1-Wu-ZFe" secondAttribute="top" id="Dtf-vA-tXu"/>
+                            <constraint firstItem="uw1-Wu-ZFe" firstAttribute="trailing" secondItem="3wo-BN-7bV" secondAttribute="trailing" id="Zoa-Gi-iwh"/>
+                            <constraint firstItem="3wo-BN-7bV" firstAttribute="leading" secondItem="uw1-Wu-ZFe" secondAttribute="leading" id="mDd-EM-6Yj"/>
+                            <constraint firstItem="uw1-Wu-ZFe" firstAttribute="bottom" secondItem="3wo-BN-7bV" secondAttribute="bottom" id="tgV-tl-Bvd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uw1-Wu-ZFe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jco-df-QHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="2301"/>
         </scene>
     </scenes>
     <resources>
