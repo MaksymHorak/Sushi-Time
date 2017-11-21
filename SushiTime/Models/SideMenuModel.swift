@@ -40,6 +40,7 @@ extension SideMenuModel {
             imageName = "WebIcon"
             name  = "Наш сайт"
             
+            
         }
     }
 }
