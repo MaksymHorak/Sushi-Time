@@ -182,6 +182,14 @@
                                     <action selector="openWebSite:" destination="P3l-4b-lHT" eventType="touchUpInside" id="CEO-uR-wkS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-Dd-3J6">
+                                <rect key="frame" x="164" y="206" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ShowWhere:" destination="P3l-4b-lHT" eventType="touchUpInside" id="cA6-Ei-1gn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -619,7 +627,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HotDishes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51q-Nv-C0X">
-                                <rect key="frame" x="96" y="252" width="183" height="99"/>
+                                <rect key="frame" x="96" y="313" width="183" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -632,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPH-LD-EEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1135.2" y="3047.226386806597"/>
+            <point key="canvasLocation" x="-1135" y="3052"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yyn-0B-cgH">
@@ -643,7 +651,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTn-N7-3Fe">
-                                <rect key="frame" x="96" y="252" width="183" height="99"/>
+                                <rect key="frame" x="96" y="313" width="183" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -656,7 +664,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSw-3Q-CMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="3047"/>
+            <point key="canvasLocation" x="-383" y="3052"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="G1P-Eu-XBs">
@@ -667,7 +675,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="maki Rolls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-Qd-mTh">
-                                <rect key="frame" x="96" y="252" width="183" height="99"/>
+                                <rect key="frame" x="96" y="313" width="183" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -680,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkg-BH-o3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286" y="3046"/>
+            <point key="canvasLocation" x="286" y="3052"/>
         </scene>
         <!--Гарячі страви-->
         <scene sceneID="Hcs-4c-tbb">
@@ -926,6 +934,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="93g-Un-U9q"/>
                     </view>
+                    <connections>
+                        <segue destination="Gzo-dm-Xje" kind="show" identifier="second" id="LUs-7o-sad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXt-z0-xxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1007,6 +1018,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iEN-L4-Mec"/>
                     </view>
+                    <connections>
+                        <segue destination="FD2-hV-jCK" kind="show" identifier="second" id="lGd-mn-WcV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjY-dR-XCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1067,7 +1081,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cellView" destination="hPR-pd-yAU" id="Usf-56-BZa"/>
+                                            <outlet property="cellView" destination="bLy-WC-3eB" id="jAd-nL-U4q"/>
                                             <outlet property="sushiInSushiItemImageView" destination="vms-BO-9KG" id="jfQ-a6-OCx"/>
                                             <outlet property="sushiInSushiItemNameLabel" destination="sdg-oe-shc" id="bC6-cl-hs2"/>
                                         </connections>
@@ -1088,10 +1102,85 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uw1-Wu-ZFe"/>
                     </view>
+                    <connections>
+                        <segue destination="9x0-Xl-pRy" kind="show" identifier="second" id="LxG-4v-Ypq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jco-df-QHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2326" y="2301"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c5z-Y0-YhV">
+            <objects>
+                <viewController id="Gzo-dm-Xje" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rlk-Ot-1Es">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rolls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbR-mw-6jc">
+                                <rect key="frame" x="96" y="313" width="183" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="qy3-1z-ogO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ZY-8D-7aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="3052"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gx0-8t-dBL">
+            <objects>
+                <viewController id="FD2-hV-jCK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npd-CB-jTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSR-lX-kur">
+                                <rect key="frame" x="96" y="313" width="183" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8hF-oc-qdZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fr9-II-7DN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="3046"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JMq-sO-qzE">
+            <objects>
+                <viewController id="9x0-Xl-pRy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qP9-se-3ds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sushi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK8-wZ-yUO">
+                                <rect key="frame" x="96" y="313" width="183" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="K0j-oF-eHh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgp-jw-Ejc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="3046"/>
         </scene>
     </scenes>
     <resources>
