@@ -58,7 +58,7 @@ extension GreetingsViewController: SideMenuTableViewControllerDelegate {
             
         case .webSite:
             SideMenuManager.default.menuLeftNavigationController?.dismiss(animated: true) {
-        let svc = SFSafariViewController(url: URL(string: "http://www.sushitime.lviv.ua/men")!)
+        let svc = SFSafariViewController(url: URL(string: "http://www.sushitime.lviv.ua")!)
         self.present(svc, animated: true, completion: nil)
             }
         return

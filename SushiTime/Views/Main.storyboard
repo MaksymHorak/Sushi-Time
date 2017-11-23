@@ -536,10 +536,10 @@
             </objects>
             <point key="canvasLocation" x="-466" y="-3"/>
         </scene>
-        <!--Гарячі страви-->
+        <!--Order Details View Controller-->
         <scene sceneID="Hcs-4c-tbb">
             <objects>
-                <viewController storyboardIdentifier="GenericTableViewController" title="Гарячі страви" id="zVe-zo-clH" customClass="OrderDetailsViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GenericTableViewController" id="zVe-zo-clH" customClass="OrderDetailsViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ch-73-Cnx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,5 +9,5 @@
 import Foundation
 
 struct TestViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Test 1", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Test 2", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Test 3", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Test 4", weight: 1, price: 8, imageName: "Home")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Tes 1", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Test 2", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Test 3", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Test 4", weight: 1, price: 8, imageName: "Home")]
 }

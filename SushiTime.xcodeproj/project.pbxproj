@@ -8,30 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5E3117C24CB52EA9CC3CEE50 /* Pods_SushiTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */; };
-		63927C6C1FC33E5400D7D67A /* SushiInSushiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63927C6B1FC33E5400D7D67A /* SushiInSushiTableViewController.swift */; };
-		63927C6E1FC33F0900D7D67A /* SushiInSushiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63927C6D1FC33F0900D7D67A /* SushiInSushiTableViewCell.swift */; };
-		63927C701FC33F1C00D7D67A /* SushiInSushiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63927C6F1FC33F1C00D7D67A /* SushiInSushiModel.swift */; };
+		6319E27D1FC7171B00DEB518 /* Sushi Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E27C1FC7171B00DEB518 /* Sushi Model.swift */; };
+		6319E27F1FC71A9C00DEB518 /* SuopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E27E1FC71A9C00DEB518 /* SuopTableViewController.swift */; };
+		6319E2811FC71AD500DEB518 /* RollsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E2801FC71AD500DEB518 /* RollsTableViewController.swift */; };
+		6319E2831FC72F6400DEB518 /* SoupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E2821FC72F6400DEB518 /* SoupViewModel.swift */; };
 		6395232A1FB219A70080CCD9 /* SushiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523291FB219A70080CCD9 /* SushiTableViewController.swift */; };
-		6395232C1FB21C8F0080CCD9 /* SushiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395232B1FB21C8F0080CCD9 /* SushiModel.swift */; };
 		6395232E1FB229B20080CCD9 /* SushiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */; };
 		639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */; };
 		639523391FB624850080CCD9 /* PizzaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523381FB624850080CCD9 /* PizzaTableViewController.swift */; };
 		6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395233A1FB624CA0080CCD9 /* PizzaModel.swift */; };
 		6395237E1FB874950080CCD9 /* HotDishesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395237D1FB874940080CCD9 /* HotDishesTableViewCell.swift */; };
-		639523801FB876960080CCD9 /* HotDishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395237F1FB876960080CCD9 /* HotDishesTableViewController.swift */; };
-		639523821FB87B7D0080CCD9 /* HotDishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523811FB87B7D0080CCD9 /* HotDishesModel.swift */; };
-		639523841FB8901B0080CCD9 /* SoupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523831FB8901B0080CCD9 /* SoupTableViewCell.swift */; };
-		639523861FB893A90080CCD9 /* SoupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523851FB893A90080CCD9 /* SoupTableViewController.swift */; };
-		639523881FB893DF0080CCD9 /* SoupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523871FB893DF0080CCD9 /* SoupModel.swift */; };
-		6395238A1FB8C9D60080CCD9 /* MakiRollsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523891FB8C9D60080CCD9 /* MakiRollsTableViewCell.swift */; };
-		6395238C1FB8CA7D0080CCD9 /* MakiRollsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395238B1FB8CA7D0080CCD9 /* MakiRollsModel.swift */; };
-		6395238E1FB8CAFA0080CCD9 /* MakiRollsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395238D1FB8CAFA0080CCD9 /* MakiRollsTableViewController.swift */; };
-		639523901FBB093C0080CCD9 /* RollsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395238F1FBB093C0080CCD9 /* RollsTableViewController.swift */; };
-		639523921FBB09C70080CCD9 /* RollsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523911FBB09C70080CCD9 /* RollsModel.swift */; };
-		639523941FBB0A0C0080CCD9 /* RollsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523931FBB0A0C0080CCD9 /* RollsTableViewCell.swift */; };
-		639523961FBB0C240080CCD9 /* SetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523951FBB0C240080CCD9 /* SetsTableViewController.swift */; };
-		639523981FBB0C3E0080CCD9 /* SetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523971FBB0C3E0080CCD9 /* SetsTableViewCell.swift */; };
-		6395239A1FBB0C520080CCD9 /* SetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523991FBB0C520080CCD9 /* SetsModel.swift */; };
 		6395239E1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395239D1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift */; };
 		63D48DDE1FC4DEA80065F424 /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D48DDD1FC4DEA80065F424 /* OrderDetailsViewController.swift */; };
 		63D48DE01FC4E02F0065F424 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D48DDF1FC4E02F0065F424 /* OrderDetailViewModel.swift */; };
@@ -57,30 +43,16 @@
 /* Begin PBXFileReference section */
 		2D6C6C2AA5632DF6B0116899 /* Pods-SushiTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SushiTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime.release.xcconfig"; sourceTree = "<group>"; };
 		32CB20B26BFAD4D872CC5002 /* Pods-SushiTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SushiTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime.debug.xcconfig"; sourceTree = "<group>"; };
-		63927C6B1FC33E5400D7D67A /* SushiInSushiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiInSushiTableViewController.swift; sourceTree = "<group>"; };
-		63927C6D1FC33F0900D7D67A /* SushiInSushiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiInSushiTableViewCell.swift; sourceTree = "<group>"; };
-		63927C6F1FC33F1C00D7D67A /* SushiInSushiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiInSushiModel.swift; sourceTree = "<group>"; };
+		6319E27C1FC7171B00DEB518 /* Sushi Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sushi Model.swift"; sourceTree = "<group>"; };
+		6319E27E1FC71A9C00DEB518 /* SuopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuopTableViewController.swift; sourceTree = "<group>"; };
+		6319E2801FC71AD500DEB518 /* RollsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsTableViewController.swift; sourceTree = "<group>"; };
+		6319E2821FC72F6400DEB518 /* SoupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupViewModel.swift; sourceTree = "<group>"; };
 		639523291FB219A70080CCD9 /* SushiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SushiTableViewController.swift; path = "SushiTime/Contr/Sushi menu controller/SushiTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6395232B1FB21C8F0080CCD9 /* SushiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiModel.swift; sourceTree = "<group>"; };
 		6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiTableViewCell.swift; sourceTree = "<group>"; };
 		639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaTableViewCell.swift; path = SushiTime/Views/PizzaTableViewCell.swift; sourceTree = "<group>"; };
 		639523381FB624850080CCD9 /* PizzaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaTableViewController.swift; path = SushiTime/Controllers/PizzaTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		6395233A1FB624CA0080CCD9 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		6395237D1FB874940080CCD9 /* HotDishesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDishesTableViewCell.swift; sourceTree = "<group>"; };
-		6395237F1FB876960080CCD9 /* HotDishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDishesTableViewController.swift; sourceTree = "<group>"; };
-		639523811FB87B7D0080CCD9 /* HotDishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDishesModel.swift; sourceTree = "<group>"; };
-		639523831FB8901B0080CCD9 /* SoupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupTableViewCell.swift; sourceTree = "<group>"; };
-		639523851FB893A90080CCD9 /* SoupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupTableViewController.swift; sourceTree = "<group>"; };
-		639523871FB893DF0080CCD9 /* SoupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupModel.swift; sourceTree = "<group>"; };
-		639523891FB8C9D60080CCD9 /* MakiRollsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakiRollsTableViewCell.swift; sourceTree = "<group>"; };
-		6395238B1FB8CA7D0080CCD9 /* MakiRollsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakiRollsModel.swift; sourceTree = "<group>"; };
-		6395238D1FB8CAFA0080CCD9 /* MakiRollsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakiRollsTableViewController.swift; sourceTree = "<group>"; };
-		6395238F1FBB093C0080CCD9 /* RollsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsTableViewController.swift; sourceTree = "<group>"; };
-		639523911FBB09C70080CCD9 /* RollsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsModel.swift; sourceTree = "<group>"; };
-		639523931FBB0A0C0080CCD9 /* RollsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsTableViewCell.swift; sourceTree = "<group>"; };
-		639523951FBB0C240080CCD9 /* SetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewController.swift; sourceTree = "<group>"; };
-		639523971FBB0C3E0080CCD9 /* SetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewCell.swift; sourceTree = "<group>"; };
-		639523991FBB0C520080CCD9 /* SetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsModel.swift; sourceTree = "<group>"; };
 		6395239D1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebSiteTableViewController.swift; path = SushiTime/Controllers/WebSiteTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		63D48DDD1FC4DEA80065F424 /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
 		63D48DDF1FC4E02F0065F424 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
@@ -139,12 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */,
-				639523891FB8C9D60080CCD9 /* MakiRollsTableViewCell.swift */,
 				6395237D1FB874940080CCD9 /* HotDishesTableViewCell.swift */,
-				639523831FB8901B0080CCD9 /* SoupTableViewCell.swift */,
-				639523931FBB0A0C0080CCD9 /* RollsTableViewCell.swift */,
-				639523971FBB0C3E0080CCD9 /* SetsTableViewCell.swift */,
-				63927C6D1FC33F0900D7D67A /* SushiInSushiTableViewCell.swift */,
 			);
 			path = "Sushi menu views";
 			sourceTree = "<group>";
@@ -153,12 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				639523291FB219A70080CCD9 /* SushiTableViewController.swift */,
-				6395237F1FB876960080CCD9 /* HotDishesTableViewController.swift */,
-				639523851FB893A90080CCD9 /* SoupTableViewController.swift */,
-				6395238D1FB8CAFA0080CCD9 /* MakiRollsTableViewController.swift */,
-				6395238F1FBB093C0080CCD9 /* RollsTableViewController.swift */,
-				639523951FBB0C240080CCD9 /* SetsTableViewController.swift */,
-				63927C6B1FC33E5400D7D67A /* SushiInSushiTableViewController.swift */,
+				6319E27E1FC71A9C00DEB518 /* SuopTableViewController.swift */,
+				6319E2801FC71AD500DEB518 /* RollsTableViewController.swift */,
 				63D48DDD1FC4DEA80065F424 /* OrderDetailsViewController.swift */,
 			);
 			path = "Sushi menu controller";
@@ -167,13 +130,7 @@
 		6395237A1FB8726D0080CCD9 /* Sushi models */ = {
 			isa = PBXGroup;
 			children = (
-				6395232B1FB21C8F0080CCD9 /* SushiModel.swift */,
-				639523811FB87B7D0080CCD9 /* HotDishesModel.swift */,
-				639523871FB893DF0080CCD9 /* SoupModel.swift */,
-				6395238B1FB8CA7D0080CCD9 /* MakiRollsModel.swift */,
-				639523911FBB09C70080CCD9 /* RollsModel.swift */,
-				639523991FBB0C520080CCD9 /* SetsModel.swift */,
-				63927C6F1FC33F1C00D7D67A /* SushiInSushiModel.swift */,
+				6319E27C1FC7171B00DEB518 /* Sushi Model.swift */,
 			);
 			path = "Sushi models";
 			sourceTree = "<group>";
@@ -265,6 +222,7 @@
 				63D48DE31FC4E8800065F424 /* HotDishesViewModel.swift */,
 				63D48DE11FC4E0B90065F424 /* OrderDetailItem.swift */,
 				63D48DE51FC4ED260065F424 /* MakiRollsViewModel.swift */,
+				6319E2821FC72F6400DEB518 /* SoupViewModel.swift */,
 				63D48DE71FC4EE2B0065F424 /* TestViewModel.swift */,
 			);
 			path = Models;
@@ -415,42 +373,28 @@
 				63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */,
 				63D48DE81FC4EE2B0065F424 /* TestViewModel.swift in Sources */,
 				63D48DE61FC4ED260065F424 /* MakiRollsViewModel.swift in Sources */,
-				639523981FBB0C3E0080CCD9 /* SetsTableViewCell.swift in Sources */,
 				6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */,
 				63D48DE01FC4E02F0065F424 /* OrderDetailViewModel.swift in Sources */,
 				63DA53C21FAFB0B5001E3D6B /* SlideMenuItemType.swift in Sources */,
-				639523841FB8901B0080CCD9 /* SoupTableViewCell.swift in Sources */,
 				6395232A1FB219A70080CCD9 /* SushiTableViewController.swift in Sources */,
 				63D48DE41FC4E8800065F424 /* HotDishesViewModel.swift in Sources */,
-				63927C6E1FC33F0900D7D67A /* SushiInSushiTableViewCell.swift in Sources */,
 				6395237E1FB874950080CCD9 /* HotDishesTableViewCell.swift in Sources */,
 				63DA53D41FB127B2001E3D6B /* MenuTableViewCell.swift in Sources */,
-				639523821FB87B7D0080CCD9 /* HotDishesModel.swift in Sources */,
 				6395239E1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift in Sources */,
+				6319E27D1FC7171B00DEB518 /* Sushi Model.swift in Sources */,
 				63DA53BC1FAE4AC8001E3D6B /* SideMenuTableViewController.swift in Sources */,
-				639523961FBB0C240080CCD9 /* SetsTableViewController.swift in Sources */,
-				6395238E1FB8CAFA0080CCD9 /* MakiRollsTableViewController.swift in Sources */,
-				639523861FB893A90080CCD9 /* SoupTableViewController.swift in Sources */,
 				63DA53D61FB128D6001E3D6B /* MenuTableViewController.swift in Sources */,
 				63D48DE21FC4E0B90065F424 /* OrderDetailItem.swift in Sources */,
 				6395232E1FB229B20080CCD9 /* SushiTableViewCell.swift in Sources */,
 				63D48DDE1FC4DEA80065F424 /* OrderDetailsViewController.swift in Sources */,
+				6319E2811FC71AD500DEB518 /* RollsTableViewController.swift in Sources */,
 				63DA53B61FAE46ED001E3D6B /* GreetingsViewController.swift in Sources */,
-				63927C6C1FC33E5400D7D67A /* SushiInSushiTableViewController.swift in Sources */,
 				639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */,
-				6395232C1FB21C8F0080CCD9 /* SushiModel.swift in Sources */,
-				639523941FBB0A0C0080CCD9 /* RollsTableViewCell.swift in Sources */,
 				63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */,
 				63DA53D81FB12A9B001E3D6B /* MenuModel.swift in Sources */,
-				6395239A1FBB0C520080CCD9 /* SetsModel.swift in Sources */,
-				6395238C1FB8CA7D0080CCD9 /* MakiRollsModel.swift in Sources */,
-				6395238A1FB8C9D60080CCD9 /* MakiRollsTableViewCell.swift in Sources */,
-				639523901FBB093C0080CCD9 /* RollsTableViewController.swift in Sources */,
+				6319E2831FC72F6400DEB518 /* SoupViewModel.swift in Sources */,
+				6319E27F1FC71A9C00DEB518 /* SuopTableViewController.swift in Sources */,
 				63DA53C01FAE4CFB001E3D6B /* SideMenuModel.swift in Sources */,
-				639523921FBB09C70080CCD9 /* RollsModel.swift in Sources */,
-				639523881FB893DF0080CCD9 /* SoupModel.swift in Sources */,
-				63927C701FC33F1C00D7D67A /* SushiInSushiModel.swift in Sources */,
-				639523801FB876960080CCD9 /* HotDishesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

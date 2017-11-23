@@ -26,7 +26,7 @@ class SushiTableViewController: UIViewController {
     }
     var items: [SushiModel]{
         return [SushiModel(type: .hotDishes),
-                SushiModel(type: .soups),
+                SushiModel(type: .soup),
                 SushiModel(type: .makiRolls),
                 SushiModel(type: .rolls),
                 SushiModel(type: .sets),
@@ -69,6 +69,7 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
             
         case .hotDishes: vc.dataSource = HotDishesViewModel()
         case .makiRolls: vc.dataSource = MakiRollsViewModel()
+        case .soup: vc.dataSource = SoupViewModel()
         default: break
  
             

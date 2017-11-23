@@ -24,7 +24,7 @@ class WebSiteTableViewController: UIViewController {
         //http://www.sushitime.lviv.ua
     }
 
-    
+    // for map button
     @IBAction func ShowWhere(_ sender: Any) {
     
     
