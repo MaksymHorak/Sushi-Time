@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import SafariServices
 
 class GreetingsViewController: UIViewController  {
     
@@ -55,7 +56,12 @@ extension GreetingsViewController: SideMenuTableViewControllerDelegate {
             
         case .aboutUs: identifire = Constants.aboutUsSegueIdentifire
             
-        case .webSite: identifire = Constants.webSiteSegueIdentifire
+        case .webSite:
+            SideMenuManager.default.menuLeftNavigationController?.dismiss(animated: true) {
+        let svc = SFSafariViewController(url: URL(string: "http://www.sushitime.lviv.ua/men")!)
+        self.present(svc, animated: true, completion: nil)
+            }
+        return
             
         }
         performSegue(withIdentifier: identifire, sender: self)

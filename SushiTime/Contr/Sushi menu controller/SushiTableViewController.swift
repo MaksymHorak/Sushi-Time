@@ -63,18 +63,18 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func didSelectCellWithType(type: SushiItemType) {
-        var identifire: String!
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController") as? OrderDetailsViewController {
         switch type {
             
-        case .hotDishes: identifire = Constants.hotDishesSegueIdentifire
-        case .soups: identifire = Constants.soupsSegueIdentifire
-        case .makiRolls: identifire = Constants.makiRollsSegueIdentifire
-        case .rolls: identifire = Constants.rollsSegueIdentifire
-        case .sets: identifire = Constants.setsSegueIdentifire
-        case .sushi: identifire = Constants.sushiSegueIdentifire
+        case .hotDishes: vc.dataSource = HotDishesViewModel()
+        case .makiRolls: vc.dataSource = MakiRollsViewModel()
+        default: break
+ 
+            
         }
-        
-        performSegue(withIdentifier: identifire, sender: self)
+        navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }
