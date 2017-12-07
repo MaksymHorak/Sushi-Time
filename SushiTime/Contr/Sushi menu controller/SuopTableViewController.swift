@@ -11,12 +11,10 @@ import UIKit
 class SoupTableViewController: OrderDetailsViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController")
-        object_setClass(vc, RollsTableViewController.self) // change class to next VC class
-        (vc as! RollsTableViewController).dataSource = MakiRollsViewModel()// change class to next VC class and change View Model
+        let sb = UIStoryboard(name: "CheckoutViewContoller", bundle: nil)
+        if let vc = sb.instantiateInitialViewController() {
         navigationController?.pushViewController(vc, animated: true)
-        
+        }
     }
 }
 

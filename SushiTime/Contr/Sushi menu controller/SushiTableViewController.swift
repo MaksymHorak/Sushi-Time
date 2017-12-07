@@ -61,7 +61,7 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         didSelectCellWithType(type: item.type)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
+     
     func didSelectCellWithType(type: SushiItemType) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         if let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController") as? OrderDetailsViewController {

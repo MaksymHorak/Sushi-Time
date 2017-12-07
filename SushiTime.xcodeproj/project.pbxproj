@@ -12,6 +12,7 @@
 		6319E27F1FC71A9C00DEB518 /* SuopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E27E1FC71A9C00DEB518 /* SuopTableViewController.swift */; };
 		6319E2811FC71AD500DEB518 /* RollsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E2801FC71AD500DEB518 /* RollsTableViewController.swift */; };
 		6319E2831FC72F6400DEB518 /* SoupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E2821FC72F6400DEB518 /* SoupViewModel.swift */; };
+		634B62D31FD74BEB00262375 /* CheckoutViewContoller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634B62D21FD74BEB00262375 /* CheckoutViewContoller.storyboard */; };
 		6395232A1FB219A70080CCD9 /* SushiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523291FB219A70080CCD9 /* SushiTableViewController.swift */; };
 		6395232E1FB229B20080CCD9 /* SushiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */; };
 		639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */; };
@@ -47,6 +48,7 @@
 		6319E27E1FC71A9C00DEB518 /* SuopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuopTableViewController.swift; sourceTree = "<group>"; };
 		6319E2801FC71AD500DEB518 /* RollsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsTableViewController.swift; sourceTree = "<group>"; };
 		6319E2821FC72F6400DEB518 /* SoupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupViewModel.swift; sourceTree = "<group>"; };
+		634B62D21FD74BEB00262375 /* CheckoutViewContoller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CheckoutViewContoller.storyboard; path = SushiTime/Views/CheckoutViewContoller.storyboard; sourceTree = "<group>"; };
 		639523291FB219A70080CCD9 /* SushiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SushiTableViewController.swift; path = "SushiTime/Contr/Sushi menu controller/SushiTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiTableViewCell.swift; sourceTree = "<group>"; };
 		639523361FB6213D0080CCD9 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaTableViewCell.swift; path = SushiTime/Views/PizzaTableViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		63DA53B11FAE457B001E3D6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				634B62D21FD74BEB00262375 /* CheckoutViewContoller.storyboard */,
 				63DA53B71FAE4778001E3D6B /* Main.storyboard */,
 				63DA53B91FAE49CF001E3D6B /* SideMenu.storyboard */,
 				63DA53BD1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift */,
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DA53BA1FAE49CF001E3D6B /* SideMenu.storyboard in Resources */,
+				634B62D31FD74BEB00262375 /* CheckoutViewContoller.storyboard in Resources */,
 				63DA53B81FAE4778001E3D6B /* Main.storyboard in Resources */,
 				63DA53A71FAE3FB7001E3D6B /* LaunchScreen.storyboard in Resources */,
 				63DA53A41FAE3FB7001E3D6B /* Assets.xcassets in Resources */,

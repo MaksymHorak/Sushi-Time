@@ -32,10 +32,10 @@ extension OrderDetailsViewController: UITableViewDataSource {
 
 extension OrderDetailsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController")
-            object_setClass(vc, SoupTableViewController.self)
-            (vc as! SoupTableViewController).dataSource = TestViewModel()
-            navigationController?.pushViewController(vc, animated: true)
+        let sb = UIStoryboard(name: "CheckoutViewContoller", bundle: nil)
+        if let vc = sb.instantiateInitialViewController() {
+            vc.title = "empty "
+        navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
