@@ -22,7 +22,7 @@ extension OrderDetailsViewController: UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HotDishesTableViewCell") as? HotDishesTableViewCell, let dataSource = dataSource else { return UITableViewCell() } //change identifire name to generic one, cell class to generic one and put identifire string to constants
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GenericTableViewCell") as? GenericTableViewCell, let dataSource = dataSource else { return UITableViewCell() } //change identifire name to generic one, cell class to generic one and put identifire string to constants
         let item = dataSource.itemsToDisplay[indexPath.row]
         cell.setUpWithViewModel(viewModel: item)
         //cell.backgroundColor = UIColor.black

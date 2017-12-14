@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N3s-c4-CdZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N3s-c4-CdZ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -287,7 +287,7 @@
                         <viewLayoutGuide key="safeArea" id="HTD-QV-BLD"/>
                     </view>
                     <connections>
-                        <segue destination="zVe-zo-clH" kind="show" identifier="HotDishes" id="5m5-1h-fdn"/>
+                        <segue destination="zVe-zo-clH" kind="show" identifier="Generic" id="5m5-1h-fdn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNy-ri-75X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -548,7 +548,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HotDishesTableViewCell" id="w3j-KV-E8k" customClass="HotDishesTableViewCell" customModule="SushiTime" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GenericTableViewCell" id="w3j-KV-E8k" customClass="GenericTableViewCell" customModule="SushiTime" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w3j-KV-E8k" id="QC5-lJ-cKn">
@@ -591,9 +591,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cellView" destination="hfw-Ab-SZH" id="bUI-ZD-FlL"/>
-                                            <outlet property="hotDishesItemImageView" destination="zyW-Kk-Xjp" id="j6x-kk-Npi"/>
-                                            <outlet property="hotDishesItemNameLabel" destination="Afp-2X-xFY" id="AzZ-XI-vjF"/>
+                                            <outlet property="cellView" destination="hfw-Ab-SZH" id="iby-vI-MIP"/>
+                                            <outlet property="genericItemImageView" destination="zyW-Kk-Xjp" id="Tem-hq-b9l"/>
+                                            <outlet property="genericItemNameLabel" destination="Afp-2X-xFY" id="hCe-IX-LAV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

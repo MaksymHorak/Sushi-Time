@@ -74,7 +74,7 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         case .sets: vc.dataSource = SetsViewModel()
         case .sashymi: vc.dataSource = SashymiViewModel()
             
-      //  default: break
+       // default: break
  
             
         }
