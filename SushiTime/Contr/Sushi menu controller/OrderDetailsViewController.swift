@@ -19,15 +19,17 @@ extension OrderDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource?.itemsToDisplay.count ?? 0
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "HotDishesTableViewCell") as? HotDishesTableViewCell, let dataSource = dataSource else { return UITableViewCell() } //change identifire name to generic one, cell class to generic one and put identifire string to constants
         let item = dataSource.itemsToDisplay[indexPath.row]
         cell.setUpWithViewModel(viewModel: item)
+        //cell.backgroundColor = UIColor.black
+            
         return cell
     }
-    
-    
+
 }
 
 extension OrderDetailsViewController: UITableViewDelegate {
