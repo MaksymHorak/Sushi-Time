@@ -10,7 +10,7 @@ import Foundation
 
 enum SushiItemType {
     
-    case hotDishes, soup, makiRolls, rolls, sets, sushi
+    case hotDishes, soup, makiRolls, rolls, sets, sashymi
 }
 
 struct SushiModel {
@@ -46,7 +46,7 @@ extension SushiModel {
             imageName = "Home"
             name  = "сети"
             
-        case .sushi:
+        case .sashymi:
             imageName = "Home"
             name  = "Сашимi"
         }
