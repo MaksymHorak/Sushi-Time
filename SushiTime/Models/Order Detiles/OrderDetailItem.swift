@@ -10,7 +10,13 @@ import Foundation
 
 struct OrderDetailItem {
     var name: String
-    var weight: Int
-    var price: Int
     var imageName: String
+    
+    var priceImage: String
+    var priceName: Int
+    
+    var weightImage: String
+    var weightName: Int
+    
+
 }

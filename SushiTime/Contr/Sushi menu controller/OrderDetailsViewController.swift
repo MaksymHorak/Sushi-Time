@@ -10,8 +10,17 @@ import UIKit
 // every controller which displayes the same content should be inherited from this one and didSelectRow for Index pass should be overriden
 class OrderDetailsViewController: UIViewController {
 
+    @IBOutlet var tableViewTest: UITableView!
     var dataSource: OrderDetailProvider?
 
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableViewTest.reloadData()
+    }
+
+    
 }
 
 extension OrderDetailsViewController: UITableViewDataSource {

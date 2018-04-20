@@ -26,6 +26,7 @@ class MenuTableViewController: UIViewController {
                 MenuModel(type: .drinksViewController)]
     }
 }
+
 extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,7 +42,10 @@ extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
         let currentItem = items[indexPath.row]
         cell.menuItemImageView.image = UIImage(named: currentItem.imageName)
         cell.menuItemNameLable.text = currentItem.name
-        cell.menuItemImageView.layer.cornerRadius = cell.menuItemImageView.frame.height / 2 
+        cell.menuItemImageView.layer.cornerRadius = cell.menuItemImageView.frame.height / 2
+        
+
+
         
         return cell
     }

@@ -9,5 +9,5 @@
 import Foundation
 
 struct HotDishesViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Hpt dish 1", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Hot dish 2", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Hot dish 3", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Hot dish 4", weight: 1, price: 8, imageName: "Home")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "HotDish", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5)]
 }

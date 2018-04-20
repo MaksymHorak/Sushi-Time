@@ -15,4 +15,7 @@ class SushiTableViewCell: UITableViewCell {
     @IBOutlet var shushiItemImageView: UIImageView!
     
     @IBOutlet var sushiItemNameLabel: UILabel!
+    
+
+    
 }

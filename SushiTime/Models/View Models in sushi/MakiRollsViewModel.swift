@@ -9,5 +9,5 @@
 import Foundation
 
 struct MakiRollsViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Maki roll 1", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Maki Roll 2", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "HMaki Roll 3", weight: 1, price: 8, imageName: "Home"), OrderDetailItem(name: "Maki Roll 4", weight: 1, price: 8, imageName: "Home")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Hpt dish 1", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "MenuIcon", weightName: 8)]
 }

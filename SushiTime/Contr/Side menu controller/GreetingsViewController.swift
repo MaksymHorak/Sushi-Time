@@ -12,6 +12,21 @@ import SafariServices
 
 class GreetingsViewController: UIViewController  {
     
+//               let toolbar = UIToolbar()
+//                self.toolbar.barTintColor = UIColor.red //color toolbar
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
+//   override func preferredStatusBarStyle() -> UIStatusBarStyle {
+//        return UIStatusBarStyle.lightContent
+//
+//    }
+    
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return UIStatusBarStyle.lightContent
+//        
+//    }
+    
     fileprivate enum Constants {
         static let menuSegueIdentifire = "Menu"
         static let sharesSegueIdentifire = "Shares"
@@ -23,6 +38,8 @@ class GreetingsViewController: UIViewController  {
         super.viewDidLoad()
          setUpSideMenu()
         // Do any additional setup after loading the view.
+
+//                self.toolbar.barTintColor = UIColor.red //color toolbar
     }
     
     func setUpSideMenu() {
@@ -37,12 +54,19 @@ class GreetingsViewController: UIViewController  {
 
         SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
+       // let toolbar = UIToolbar()
+
     }
 
     @IBAction func barButtonItemPressed(_ sender: Any) {
         present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
     }
 }
+
+
+
+
 extension GreetingsViewController: SideMenuTableViewControllerDelegate {
     func didSelectCellWithType(type: SlideMenuItemType) {
         var identifire: String!

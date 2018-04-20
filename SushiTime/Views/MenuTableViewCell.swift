@@ -15,4 +15,15 @@ class MenuTableViewCell: UITableViewCell {
     @IBOutlet var menuItemImageView: UIImageView!
     
     @IBOutlet var menuItemNameLable: UILabel!
+    
+    
+    
+    open override func setSelected(_ selected: Bool, animated: Bool){
+        
+        super.setSelected(selected, animated: animated)
+        cellView.backgroundColor = selected ? .gray : .sushiGray
+        
+        
+    }
+    
 }
