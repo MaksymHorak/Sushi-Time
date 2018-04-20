@@ -29,7 +29,9 @@ class SideMenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView() 
+        tableView.tableFooterView = UIView()
+        //self.view.backgroundColor = UIColor.black
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -39,7 +39,8 @@ class GreetingsViewController: UIViewController  {
          setUpSideMenu()
         // Do any additional setup after loading the view.
 
-//                self.toolbar.barTintColor = UIColor.red //color toolbar
+//              self.toolbar.barTintColor = UIColor.red //color toolbar
+    //    self.view.backgroundColor = UIColor.black
     }
     
     func setUpSideMenu() {

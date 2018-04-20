@@ -12,11 +12,13 @@ struct SideMenuModel {
     var imageName: String
     var name: String
     var type: SlideMenuItemType
+    
 }
 
 extension SideMenuModel {
     
     init(type: SlideMenuItemType) {
+        
         self.type = type
         switch type {
             
