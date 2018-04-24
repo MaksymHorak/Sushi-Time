@@ -280,7 +280,6 @@
 				63DA53961FAE3FB7001E3D6B /* Frameworks */,
 				63DA53971FAE3FB7001E3D6B /* Resources */,
 				59433D2065D41AF94BC1ADDA /* [CP] Embed Pods Frameworks */,
-				D24466AE867A4946A10AFD5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,21 +376,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D24466AE867A4946A10AFD5E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SushiTime/Pods-SushiTime-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

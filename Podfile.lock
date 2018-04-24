@@ -1,15 +1,20 @@
 PODS:
   - BWTVController (0.1.6)
-  - SideMenu (3.1.4)
+  - SideMenu (3.1.5)
 
 DEPENDENCIES:
   - BWTVController
   - SideMenu
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BWTVController
+    - SideMenu
+
 SPEC CHECKSUMS:
   BWTVController: aef603a049a7b2f867449042a6afb83bd7bd5b5e
-  SideMenu: 99021e70b3f2eee65b5dd88e4274d09031b1221e
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
 
 PODFILE CHECKSUM: 5a7278432defa1afa2340da0c5ab669477f4b79b
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0
