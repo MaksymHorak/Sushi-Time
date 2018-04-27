@@ -23,24 +23,29 @@ extension SideMenuModel {
         switch type {
             
         case .menu:
-            imageName = "MenuIcon"
+            imageName = "SideMenuMenu"
             name  = "Меню"
             
         case .shares:
-            imageName = "SharesIcon"
+            imageName = "SideMenuSale"
             name  = "Акції"
             
         case .contacts:
-            imageName = "PhoneIcon"
+            imageName = "SideMenuContact"
             name  = "Контакти"
             
         case .aboutUs:
-            imageName = ""
+            imageName = "SideMenuAboutUs"
             name  = "Про нас"
             
         case .webSite:
-            imageName = "WebIcon"
+            imageName = "SideMenuWebSite"
             name  = "Наш сайт"
+            
+        case .howToGet:
+            imageName = "SideMenuWebSite"
+            name  = "Як добратись"
+
             
             
         }

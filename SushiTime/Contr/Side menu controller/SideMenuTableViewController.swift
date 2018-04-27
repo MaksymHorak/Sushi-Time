@@ -23,7 +23,8 @@ class SideMenuTableViewController: UITableViewController {
                 SideMenuModel(type: .shares),
                 SideMenuModel(type: .contacts),
                 SideMenuModel(type: .aboutUs),
-                SideMenuModel(type: .webSite)]
+                SideMenuModel(type: .webSite),
+                SideMenuModel(type: .howToGet)]
     }
     weak var delegate: SideMenuTableViewControllerDelegate?
     
