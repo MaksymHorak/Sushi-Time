@@ -9,8 +9,7 @@
 import UIKit
 
 class PizzaTableViewController: UIViewController {
-
-   
+    
     fileprivate enum ConstantsCell{
         static let cellIdentifire = "PizzaTableViewCell"
         
@@ -18,17 +17,14 @@ class PizzaTableViewController: UIViewController {
     
     fileprivate enum Constants {
         static let firstSegueIdentifire = "first"
+
         
     }
     var items: [PizzaModel]{
         return [PizzaModel(type: .first)]
     }
-
-
 }
-
-
-
+// case hotDishes, soups, makiRolls
 extension PizzaTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -51,22 +47,26 @@ extension PizzaTableViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         didSelectCellWithType(type: item.type)
         tableView.deselectRow(at: indexPath, animated: true)
-
     }
     
     func didSelectCellWithType(type: PizzaItemType) {
-        var identifire: String!
-        switch type {
-            
-        case .first: identifire = Constants.firstSegueIdentifire
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController") as? OrderDetailsViewController {
+            switch type {
+                
+            case .first: vc.dataSource = PizzaViewModel()
+
+                
+                // default: break
+                
+                
+            }
+            navigationController?.pushViewController(vc, animated: true)
         }
-        
-        performSegue(withIdentifier: identifire, sender: self)
     }
+    
 }

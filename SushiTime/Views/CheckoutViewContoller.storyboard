@@ -1,38 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gtf-Hx-Ty8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gtf-Hx-Ty8">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HanZi.ttf">
+            <string>HanZi</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="veo-L5-dbB">
             <objects>
                 <viewController id="Gtf-Hx-Ty8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GMI-Wb-cMk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysv-M0-mip">
-                                <rect key="frame" x="166" y="396" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Піцца &quot;Маргарита&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysv-M0-mip">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="nK6-5d-EN5">
+                                <rect key="frame" x="0.0" y="238" width="375" height="9"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nK6-5d-EN5" secondAttribute="height" multiplier="125:3" id="kTH-ps-2cc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaTest" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-A7-Vbu">
+                                <rect key="frame" x="0.0" y="21" width="375" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ykq-A7-Vbu" secondAttribute="height" multiplier="75:43" id="tBB-gp-mbt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeightImage" translatesAutoresizingMaskIntoConstraints="NO" id="iAD-d0-RqY">
+                                <rect key="frame" x="16" y="255" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iAD-d0-RqY" secondAttribute="height" multiplier="1:1" id="E3u-Ro-Yd6"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-13-oYv">
+                                <rect key="frame" x="119" y="244" width="256" height="386"/>
+                                <string key="text">•Фірмовий соус 
+•Сир моцарела
+•Базилік</string>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CashImage" translatesAutoresizingMaskIntoConstraints="NO" id="aU6-Kn-2IY">
+                                <rect key="frame" x="16" y="288" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aU6-Kn-2IY" secondAttribute="height" multiplier="1:1" id="5rf-R2-bhw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 грн" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzu-5C-cZ2">
+                                <rect key="frame" x="49" y="262" width="57" height="18"/>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="14"/>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rD3-q4-J35">
+                                <rect key="frame" x="49" y="293" width="45" height="20"/>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="16"/>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu7-kh-Qh5">
+                                <rect key="frame" x="0.0" y="672" width="375" height="52"/>
+                                <color key="backgroundColor" red="0.19785465344132577" green="0.19981361040609136" blue="0.19981361040609136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="YpM-xI-5ev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="В корзину">
+                                    <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nK6-5d-EN5" firstAttribute="leading" secondItem="10X-ay-Ekx" secondAttribute="leading" id="5Tr-Ws-yWD"/>
+                            <constraint firstItem="Vu7-kh-Qh5" firstAttribute="trailing" secondItem="10X-ay-Ekx" secondAttribute="trailing" id="8u4-EF-UEO"/>
+                            <constraint firstItem="aU6-Kn-2IY" firstAttribute="top" secondItem="iAD-d0-RqY" secondAttribute="bottom" constant="8" id="Aia-gm-a60"/>
+                            <constraint firstItem="gzu-5C-cZ2" firstAttribute="leading" secondItem="iAD-d0-RqY" secondAttribute="trailing" constant="8" id="Asr-eh-6BD"/>
+                            <constraint firstItem="iAD-d0-RqY" firstAttribute="top" secondItem="nK6-5d-EN5" secondAttribute="bottom" constant="8" id="GVJ-pp-Bf1"/>
+                            <constraint firstItem="ysv-M0-mip" firstAttribute="trailing" secondItem="10X-ay-Ekx" secondAttribute="trailing" id="Gfh-tc-icz"/>
+                            <constraint firstItem="sB1-13-oYv" firstAttribute="leading" secondItem="iAD-d0-RqY" secondAttribute="trailing" constant="78" id="HXE-oU-czh"/>
+                            <constraint firstItem="gzu-5C-cZ2" firstAttribute="top" secondItem="nK6-5d-EN5" secondAttribute="bottom" constant="15" id="Iye-Bf-Awh"/>
+                            <constraint firstItem="rD3-q4-J35" firstAttribute="top" secondItem="gzu-5C-cZ2" secondAttribute="bottom" constant="13" id="KLk-qp-Rjj"/>
+                            <constraint firstItem="iAD-d0-RqY" firstAttribute="leading" secondItem="10X-ay-Ekx" secondAttribute="leading" constant="16" id="Kj7-O0-5JK"/>
+                            <constraint firstItem="nK6-5d-EN5" firstAttribute="trailing" secondItem="10X-ay-Ekx" secondAttribute="trailing" id="LQg-9z-Ijq"/>
+                            <constraint firstItem="ysv-M0-mip" firstAttribute="top" secondItem="10X-ay-Ekx" secondAttribute="top" id="MIJ-PD-WYX"/>
+                            <constraint firstItem="ykq-A7-Vbu" firstAttribute="trailing" secondItem="10X-ay-Ekx" secondAttribute="trailing" id="TFj-Ip-iSg"/>
+                            <constraint firstItem="ykq-A7-Vbu" firstAttribute="leading" secondItem="10X-ay-Ekx" secondAttribute="leading" id="UeG-5g-uf1"/>
+                            <constraint firstItem="rD3-q4-J35" firstAttribute="leading" secondItem="aU6-Kn-2IY" secondAttribute="trailing" constant="8" id="YZv-Un-hHh"/>
+                            <constraint firstItem="Vu7-kh-Qh5" firstAttribute="top" secondItem="sB1-13-oYv" secondAttribute="bottom" constant="42" id="Zhm-gL-Uw6"/>
+                            <constraint firstItem="nK6-5d-EN5" firstAttribute="top" secondItem="ykq-A7-Vbu" secondAttribute="bottom" constant="2" id="gxy-6D-Sm7"/>
+                            <constraint firstItem="ysv-M0-mip" firstAttribute="leading" secondItem="10X-ay-Ekx" secondAttribute="leading" id="lXM-Tw-cM5"/>
+                            <constraint firstItem="sB1-13-oYv" firstAttribute="leading" secondItem="gzu-5C-cZ2" secondAttribute="trailing" constant="13" id="mAH-vK-7qR"/>
+                            <constraint firstItem="aU6-Kn-2IY" firstAttribute="leading" secondItem="10X-ay-Ekx" secondAttribute="leading" constant="16" id="nPt-T2-Bpy"/>
+                            <constraint firstItem="sB1-13-oYv" firstAttribute="top" secondItem="nK6-5d-EN5" secondAttribute="bottom" constant="-3" id="qJx-a5-eBz"/>
+                            <constraint firstItem="ykq-A7-Vbu" firstAttribute="top" secondItem="ysv-M0-mip" secondAttribute="bottom" id="utq-gF-luR"/>
+                            <constraint firstItem="sB1-13-oYv" firstAttribute="leading" secondItem="aU6-Kn-2IY" secondAttribute="trailing" constant="78" id="w58-HP-MYl"/>
+                            <constraint firstAttribute="bottom" secondItem="Vu7-kh-Qh5" secondAttribute="bottom" id="wcI-da-1zG"/>
+                            <constraint firstItem="Vu7-kh-Qh5" firstAttribute="leading" secondItem="10X-ay-Ekx" secondAttribute="leading" id="xjV-tF-ofu"/>
+                            <constraint firstItem="sB1-13-oYv" firstAttribute="trailing" secondItem="10X-ay-Ekx" secondAttribute="trailing" id="yB5-gy-4Lq"/>
+                            <constraint firstItem="sB1-13-oYv" firstAttribute="leading" secondItem="rD3-q4-J35" secondAttribute="trailing" constant="25" id="yZ2-b1-NCT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="10X-ay-Ekx"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKg-0T-Qla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="162"/>
+            <point key="canvasLocation" x="69.599999999999994" y="158.77061469265368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CashImage" width="25" height="25"/>
+        <image name="PizzaTest" width="796" height="528"/>
+        <image name="WeightImage" width="25" height="25"/>
+        <image name="line" width="474" height="18"/>
+    </resources>
 </document>

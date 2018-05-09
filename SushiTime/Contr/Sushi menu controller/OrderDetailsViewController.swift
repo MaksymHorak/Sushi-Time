@@ -34,7 +34,6 @@ extension OrderDetailsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GenericTableViewCell") as? GenericTableViewCell, let dataSource = dataSource else { return UITableViewCell() } //change identifire name to generic one, cell class to generic one and put identifire string to constants
         let item = dataSource.itemsToDisplay[indexPath.row]
         cell.setUpWithViewModel(viewModel: item)
-        //cell.backgroundColor = UIColor.black
             
         return cell
     }
@@ -45,7 +44,7 @@ extension OrderDetailsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "CheckoutViewContoller", bundle: nil)
         if let vc = sb.instantiateInitialViewController() {
-            vc.title = "empty "
+            
         navigationController?.pushViewController(vc, animated: true)
         }
     }

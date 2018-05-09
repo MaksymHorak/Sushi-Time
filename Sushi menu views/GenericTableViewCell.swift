@@ -21,15 +21,16 @@ class GenericTableViewCell: UITableViewCell {
             genericItemImageView.layer.cornerRadius = genericItemImageView.frame.height / 2
         }
     }
+
     
     @IBOutlet var genericItemNameLabel: UILabel!
     
     @IBOutlet var priceItemImageView: UIImageView!
-    @IBOutlet var priceItemLabelView: UILabel!
+    @IBOutlet weak var priceItemLabelView: UILabel!
     
     
     @IBOutlet var weightItemImageView: UIImageView!
-    @IBOutlet var weightItemLabelView: UILabel!
+    @IBOutlet weak var weightItemLabelView: UILabel!
 
     
     open override func setSelected(_ selected: Bool, animated: Bool){
@@ -40,30 +41,32 @@ class GenericTableViewCell: UITableViewCell {
 
     }
 }
-
+//var priseName = 0
 
 
 
 // TODO: Add price and weight labels
 extension GenericTableViewCell {
     func setUpWithViewModel(viewModel: OrderDetailItem) {
+        
+
         genericItemImageView.image = UIImage(named: viewModel.imageName)
         genericItemNameLabel.text = viewModel.name
         
         priceItemImageView.image = UIImage(named: viewModel.priceImage)
-        //priceItemLabelView.text = viewModel.priceName
+        priceItemLabelView.text = String(viewModel.priceName)
         
-        
-    //    Int(priceItemLabelView.text)!
+//        Int(priceItemLabelView.text!)
 //        priceItemLabelView.text: Int
-        //\("5")
+//        \("5")
         
         weightItemImageView.image = UIImage(named: viewModel.weightImage)
-      //  weightItemLabelView.text = viewModel.weightName
+        weightItemLabelView.text = String(viewModel.weightName)
         
         
-       // Int(weightItemLabelView.text)!
-      //  weightItemLabelView.text = viewModel.weightName
+//        Int(weightItemLabelView.text)!
+//        weightItemLabelView.text = viewModel.weightName
         //here set weight and price
+
     }
 }

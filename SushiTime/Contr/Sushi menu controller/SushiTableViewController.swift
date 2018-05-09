@@ -22,6 +22,7 @@ class SushiTableViewController: UIViewController {
         static let rollsSegueIdentifire = "rolls"
         static let setsSegueIdentifire = "sets"
         static let sushiSegueIdentifire = "Sushi"
+        static let rollsWithLososSegueIdentifire = "RollsWithLosos"
   
     }
     var items: [SushiModel]{
@@ -30,7 +31,8 @@ class SushiTableViewController: UIViewController {
                 SushiModel(type: .makiRolls),
                 SushiModel(type: .rolls),
                 SushiModel(type: .sets),
-                SushiModel(type: .sashymi)]
+                SushiModel(type: .sushi),
+                SushiModel(type: .rollsWithLosos)]
     }
 }
  // case hotDishes, soups, makiRolls
@@ -72,10 +74,11 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         case .soup: vc.dataSource = SoupViewModel()
         case .rolls: vc.dataSource = RollsViewModel()
         case .sets: vc.dataSource = SetsViewModel()
-        case .sashymi: vc.dataSource = SashymiViewModel()
+        case .sushi: vc.dataSource = SushiViewModel()
+        case .rollsWithLosos: vc.dataSource = RollsWithLososViewModel()
             
        // default: break
- 
+
             
         }
         navigationController?.pushViewController(vc, animated: true)

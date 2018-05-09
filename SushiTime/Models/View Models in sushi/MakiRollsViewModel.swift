@@ -9,5 +9,10 @@
 import Foundation
 
 struct MakiRollsViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Hpt dish 1", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "MenuIcon", weightName: 8)]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Макі з огірком", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8),
+                                              OrderDetailItem(name: "Макі з авокадо", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8),
+                                              OrderDetailItem(name: "Макі з авокадо та вершковим сиром", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8),
+                                              OrderDetailItem(name: "Макі з лососем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8),
+                                              OrderDetailItem(name: "Макі з тунцем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8),
+                                              OrderDetailItem(name: "Макі з вугрем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8)]
 }

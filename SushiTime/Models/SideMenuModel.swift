@@ -35,15 +35,15 @@ extension SideMenuModel {
             name  = "Контакти"
             
         case .aboutUs:
-            imageName = "SideMenuAboutUs"
+            imageName = "SideMenuAbout"
             name  = "Про нас"
             
         case .webSite:
-            imageName = "SideMenuWebSite"
+            imageName = "SideMenuWeb"
             name  = "Наш сайт"
             
         case .howToGet:
-            imageName = "SideMenuWebSite"
+            imageName = "SideMenuGPS"
             name  = "Як добратись"
 
             
