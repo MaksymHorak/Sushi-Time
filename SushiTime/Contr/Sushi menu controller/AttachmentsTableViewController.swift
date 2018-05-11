@@ -1,0 +1,72 @@
+//
+//  AttachmentsTableViewController.swift
+//  SushiTime
+//
+//  Created by 1 on 11.05.2018.
+//  Copyright © 2018 Self. All rights reserved.
+//
+
+import UIKit
+
+class AttachmentsTableViewController: UIViewController {
+
+    fileprivate enum ConstantsCell{
+        static let cellIdentifire = "AttachmentsTableViewCell"
+        
+    }
+    
+    fileprivate enum Constants {
+        static let hotDishesSegueIdentifire = "HotDishes"
+        
+        
+    }
+    var items: [AttachmentsModel]{
+        return [AttachmentsModel(type: .pepper)]
+    }
+}
+// case hotDishes, soups, makiRolls
+extension AttachmentsTableViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstantsCell.cellIdentifire, for: indexPath) as? AttachmentsTableViewCell else{
+            
+            
+            return UITableViewCell()
+        }
+        cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
+        
+        let currentItem = items[indexPath.row]
+        cell.attachmentsItemImageView.image = UIImage(named: currentItem.imageName)
+        cell.attachmentsItemLabel.text = currentItem.name
+        
+        cell.attachmentsItemImageView.layer.cornerRadius = cell.attachmentsItemImageView.frame.height / 2
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        didSelectCellWithType(type: item.type)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func didSelectCellWithType(type: AttachmentsItemType) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController") as? OrderDetailsViewController {
+            switch type {
+                
+            case .pepper: vc.dataSource = AttachmentsViewModel()
+                
+                
+                // default: break
+                
+                
+            }
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
+}

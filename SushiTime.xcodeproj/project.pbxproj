@@ -31,7 +31,7 @@
 		6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395233A1FB624CA0080CCD9 /* PizzaModel.swift */; };
 		6395237E1FB874950080CCD9 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395237D1FB874940080CCD9 /* GenericTableViewCell.swift */; };
 		6395239E1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395239D1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift */; };
-		63A69BE120A2E054001B93DD /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A69BE020A2E054001B93DD /* CartManager.swift */; };
+		63A69BE320A32E2C001B93DD /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A69BE220A32E2C001B93DD /* CartViewController.swift */; };
 		63CCDC5720557A4000F02D19 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCDC5620557A4000F02D19 /* UIColor.swift */; };
 		63CE37342095F2AE0044F42B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE37332095F2AE0044F42B /* ContactsViewController.swift */; };
 		63CE373C209666840044F42B /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE373B209666840044F42B /* DrinksTableViewController.swift */; };
@@ -55,6 +55,10 @@
 		63DA53D41FB127B2001E3D6B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53D31FB127B2001E3D6B /* MenuTableViewCell.swift */; };
 		63DA53D61FB128D6001E3D6B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53D51FB128D6001E3D6B /* MenuTableViewController.swift */; };
 		63DA53D81FB12A9B001E3D6B /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA53D71FB12A9B001E3D6B /* MenuModel.swift */; };
+		63F0FC2A20A5B2A500020BC0 /* AttachmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0FC2920A5B2A500020BC0 /* AttachmentsTableViewController.swift */; };
+		63F0FC2C20A5B33E00020BC0 /* AttachmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0FC2B20A5B33E00020BC0 /* AttachmentsModel.swift */; };
+		63F0FC2E20A5B3FD00020BC0 /* AttachmentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0FC2D20A5B3FD00020BC0 /* AttachmentsViewModel.swift */; };
+		63F0FC3020A5B48000020BC0 /* AttachmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0FC2F20A5B48000020BC0 /* AttachmentsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +87,7 @@
 		6395233A1FB624CA0080CCD9 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		6395237D1FB874940080CCD9 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		6395239D1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebSiteTableViewController.swift; path = SushiTime/Controllers/WebSiteTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		63A69BE020A2E054001B93DD /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		63A69BE220A32E2C001B93DD /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		63CCDC5620557A4000F02D19 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		63CE37332095F2AE0044F42B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		63CE373B209666840044F42B /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,10 @@
 		63DA53D31FB127B2001E3D6B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = SushiTime/Views/MenuTableViewCell.swift; sourceTree = "<group>"; };
 		63DA53D51FB128D6001E3D6B /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = SushiTime/Controllers/MenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		63DA53D71FB12A9B001E3D6B /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		63F0FC2920A5B2A500020BC0 /* AttachmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsTableViewController.swift; sourceTree = "<group>"; };
+		63F0FC2B20A5B33E00020BC0 /* AttachmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsModel.swift; sourceTree = "<group>"; };
+		63F0FC2D20A5B3FD00020BC0 /* AttachmentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsViewModel.swift; sourceTree = "<group>"; };
+		63F0FC2F20A5B48000020BC0 /* AttachmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsTableViewCell.swift; sourceTree = "<group>"; };
 		A3943AAB0123E966C80465EE /* Pods_SushiTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SushiTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,6 +187,7 @@
 			children = (
 				6395232D1FB229B20080CCD9 /* SushiTableViewCell.swift */,
 				63CE373F2096670C0044F42B /* DrinksTableViewCell.swift */,
+				63F0FC2F20A5B48000020BC0 /* AttachmentsTableViewCell.swift */,
 				6395237D1FB874940080CCD9 /* GenericTableViewCell.swift */,
 			);
 			path = "Sushi menu views";
@@ -189,6 +198,7 @@
 			children = (
 				639523291FB219A70080CCD9 /* SushiTableViewController.swift */,
 				63CE373B209666840044F42B /* DrinksTableViewController.swift */,
+				63F0FC2920A5B2A500020BC0 /* AttachmentsTableViewController.swift */,
 				6319E27E1FC71A9C00DEB518 /* SuopTableViewController.swift */,
 				6319E2801FC71AD500DEB518 /* RollsTableViewController.swift */,
 				63D48DDD1FC4DEA80065F424 /* OrderDetailsViewController.swift */,
@@ -208,9 +218,17 @@
 		63A69BDF20A2DFC0001B93DD /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				63A69BE020A2E054001B93DD /* CartManager.swift */,
+				63A69BE220A32E2C001B93DD /* CartViewController.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		63A69BEA20A5936A001B93DD /* ViewModelsInAttachments */ = {
+			isa = PBXGroup;
+			children = (
+				63F0FC2D20A5B3FD00020BC0 /* AttachmentsViewModel.swift */,
+			);
+			path = ViewModelsInAttachments;
 			sourceTree = "<group>";
 		};
 		63CCDC5520557A2600F02D19 /* Extension */ = {
@@ -246,6 +264,7 @@
 				63DA53B01FAE4549001E3D6B /* Controllers */,
 				63DA53B11FAE457B001E3D6B /* Views */,
 				63DA53B41FAE4607001E3D6B /* Models */,
+				63A69BEA20A5936A001B93DD /* ViewModelsInAttachments */,
 				633A7398209879780019B922 /* View Models in Drinks */,
 				633A73972098786E0019B922 /* View Models in Pizza */,
 				63DA53B31FAE45E3001E3D6B /* Resources */,
@@ -313,6 +332,7 @@
 				6395233A1FB624CA0080CCD9 /* PizzaModel.swift */,
 				6319E27C1FC7171B00DEB518 /* Sushi Model.swift */,
 				63CE373D209666D30044F42B /* DrinksModel.swift */,
+				63F0FC2B20A5B33E00020BC0 /* AttachmentsModel.swift */,
 				6395237A1FB8726D0080CCD9 /* Order Detiles */,
 				63181A851FE2E3F60005CB19 /* View Models in sushi */,
 			);
@@ -453,6 +473,7 @@
 				633A73962098766E0019B922 /* PizzaViewModel.swift in Sources */,
 				63D48DE81FC4EE2B0065F424 /* RollsViewModel.swift in Sources */,
 				63D48DE61FC4ED260065F424 /* MakiRollsViewModel.swift in Sources */,
+				63A69BE320A32E2C001B93DD /* CartViewController.swift in Sources */,
 				6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */,
 				63D48DE01FC4E02F0065F424 /* OrderDetailViewModel.swift in Sources */,
 				63DA53C21FAFB0B5001E3D6B /* SlideMenuItemType.swift in Sources */,
@@ -464,12 +485,12 @@
 				6346BC8920934B4D00A3A0FF /* HowToGetViewController.swift in Sources */,
 				6319E27D1FC7171B00DEB518 /* Sushi Model.swift in Sources */,
 				63DA53BC1FAE4AC8001E3D6B /* SideMenuTableViewController.swift in Sources */,
-				63A69BE120A2E054001B93DD /* CartManager.swift in Sources */,
 				6395042B209A4C1700C81C12 /* WithOutAlcoholViewModel.swift in Sources */,
 				63DA53D61FB128D6001E3D6B /* MenuTableViewController.swift in Sources */,
 				63D48DE21FC4E0B90065F424 /* OrderDetailItem.swift in Sources */,
 				63181A821FE2E0540005CB19 /* SetsViewModel.swift in Sources */,
 				6395232E1FB229B20080CCD9 /* SushiTableViewCell.swift in Sources */,
+				63F0FC2A20A5B2A500020BC0 /* AttachmentsTableViewController.swift in Sources */,
 				63CCDC5720557A4000F02D19 /* UIColor.swift in Sources */,
 				63181A871FE2F54D0005CB19 /* CheckuotViewController.swift in Sources */,
 				63D48DDE1FC4DEA80065F424 /* OrderDetailsViewController.swift in Sources */,
@@ -477,13 +498,16 @@
 				6319E2811FC71AD500DEB518 /* RollsTableViewController.swift in Sources */,
 				638A4AB320950AA2003E075C /* AboutUsViewController.swift in Sources */,
 				63CE37402096670C0044F42B /* DrinksTableViewCell.swift in Sources */,
+				63F0FC2C20A5B33E00020BC0 /* AttachmentsModel.swift in Sources */,
 				63DA53B61FAE46ED001E3D6B /* GreetingsViewController.swift in Sources */,
 				63950429209A4C0200C81C12 /* AlcoholViewModel.swift in Sources */,
 				63CE373E209666D30044F42B /* DrinksModel.swift in Sources */,
 				639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */,
+				63F0FC2E20A5B3FD00020BC0 /* AttachmentsViewModel.swift in Sources */,
 				63CE373C209666840044F42B /* DrinksTableViewController.swift in Sources */,
 				63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */,
 				63DA53D81FB12A9B001E3D6B /* MenuModel.swift in Sources */,
+				63F0FC3020A5B48000020BC0 /* AttachmentsTableViewCell.swift in Sources */,
 				6319E2831FC72F6400DEB518 /* SoupViewModel.swift in Sources */,
 				6319E27F1FC71A9C00DEB518 /* SuopTableViewController.swift in Sources */,
 				63DA53C01FAE4CFB001E3D6B /* SideMenuModel.swift in Sources */,

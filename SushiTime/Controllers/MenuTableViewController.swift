@@ -18,12 +18,14 @@ class MenuTableViewController: UIViewController {
         static let sushiViewControllerSegueIdentifire = "SushiViewController"
         static let pizzaViewControllerSegueIdentifire = "PizzaViewController"
         static let drinksViewControllerSegueIdentifire = "DrinksViewController"
+        static let attachmentsViewControllerSegueIdentifire = "AttachmentsViewController"
 
     }
     var items: [MenuModel]{
         return [MenuModel(type: .sushiViewController),
                 MenuModel(type: .pizzaViewController),
-                MenuModel(type: .drinksViewController)]
+                MenuModel(type: .drinksViewController),
+                MenuModel(type: .attachmentsViewController)]
     }
 }
 
@@ -66,6 +68,8 @@ extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
         case .pizzaViewController: identifire = Constantss.pizzaViewControllerSegueIdentifire
             
         case .drinksViewController: identifire = Constantss.drinksViewControllerSegueIdentifire
+            
+        case .attachmentsViewController: identifire = Constantss.attachmentsViewControllerSegueIdentifire
         }
         
         performSegue(withIdentifier: identifire, sender: self)

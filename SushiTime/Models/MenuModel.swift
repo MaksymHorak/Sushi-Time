@@ -10,7 +10,7 @@ import Foundation
 
 enum MenuItemType {
 
-    case sushiViewController, pizzaViewController, drinksViewController
+    case sushiViewController, pizzaViewController, drinksViewController, attachmentsViewController
 }
 
 struct MenuModel {
@@ -36,6 +36,12 @@ extension MenuModel {
         case .drinksViewController:
             imageName = "DrinksIcon"
             name  = "Напої"
+            
+        case .attachmentsViewController:
+            imageName = ""
+            name = "Додотки"
+            
+            
         }
     }
 }
