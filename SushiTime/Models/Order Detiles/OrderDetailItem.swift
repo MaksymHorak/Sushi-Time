@@ -18,5 +18,7 @@ struct OrderDetailItem {
     var weightImage: String
     var weightName: Int
     
+    var aboutName: String
+    
 
 }

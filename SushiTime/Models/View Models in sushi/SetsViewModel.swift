@@ -9,9 +9,9 @@
 import Foundation
 
 struct SetsViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Набір Макі", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Набір Філадельфія", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Набір Макі плюс", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Набір Мікс", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Набір Якудза", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8)]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Набір Макі", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Набір Філадельфія", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Набір Макі плюс", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Набір Мікс", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Набір Якудза", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан")]
 }

@@ -37,14 +37,28 @@ extension OrderDetailsViewController: UITableViewDataSource {
             
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 30, 0)
+        cell.layer.transform = transform
+        
+        UIView.animate(withDuration: 0.6) {
+            cell.alpha = 1
+            cell.layer.transform = CATransform3DIdentity
+            
+        }
+    }
+    
 
 }
 
 extension OrderDetailsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "CheckoutViewContoller", bundle: nil)
-        if let vc = sb.instantiateInitialViewController() {
-            
+        if let vc = sb.instantiateInitialViewController() as? CheckuotViewController {
+            let selectedItem = dataSource?.itemsToDisplay[indexPath.row]
+            vc.selectedItem = selectedItem
         navigationController?.pushViewController(vc, animated: true)
         }
     }

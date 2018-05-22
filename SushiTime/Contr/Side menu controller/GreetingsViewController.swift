@@ -14,6 +14,14 @@ import SafariServices
 
 class GreetingsViewController: UIViewController  {
     
+    @IBOutlet weak var moreMenuButton: UIButton!
+    @IBOutlet weak var pizzaButton: UIButton!
+    @IBOutlet weak var sushiButton: UIButton!
+    @IBOutlet weak var drinksButton: UIButton!
+    
+    var pizzaButtonCenter: CGPoint!
+    var sushiButtonCenter: CGPoint!
+    var drinksButtonCenter: CGPoint!
     
     fileprivate enum Constants {
         static let menuSegueIdentifire = "Menu"
@@ -27,6 +35,58 @@ class GreetingsViewController: UIViewController  {
         super.viewDidLoad()
          setUpSideMenu()
         // Do any additional setup after loading the view.
+        pizzaButtonCenter = pizzaButton.center
+        sushiButtonCenter = sushiButton.center
+        drinksButtonCenter = drinksButton.center
+        
+        sushiButton.center = moreMenuButton.center
+        pizzaButton.center = moreMenuButton.center
+        drinksButton.center = moreMenuButton.center
+    }
+    
+    
+    
+    @IBAction func DrinksClicked(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func SushiClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func PizzaClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func moreClicked(_ sender: UIButton) {
+        if moreMenuButton.currentImage == #imageLiteral(resourceName: "SideMenuMenu") {
+            UIView.animate(withDuration: 0.3, animations: {
+                //animation here!
+                self.pizzaButton.alpha = 1
+                self.drinksButton.alpha = 1
+                self.sushiButton.alpha = 1
+                
+                self.pizzaButton.center = self.pizzaButtonCenter
+                self.drinksButton.center = self.drinksButtonCenter
+                self.sushiButton.center = self.sushiButtonCenter
+            })
+        } else {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.pizzaButton.alpha = 0
+                self.drinksButton.alpha = 0
+                self.sushiButton.alpha = 0
+                
+                self.sushiButton.center = self.moreMenuButton.center
+                self.pizzaButton.center = self.moreMenuButton.center
+                self.drinksButton.center = self.moreMenuButton.center
+            })
+        }
+    
+        
+    if sender.currentImage == #imageLiteral(resourceName: "SideMenuMenu") {
+            sender.setImage(#imageLiteral(resourceName: "MenuButtonOn"), for: .normal)
+        } else {
+            sender.setImage(#imageLiteral(resourceName: "SideMenuMenu"), for: .normal)
+        }
+        
     }
     
     func setUpSideMenu() {

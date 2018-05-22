@@ -7,6 +7,7 @@ target 'SushiTime' do
   use_frameworks!
 
   # Pods for SushiTime
-  pod ’SideMenu’
-    pod 'BWTVController'
+pod ’SideMenu’
+pod 'BWTVController'
+pod 'RealmSwift'
 end

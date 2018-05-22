@@ -36,6 +36,8 @@ extension PizzaTableViewController: UITableViewDelegate, UITableViewDataSource {
             
             return UITableViewCell()
         }
+        
+        
         cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
         
         let currentItem = items[indexPath.row]
@@ -51,6 +53,17 @@ extension PizzaTableViewController: UITableViewDelegate, UITableViewDataSource {
         let item = items[indexPath.row]
         didSelectCellWithType(type: item.type)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 30, 0)
+        cell.layer.transform = transform
+        
+        UIView.animate(withDuration: 1) {
+            cell.alpha = 1
+            cell.layer.transform = CATransform3DIdentity
+            
+        }
     }
     
     func didSelectCellWithType(type: PizzaItemType) {

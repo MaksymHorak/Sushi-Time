@@ -9,18 +9,18 @@
 import Foundation
 
 struct PizzaViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Піца Маргарита", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Папероні", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Томатіна", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Діабола", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Баварська", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Гавайська", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Прошутто Крудо", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Капрічьоза", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Домашня", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Чотири сезони", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Сицилія", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Цезаре", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Чотири сири", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5),
-                                              OrderDetailItem(name: "Піца Тонно", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5)]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Піца Маргарита", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Папероні", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Томатіна", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Діабола", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Баварська", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Гавайська", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Прошутто Крудо", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Капрічьоза", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Домашня", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Чотири сезони", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Сицилія", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Цезаре", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Чотири сири", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Піца Тонно", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "гункан")]
 }

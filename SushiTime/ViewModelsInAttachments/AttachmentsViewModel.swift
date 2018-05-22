@@ -9,5 +9,5 @@
 import Foundation
 
 struct AttachmentsViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Роберт Домс Бельгійський 0,5л", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5)]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Роберт Домс Бельгійський 0,5л", imageName: "Home", priceImage: "Home", priceName: 5, weightImage: "Home", weightName: 5, aboutName: "Robert")]
 }

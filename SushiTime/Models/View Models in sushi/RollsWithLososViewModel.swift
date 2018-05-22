@@ -9,10 +9,10 @@
 import Foundation
 
 struct RollsWithLososViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Маки з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Монреаль", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Філадельфія чіз з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Каліфорнія з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Філадельфія з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8),
-                                              OrderDetailItem(name: "Каліфорнія з вершковим сиром та копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8)]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Маки з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "maki"),
+                                              OrderDetailItem(name: "Монреаль", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Філадельфія чіз з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Каліфорнія з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Філадельфія з копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Каліфорнія з вершковим сиром та копченим лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан")]
 }

@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Checkuot View Controller-->
         <scene sceneID="veo-L5-dbB">
             <objects>
-                <viewController id="Gtf-Hx-Ty8" sceneMemberID="viewController">
+                <viewController id="Gtf-Hx-Ty8" customClass="CheckuotViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GMI-Wb-cMk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +122,13 @@
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="aboutName" destination="sB1-13-oYv" id="qfl-Oh-gF6"/>
+                        <outlet property="imageName" destination="ykq-A7-Vbu" id="1wz-gn-fuO"/>
+                        <outlet property="name" destination="ysv-M0-mip" id="Ghd-JX-trW"/>
+                        <outlet property="priceName" destination="gzu-5C-cZ2" id="fuK-fF-yVn"/>
+                        <outlet property="weightName" destination="rD3-q4-J35" id="717-7F-OEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKg-0T-Qla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
