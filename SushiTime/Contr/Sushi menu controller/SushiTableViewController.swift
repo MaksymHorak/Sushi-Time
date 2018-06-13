@@ -69,7 +69,7 @@ extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {
         let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 30, 0)
         cell.layer.transform = transform
         
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.6) {
             cell.alpha = 1
             cell.layer.transform = CATransform3DIdentity
             

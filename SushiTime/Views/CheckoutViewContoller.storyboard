@@ -86,6 +86,15 @@
                                     <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-jg-3xC">
+                                <rect key="frame" x="0.0" y="321" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="30 см."/>
+                                    <segment title="60 см."/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -124,6 +133,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="aboutName" destination="sB1-13-oYv" id="qfl-Oh-gF6"/>
+                        <outlet property="choosePizzaSize" destination="b3J-jg-3xC" id="eZs-7u-8ry"/>
                         <outlet property="imageName" destination="ykq-A7-Vbu" id="1wz-gn-fuO"/>
                         <outlet property="name" destination="ysv-M0-mip" id="Ghd-JX-trW"/>
                         <outlet property="priceName" destination="gzu-5C-cZ2" id="fuK-fF-yVn"/>

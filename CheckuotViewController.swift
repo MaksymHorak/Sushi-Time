@@ -16,6 +16,7 @@ class CheckuotViewController: UIViewController {
     @IBOutlet var weightName: UILabel!
     @IBOutlet var priceName: UILabel!
     @IBOutlet var name: UILabel!
+    @IBOutlet weak var choosePizzaSize: UISegmentedControl!
     
     var selectedItem: OrderDetailItem?
     
@@ -29,9 +30,3 @@ class CheckuotViewController: UIViewController {
     }
     
 }
-
-
-//priceItemImageView.image = UIImage(named: viewModel.priceImage)
-//priceItemLabelView.text = String(viewModel.priceName)
-//weightItemImageView.image = UIImage(named: viewModel.weightImage)
-//weightItemLabelView.text = String(viewModel.weightName)

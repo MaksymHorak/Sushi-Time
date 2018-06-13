@@ -41,9 +41,6 @@ class GenericTableViewCell: UITableViewCell {
 
     }
 }
-//var priseName = 0
-
-
 
 // TODO: Add price and weight labels
 extension GenericTableViewCell {

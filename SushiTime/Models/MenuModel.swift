@@ -38,7 +38,7 @@ extension MenuModel {
             name  = "Напої"
             
         case .attachmentsViewController:
-            imageName = ""
+            imageName = "TestSushiPhoto"
             name = "Додотки"
             
             

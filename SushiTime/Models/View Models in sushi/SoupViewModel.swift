@@ -9,7 +9,10 @@
 import Foundation
 
 struct SoupViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Місо суп", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Місо суп з лососем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Мусо суп з вугрем", imageName: "Home", priceImage: "Home", priceName: 1, weightImage: "Home", weightName: 8, aboutName: "гункан")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Місо суп", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Місо суп з лососем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
+                                              OrderDetailItem(name: "Мусо суп з вугрем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан")]
 }
+
+
+
