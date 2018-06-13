@@ -1,20 +1,30 @@
 PODS:
   - BWTVController (0.1.6)
+  - Realm (3.5.0):
+    - Realm/Headers (= 3.5.0)
+  - Realm/Headers (3.5.0)
+  - RealmSwift (3.5.0):
+    - Realm (= 3.5.0)
   - SideMenu (3.1.5)
 
 DEPENDENCIES:
   - BWTVController
+  - RealmSwift
   - SideMenu
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - BWTVController
+    - Realm
+    - RealmSwift
     - SideMenu
 
 SPEC CHECKSUMS:
   BWTVController: aef603a049a7b2f867449042a6afb83bd7bd5b5e
+  Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
+  RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
   SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
 
-PODFILE CHECKSUM: 5a7278432defa1afa2340da0c5ab669477f4b79b
+PODFILE CHECKSUM: 61d07a8be4e63c03800856d4e054053b96ab2dfe
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2
