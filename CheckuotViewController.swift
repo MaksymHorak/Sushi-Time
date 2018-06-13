@@ -29,4 +29,14 @@ class CheckuotViewController: UIViewController {
         aboutName.text = String(selectedItem!.aboutName)
     }
     
+    @IBAction func addToCardPressed(_ sender: Any) {
+        guard let selectedItem = self.selectedItem else { return }
+        
+        if let index = CartManager.shared.cartItems.index(of: selectedItem) {
+            CartManager.shared.cartItems[index].count += 1
+            return
+        }
+        
+        CartManager.shared.cartItems.append(selectedItem)        
+    }
 }

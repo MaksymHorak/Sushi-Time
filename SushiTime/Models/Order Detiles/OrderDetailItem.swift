@@ -19,6 +19,25 @@ struct OrderDetailItem {
     var weightName: Int
     
     var aboutName: String
+
+    var count: Int = 1
     
+    init(name: String, imageName: String, priceImage: String, priceName: Int, weightImage: String, weightName: Int, aboutName: String) {
+        self.name = name
+        self.imageName = imageName
+        self.priceName = priceName
+        self.priceImage = priceImage
+        self.weightName = weightName
+        self.weightImage = weightImage
+        self.aboutName = aboutName
+        self.count = 1
+    }
+}
+
+
+extension OrderDetailItem: Equatable {
+    public static func == (lhs: OrderDetailItem, rhs: OrderDetailItem) -> Bool {
+        return lhs.name == rhs.name
+    }
 
 }
