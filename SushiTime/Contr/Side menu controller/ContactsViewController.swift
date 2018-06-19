@@ -30,6 +30,18 @@ class ContactsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func CartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
+    
+    @IBAction func TestButt(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController")as! AboutUsViewController
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
     @IBAction func callTest(_ sender: UIButton) {
         let alertVC = UIAlertController(title: "Sushi Time", message: "Доставка", preferredStyle: .actionSheet)
         let callToKyivstar = UIAlertAction(title: "Київстар", style: .default) { (action) in

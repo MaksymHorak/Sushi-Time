@@ -25,6 +25,13 @@ class PizzaTableViewController: UIViewController {
     var items: [PizzaModel]{
         return [PizzaModel(type: .first)]
     }
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
+    
+    
 }
 // case hotDishes, soups, makiRolls
 extension PizzaTableViewController: UITableViewDelegate, UITableViewDataSource {

@@ -34,6 +34,12 @@ class SushiTableViewController: UIViewController {
                 SushiModel(type: .sushi),
                 SushiModel(type: .rollsWithLosos)]
     }
+    @IBAction func CartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
+    
 }
  // case hotDishes, soups, makiRolls
 extension SushiTableViewController: UITableViewDelegate, UITableViewDataSource {

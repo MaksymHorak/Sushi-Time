@@ -19,37 +19,37 @@
         <!--Checkuot View Controller-->
         <scene sceneID="veo-L5-dbB">
             <objects>
-                <viewController id="Gtf-Hx-Ty8" customClass="CheckuotViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckuotViewController" id="Gtf-Hx-Ty8" customClass="CheckuotViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GMI-Wb-cMk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Піцца &quot;Маргарита&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysv-M0-mip">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="21"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="nK6-5d-EN5">
-                                <rect key="frame" x="0.0" y="238" width="375" height="9"/>
+                                <rect key="frame" x="0.0" y="326" width="375" height="9"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nK6-5d-EN5" secondAttribute="height" multiplier="125:3" id="kTH-ps-2cc"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaTest" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-A7-Vbu">
-                                <rect key="frame" x="0.0" y="21" width="375" height="215"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="215"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ykq-A7-Vbu" secondAttribute="height" multiplier="75:43" id="tBB-gp-mbt"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeightImage" translatesAutoresizingMaskIntoConstraints="NO" id="iAD-d0-RqY">
-                                <rect key="frame" x="16" y="255" width="25" height="25"/>
+                                <rect key="frame" x="16" y="343" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iAD-d0-RqY" secondAttribute="height" multiplier="1:1" id="E3u-Ro-Yd6"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-13-oYv">
-                                <rect key="frame" x="119" y="244" width="256" height="386"/>
+                                <rect key="frame" x="119" y="332" width="256" height="386"/>
                                 <string key="text">•Фірмовий соус 
 •Сир моцарела
 •Базилік</string>
@@ -58,25 +58,25 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CashImage" translatesAutoresizingMaskIntoConstraints="NO" id="aU6-Kn-2IY">
-                                <rect key="frame" x="16" y="288" width="25" height="25"/>
+                                <rect key="frame" x="16" y="376" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aU6-Kn-2IY" secondAttribute="height" multiplier="1:1" id="5rf-R2-bhw"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 грн" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzu-5C-cZ2">
-                                <rect key="frame" x="49" y="262" width="57" height="18"/>
+                                <rect key="frame" x="49" y="350" width="57" height="18"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="14"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rD3-q4-J35">
-                                <rect key="frame" x="49" y="293" width="45" height="20"/>
+                                <rect key="frame" x="49" y="381" width="45" height="20"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="16"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu7-kh-Qh5">
-                                <rect key="frame" x="0.0" y="672" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="760" width="375" height="52"/>
                                 <color key="backgroundColor" red="0.19785465344132577" green="0.19981361040609136" blue="0.19981361040609136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="YpM-xI-5ev"/>
@@ -89,15 +89,6 @@
                                     <action selector="addToCardPressed:" destination="Gtf-Hx-Ty8" eventType="touchUpInside" id="8Ir-lS-ePc"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-jg-3xC">
-                                <rect key="frame" x="0.0" y="321" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="30 см."/>
-                                    <segment title="60 см."/>
-                                </segments>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -132,11 +123,17 @@
                         <viewLayoutGuide key="safeArea" id="10X-ay-Ekx"/>
                     </view>
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationItem key="navigationItem" id="Ipb-AN-cP8">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ShoppingCart" id="aBL-dE-tBb">
+                            <connections>
+                                <action selector="cartButton:" destination="Gtf-Hx-Ty8" id="esE-Ui-o8Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="aboutName" destination="sB1-13-oYv" id="qfl-Oh-gF6"/>
-                        <outlet property="choosePizzaSize" destination="b3J-jg-3xC" id="eZs-7u-8ry"/>
                         <outlet property="imageName" destination="ykq-A7-Vbu" id="1wz-gn-fuO"/>
                         <outlet property="name" destination="ysv-M0-mip" id="Ghd-JX-trW"/>
                         <outlet property="priceName" destination="gzu-5C-cZ2" id="fuK-fF-yVn"/>
@@ -151,6 +148,7 @@
     <resources>
         <image name="CashImage" width="25" height="25"/>
         <image name="PizzaTest" width="796" height="528"/>
+        <image name="ShoppingCart" width="25" height="25"/>
         <image name="WeightImage" width="25" height="25"/>
         <image name="line" width="474" height="18"/>
     </resources>

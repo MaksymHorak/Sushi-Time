@@ -20,6 +20,11 @@ class OrderDetailsViewController: UIViewController {
         tableViewTest.reloadData()
     }
 
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
     
 }
 

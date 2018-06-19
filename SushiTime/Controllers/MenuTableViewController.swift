@@ -27,6 +27,12 @@ class MenuTableViewController: UIViewController {
                 MenuModel(type: .drinksViewController),
                 MenuModel(type: .attachmentsViewController)]
     }
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
+    
 }
 
 extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {

@@ -10,6 +10,11 @@ import UIKit
 
 class CheckuotViewController: UIViewController {
 
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
     @IBOutlet var imageName: UIImageView!
     
     @IBOutlet var aboutName: UITextView!
@@ -39,4 +44,5 @@ class CheckuotViewController: UIViewController {
         
         CartManager.shared.cartItems.append(selectedItem)        
     }
+    
 }

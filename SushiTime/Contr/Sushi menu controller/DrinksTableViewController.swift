@@ -24,6 +24,12 @@ class DrinksTableViewController: UIViewController {
         return [DrinksModel(type: .withOutAlcohol),
                 DrinksModel(type: .alcohol)]
     }
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
+        self.navigationController?.pushViewController(CartVC, animated: true)
+    }
+    
 }
 // case hotDishes, soups, makiRolls
 extension DrinksTableViewController: UITableViewDelegate, UITableViewDataSource {

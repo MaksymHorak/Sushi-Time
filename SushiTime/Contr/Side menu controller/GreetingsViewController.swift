@@ -47,13 +47,22 @@ class GreetingsViewController: UIViewController  {
     
     
     @IBAction func DrinksClicked(_ sender: UIButton) {
+        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "DrinksTableViewController")as! DrinksTableViewController
+        self.navigationController?.pushViewController(drinksVC, animated: true)
 
     }
     
     @IBAction func SushiClicked(_ sender: UIButton) {
+        let sushiStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let sushiVC = sushiStoryboard.instantiateViewController(withIdentifier: "SushiTableViewController")as! SushiTableViewController
+        self.navigationController?.pushViewController(sushiVC, animated: true)
     }
     
     @IBAction func PizzaClicked(_ sender: UIButton) {
+        let pizzaStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let pizzaVC = pizzaStoryboard.instantiateViewController(withIdentifier: "PizzaTableViewController")as! PizzaTableViewController
+        self.navigationController?.pushViewController(pizzaVC, animated: true)
     }
     
     @IBAction func moreClicked(_ sender: UIButton) {
