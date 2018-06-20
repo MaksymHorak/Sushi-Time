@@ -16,9 +16,48 @@ class CartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        overalLbl.text = "\(CartManager.shared.calculateOveral())"
+        overalLbl.text = "\(CartManager.shared.calculateOveral()) грн"
         
     }
+    @IBAction func orderingButton(_ sender: Any) {
+        if overalLbl.text == "0 грн" {
+            let alert = UIAlertController(title: "Ваша корзина пуста!", message: nil, preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
+            let when = DispatchTime.now() + 1
+            DispatchQueue.main.asyncAfter(deadline: when){
+                alert.dismiss(animated: true, completion: nil) }
+
+        } else {
+
+//            let cartStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let orderingVC = cartStoryboard.instantiateViewController(withIdentifier: "OrderingTableViewController")as! OrderingTableViewController
+//            self.navigationController?.pushViewController(orderingVC, animated: true)
+            let alertVC = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            let callToKyivstar = UIAlertAction(title: "Доставка", style: .default) { (action) in
+                            let cartStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let orderingVC = cartStoryboard.instantiateViewController(withIdentifier: "OrderingTableViewController")as! OrderingTableViewController
+                            self.navigationController?.pushViewController(orderingVC, animated: true)
+            }
+            
+            let callToLife = UIAlertAction(title: "Самовивіз", style: .default) { (action) in
+                let url: NSURL = URL(string: "TEL://+380630185979")! as NSURL
+                UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+            }
+            
+            let actionCancel = UIAlertAction(title: "Закрити", style: .cancel) { (action) in
+            }
+            
+            alertVC.addAction(callToKyivstar)
+            alertVC.addAction(callToLife)
+            alertVC.addAction(actionCancel)
+            
+            self.present(alertVC, animated: true){
+                print("alert is show")
+            }
+            
+        }
+    }
+    
 }
 
 extension CartViewController: UITableViewDataSource {
@@ -54,7 +93,7 @@ extension CartViewController: CartTableViewCellDelegate {
                 CartManager.shared.cartItems[index].count -= 1
                 count-=1
                 cell.countLbl.text = "\(count)"
-                  overalLbl.text = "\(CartManager.shared.calculateOveral())"
+                  overalLbl.text = "\(CartManager.shared.calculateOveral()) грн"
             }
         }
     }
@@ -65,7 +104,7 @@ extension CartViewController: CartTableViewCellDelegate {
             CartManager.shared.cartItems[index].count += 1
             count+=1
             cell.countLbl.text = "\(count)"
-              overalLbl.text = "\(CartManager.shared.calculateOveral())"
+              overalLbl.text = "\(CartManager.shared.calculateOveral()) грн"
         }
     }
     

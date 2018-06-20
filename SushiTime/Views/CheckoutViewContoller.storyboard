@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="width" secondItem="iAD-d0-RqY" secondAttribute="height" multiplier="1:1" id="E3u-Ro-Yd6"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-13-oYv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-13-oYv">
                                 <rect key="frame" x="119" y="332" width="256" height="386"/>
                                 <string key="text">•Фірмовий соус 
 •Сир моцарела

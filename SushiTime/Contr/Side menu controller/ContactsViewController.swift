@@ -30,6 +30,18 @@ class ContactsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func alert(_ sender: Any) {
+        let alert = UIAlertController(title: "Alert", message: "Removed from cart", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        
+        // change to desired number of seconds (in this case 5 seconds)
+        let when = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: when){
+            // your code with delay
+            alert.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func CartButton(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let CartVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")as! CartViewController
@@ -53,7 +65,8 @@ class ContactsViewController: UIViewController {
             let url: NSURL = URL(string: "TEL://+380630185979")! as NSURL
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
-
+        alertVC.addAction(callToKyivstar)
+        alertVC.addAction(callToLife)
         self.present(alertVC, animated: true){
             print("alert is show")
         }
@@ -74,8 +87,7 @@ class ContactsViewController: UIViewController {
         let actionCancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
             
         }
-        alertVC.addAction(callToKyivstar)
-        alertVC.addAction(callToLife)
+
         
 
         alertVC1.addAction(callToKyivstar1)
