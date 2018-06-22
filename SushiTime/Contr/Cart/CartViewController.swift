@@ -40,8 +40,9 @@ class CartViewController: UIViewController {
             }
             
             let callToLife = UIAlertAction(title: "Самовивіз", style: .default) { (action) in
-                let url: NSURL = URL(string: "TEL://+380630185979")! as NSURL
-                UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+                let cartStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let orderingVC = cartStoryboard.instantiateViewController(withIdentifier: "PickupViewController")as! PickupViewController
+                self.navigationController?.pushViewController(orderingVC, animated: true)
             }
             
             let actionCancel = UIAlertAction(title: "Закрити", style: .cancel) { (action) in
