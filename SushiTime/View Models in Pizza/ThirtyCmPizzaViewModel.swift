@@ -10,7 +10,7 @@
 
 import Foundation
 
-struct PizzaViewModel: OrderDetailProvider {
+struct ThirtyCmPizzaViewModel: OrderDetailProvider {
     var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Піца Маргарита", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "гункан"),
                                               OrderDetailItem(name: "Піца Папероні", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "гункан"),
                                               OrderDetailItem(name: "Піца Томатіна", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "гункан"),

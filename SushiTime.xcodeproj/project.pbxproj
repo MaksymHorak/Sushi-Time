@@ -17,7 +17,8 @@
 		6319E2831FC72F6400DEB518 /* SoupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319E2821FC72F6400DEB518 /* SoupViewModel.swift */; };
 		6333A56A20D94468007BD5B2 /* OrderingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56920D94468007BD5B2 /* OrderingTableViewController.swift */; };
 		6333A56C20DAC02F007BD5B2 /* PickupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56B20DAC02F007BD5B2 /* PickupViewController.swift */; };
-		633A73962098766E0019B922 /* PizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A73952098766E0019B922 /* PizzaViewModel.swift */; };
+		6333A56E20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56D20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift */; };
+		633A73962098766E0019B922 /* ThirtyCmPizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A73952098766E0019B922 /* ThirtyCmPizzaViewModel.swift */; };
 		633A739C209895600019B922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633A739B209895600019B922 /* Assets.xcassets */; };
 		6340054220D18F8000D9CA1D /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340054120D18F8000D9CA1D /* CartManager.swift */; };
 		6340054420D19AC800D9CA1D /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340054320D19AC800D9CA1D /* CartTableViewCell.swift */; };
@@ -79,7 +80,8 @@
 		6319E2821FC72F6400DEB518 /* SoupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupViewModel.swift; sourceTree = "<group>"; };
 		6333A56920D94468007BD5B2 /* OrderingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderingTableViewController.swift; sourceTree = "<group>"; };
 		6333A56B20DAC02F007BD5B2 /* PickupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupViewController.swift; sourceTree = "<group>"; };
-		633A73952098766E0019B922 /* PizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewModel.swift; sourceTree = "<group>"; };
+		6333A56D20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiftiesCmPizzaViewModel.swift; sourceTree = "<group>"; };
+		633A73952098766E0019B922 /* ThirtyCmPizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirtyCmPizzaViewModel.swift; sourceTree = "<group>"; };
 		633A739B209895600019B922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6340054120D18F8000D9CA1D /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		6340054320D19AC800D9CA1D /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,7 +171,8 @@
 		633A73972098786E0019B922 /* View Models in Pizza */ = {
 			isa = PBXGroup;
 			children = (
-				633A73952098766E0019B922 /* PizzaViewModel.swift */,
+				633A73952098766E0019B922 /* ThirtyCmPizzaViewModel.swift */,
+				6333A56D20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift */,
 			);
 			path = "View Models in Pizza";
 			sourceTree = "<group>";
@@ -494,7 +497,7 @@
 				639523391FB624850080CCD9 /* PizzaTableViewController.swift in Sources */,
 				63DA539D1FAE3FB7001E3D6B /* AppDelegate.swift in Sources */,
 				63181A841FE2E0790005CB19 /* SushiViewModel.swift in Sources */,
-				633A73962098766E0019B922 /* PizzaViewModel.swift in Sources */,
+				633A73962098766E0019B922 /* ThirtyCmPizzaViewModel.swift in Sources */,
 				63D48DE81FC4EE2B0065F424 /* RollsViewModel.swift in Sources */,
 				63D48DE61FC4ED260065F424 /* MakiRollsViewModel.swift in Sources */,
 				6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */,
@@ -537,6 +540,7 @@
 				63DA53D81FB12A9B001E3D6B /* MenuModel.swift in Sources */,
 				63F0FC3020A5B48000020BC0 /* AttachmentsTableViewCell.swift in Sources */,
 				6319E2831FC72F6400DEB518 /* SoupViewModel.swift in Sources */,
+				6333A56E20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift in Sources */,
 				6319E27F1FC71A9C00DEB518 /* SuopTableViewController.swift in Sources */,
 				63DA53C01FAE4CFB001E3D6B /* SideMenuModel.swift in Sources */,
 			);

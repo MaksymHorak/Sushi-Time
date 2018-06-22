@@ -18,12 +18,13 @@ class PizzaTableViewController: UIViewController {
     }
     
     fileprivate enum Constants {
-        static let firstSegueIdentifire = "first"
+        static let firstSegueIdentifire = "thirtyCmPizza"
 
         
     }
     var items: [PizzaModel]{
-        return [PizzaModel(type: .first)]
+        return [PizzaModel(type: .thirtyCmPizza),
+                PizzaModel(type: .fiftiesCmPizza)]
     }
     @IBAction func cartButton(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -80,7 +81,8 @@ extension PizzaTableViewController: UITableViewDelegate, UITableViewDataSource {
         if let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController") as? OrderDetailsViewController {
             switch type {
                 
-            case .first: vc.dataSource = PizzaViewModel()
+            case .thirtyCmPizza: vc.dataSource = ThirtyCmPizzaViewModel()
+            case .fiftiesCmPizza: vc.dataSource = FiftiesCmPizzaViewModel()
 
                 
                 // default: break

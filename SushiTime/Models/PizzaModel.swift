@@ -10,7 +10,7 @@ import Foundation
 
 enum PizzaItemType {
     
-    case first
+    case thirtyCmPizza, fiftiesCmPizza
 }
 
 struct PizzaModel {
@@ -26,9 +26,13 @@ extension PizzaModel {
         self.type = type
         switch type {
             
-        case .first:
+        case .thirtyCmPizza:
             imageName = "syrnyi"
-            name  = "Some pizza"
+            name  = "Піца 30 см."
+            
+        case .fiftiesCmPizza:
+            imageName = "syrnyi"
+            name  = "Піца 50 см."
         }
     }
 }
