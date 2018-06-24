@@ -80,7 +80,10 @@ extension CartViewController: UITableViewDataSource {
         if editingStyle == .delete {
             CartManager.shared.cartItems.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+
+            overalLbl.text = "\(CartManager.shared.calculateOveral()) грн"
         }
+        
     }
     
     

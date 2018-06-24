@@ -30,11 +30,11 @@ extension MenuModel {
             name  = "Суші"
             
         case .pizzaViewController:
-            imageName = "PizzaMoveButton"
+            imageName = "PizzaInMenuImage"
             name  = "Піца"
             
         case .drinksViewController:
-            imageName = "DrinksMoveButton"
+            imageName = "DrinksIcon"
             name  = "Напої"
             
         case .attachmentsViewController:

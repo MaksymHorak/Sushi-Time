@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" secondItem="nK6-5d-EN5" secondAttribute="height" multiplier="125:3" id="kTH-ps-2cc"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaTest" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-A7-Vbu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HunkanWithSalatChuka" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-A7-Vbu">
                                 <rect key="frame" x="0.0" y="109" width="375" height="215"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ykq-A7-Vbu" secondAttribute="height" multiplier="75:43" id="tBB-gp-mbt"/>
@@ -147,7 +147,7 @@
     </scenes>
     <resources>
         <image name="CashImage" width="25" height="25"/>
-        <image name="PizzaTest" width="796" height="528"/>
+        <image name="HunkanWithSalatChuka" width="161" height="161"/>
         <image name="ShoppingCart" width="25" height="25"/>
         <image name="WeightImage" width="25" height="25"/>
         <image name="line" width="474" height="18"/>

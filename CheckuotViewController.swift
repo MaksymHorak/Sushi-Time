@@ -21,8 +21,8 @@ class CheckuotViewController: UIViewController {
     @IBOutlet var weightName: UILabel!
     @IBOutlet var priceName: UILabel!
     @IBOutlet var name: UILabel!
-    @IBOutlet weak var choosePizzaSize: UISegmentedControl!
-    
+
+    let hrn = "ГРН"
     var selectedItem: OrderDetailItem?
     
     override func viewDidLoad() {

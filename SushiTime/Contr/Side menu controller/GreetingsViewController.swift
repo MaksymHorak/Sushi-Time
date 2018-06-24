@@ -38,11 +38,12 @@ class GreetingsViewController: UIViewController  {
         pizzaButtonCenter = pizzaButton.center
         sushiButtonCenter = sushiButton.center
         drinksButtonCenter = drinksButton.center
-        
+//
         sushiButton.center = moreMenuButton.center
         pizzaButton.center = moreMenuButton.center
         drinksButton.center = moreMenuButton.center
     }
+
     
     
     

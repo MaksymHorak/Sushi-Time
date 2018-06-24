@@ -10,7 +10,7 @@
 import Foundation
 
 struct SushiViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Гункан з салатом чука вакаме", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Гункан з салатом чука вакаме", imageName: "HunkanWithSalatChuka", priceImage: "CashImage", priceName: 31, weightImage: "WeightImage", weightName: 50, aboutName: "гункан"),
                                               OrderDetailItem(name: "Гункан спайс з крабовим міксом", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
                                               OrderDetailItem(name: "Гункан з ікрою масаго", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
                                               OrderDetailItem(name: "Гункан спайс з вугрем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),

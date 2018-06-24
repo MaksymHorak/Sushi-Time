@@ -7,17 +7,9 @@
 //
 
 import UIKit
-//
-//let url: NSURL = URL(string: "TEL://123456678")! as NSURL
-//UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
-class ContactsViewController: UIViewController {
-    
-    
 
-    
-    
-    
-    
+class ContactsViewController: UIViewController {
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,18 +21,7 @@ class ContactsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func alert(_ sender: Any) {
-        let alert = UIAlertController(title: "Alert", message: "Removed from cart", preferredStyle: .alert)
-        self.present(alert, animated: true, completion: nil)
-        
-        // change to desired number of seconds (in this case 5 seconds)
-        let when = DispatchTime.now() + 1
-        DispatchQueue.main.asyncAfter(deadline: when){
-            // your code with delay
-            alert.dismiss(animated: true, completion: nil)
-        }
-    }
+
     
     @IBAction func CartButton(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -48,12 +29,51 @@ class ContactsViewController: UIViewController {
         self.navigationController?.pushViewController(CartVC, animated: true)
     }
     
-    @IBAction func TestButt(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let secondVC = storyboard.instantiateViewController(withIdentifier: "AboutUsViewController")as! AboutUsViewController
-        self.navigationController?.pushViewController(secondVC, animated: true)
+
+    @IBAction func orderingCallButton(_ sender: Any) {
+        let alertVC = UIAlertController(title: "Sushi Time", message: "Доставка", preferredStyle: .actionSheet)
+        let callToKyivstar = UIAlertAction(title: "Київстар", style: .default) { (action) in
+            let url: NSURL = URL(string: "TEL://+380987137616")! as NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        
+        let callToLife = UIAlertAction(title: "Лайф", style: .default) { (action) in
+            let url: NSURL = URL(string: "TEL://+380630185979")! as NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            
+        }
+        alertVC.addAction(callToKyivstar)
+        alertVC.addAction(callToLife)
+        alertVC.addAction(actionCancel)
+        self.present(alertVC, animated: true){
+            print("alert is show")
+        }
     }
     
+    @IBAction func pickupCallButton(_ sender: Any) {
+        let alertVC = UIAlertController(title: "Sushi Time", message: "Самовивіз", preferredStyle: .actionSheet)
+        let callToKyivstar = UIAlertAction(title: "Київстар", style: .default) { (action) in
+            let url: NSURL = URL(string: "TEL://+380688903909")! as NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        
+        let callToLife = UIAlertAction(title: "Лайф", style: .default) { (action) in
+            let url: NSURL = URL(string: "TEL://+380930191720")! as NSURL
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            
+        }
+        alertVC.addAction(callToKyivstar)
+        alertVC.addAction(callToLife)
+        alertVC.addAction(actionCancel)
+        self.present(alertVC, animated: true){
+            print("alert is show")
+        }
+
+    }
     @IBAction func callTest(_ sender: UIButton) {
         let alertVC = UIAlertController(title: "Sushi Time", message: "Доставка", preferredStyle: .actionSheet)
         let callToKyivstar = UIAlertAction(title: "Київстар", style: .default) { (action) in

@@ -18,6 +18,7 @@
 		6333A56A20D94468007BD5B2 /* OrderingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56920D94468007BD5B2 /* OrderingTableViewController.swift */; };
 		6333A56C20DAC02F007BD5B2 /* PickupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56B20DAC02F007BD5B2 /* PickupViewController.swift */; };
 		6333A56E20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56D20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift */; };
+		6333A57020DE1C10007BD5B2 /* FinishTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333A56F20DE1C10007BD5B2 /* FinishTestViewController.swift */; };
 		633A73962098766E0019B922 /* ThirtyCmPizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A73952098766E0019B922 /* ThirtyCmPizzaViewModel.swift */; };
 		633A739C209895600019B922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633A739B209895600019B922 /* Assets.xcassets */; };
 		6340054220D18F8000D9CA1D /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340054120D18F8000D9CA1D /* CartManager.swift */; };
@@ -81,6 +82,7 @@
 		6333A56920D94468007BD5B2 /* OrderingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderingTableViewController.swift; sourceTree = "<group>"; };
 		6333A56B20DAC02F007BD5B2 /* PickupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupViewController.swift; sourceTree = "<group>"; };
 		6333A56D20DC7602007BD5B2 /* FiftiesCmPizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiftiesCmPizzaViewModel.swift; sourceTree = "<group>"; };
+		6333A56F20DE1C10007BD5B2 /* FinishTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTestViewController.swift; sourceTree = "<group>"; };
 		633A73952098766E0019B922 /* ThirtyCmPizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirtyCmPizzaViewModel.swift; sourceTree = "<group>"; };
 		633A739B209895600019B922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6340054120D18F8000D9CA1D /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
@@ -233,8 +235,8 @@
 		63A69BDF20A2DFC0001B93DD /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				63C4C15720B41501001FD1E5 /* CartViewController.swift */,
 				6333A56920D94468007BD5B2 /* OrderingTableViewController.swift */,
+				63C4C15720B41501001FD1E5 /* CartViewController.swift */,
 				6333A56B20DAC02F007BD5B2 /* PickupViewController.swift */,
 			);
 			path = Cart;
@@ -254,6 +256,7 @@
 				63CCDC5620557A4000F02D19 /* UIColor.swift */,
 				63C4C15520B41334001FD1E5 /* GradientView.swift */,
 				63FFE53C20B196E20039877D /* internet.swift */,
+				6333A56F20DE1C10007BD5B2 /* FinishTestViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				63C4C15620B41334001FD1E5 /* GradientView.swift in Sources */,
 				6333A56A20D94468007BD5B2 /* OrderingTableViewController.swift in Sources */,
 				63CCDC5720557A4000F02D19 /* UIColor.swift in Sources */,
+				6333A57020DE1C10007BD5B2 /* FinishTestViewController.swift in Sources */,
 				63181A871FE2F54D0005CB19 /* CheckuotViewController.swift in Sources */,
 				63D48DDE1FC4DEA80065F424 /* OrderDetailsViewController.swift in Sources */,
 				63CE37342095F2AE0044F42B /* ContactsViewController.swift in Sources */,
