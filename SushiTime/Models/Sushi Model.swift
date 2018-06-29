@@ -27,31 +27,31 @@ extension SushiModel {
         switch type {
             
         case .hotDishes:
-            imageName = "HotDishesIcon"
+            imageName = "UdonWithChicken"
             name  = "Гарячі страви"
             
         case .soup:
-            imageName = "SoupsIcon"
+            imageName = "MisoSoupWithVuhor"
             name  = "Супи"
             
         case .makiRolls:
-            imageName = "MakiRollsIcon"
-            name  = "Маки роли"
+            imageName = "MakiWithVuhor"
+            name  = "Макi роли"
             
         case .rolls:
-            imageName = "Home"
+            imageName = "BlackSamuray"
             name  = "Роли"
             
         case .sets:
-            imageName = "Home"
-            name  = "сети"
+            imageName = "YakudzaSet"
+            name  = "Набори"
             
         case .sushi:
-            imageName = "Home"
+            imageName = "NihiriWithVuhor"
             name  = "Суші"
             
         case .rollsWithLosos:
-            imageName = "Home"
+            imageName = "FiladelfiyaCheeseWithKopchenyiLosos"
             name  = "Роли з копченим лососем"
         }
     }

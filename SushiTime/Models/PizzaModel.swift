@@ -27,11 +27,11 @@ extension PizzaModel {
         switch type {
             
         case .thirtyCmPizza:
-            imageName = "syrnyi"
+            imageName = "4seasons"
             name  = "Піца 30 см."
             
         case .fiftiesCmPizza:
-            imageName = "syrnyi"
+            imageName = "Paperoni"
             name  = "Піца 50 см."
         }
     }

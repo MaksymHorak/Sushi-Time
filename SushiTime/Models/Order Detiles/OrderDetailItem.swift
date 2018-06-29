@@ -19,10 +19,12 @@ struct OrderDetailItem {
     var weightName: Int
     
     var aboutName: String
+    
+    var grLabel: String
 
     var count: Int = 1
     
-    init(name: String, imageName: String, priceImage: String, priceName: Int, weightImage: String, weightName: Int, aboutName: String) {
+    init(name: String, imageName: String, priceImage: String, priceName: Int, weightImage: String, weightName: Int, aboutName: String, grLabel: String) {
         self.name = name
         self.imageName = imageName
         self.priceName = priceName
@@ -30,6 +32,7 @@ struct OrderDetailItem {
         self.weightName = weightName
         self.weightImage = weightImage
         self.aboutName = aboutName
+        self.grLabel = grLabel
         self.count = 1
     }
 }

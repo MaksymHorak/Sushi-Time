@@ -10,16 +10,10 @@
 import Foundation
 
 struct WithOutAlcoholViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  =
-        
-[OrderDetailItem(name: "Кока-кола 0,5л", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "•Фірмовий соус \n•Сир моцарела \n•Базилік"),
-       
-                                              
-OrderDetailItem(name: "Фанта 0,5л", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "kola"),
-
-
-OrderDetailItem(name: "Спрайт 0,5л", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "sprite"),
-
-
-OrderDetailItem(name: "Бонаква 0,5л", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "bonakwa")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Кока-кола 0,5л", imageName: "Cola", priceImage: "CashImage", priceName: 25, weightImage: "WeightImage", weightName: 500, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Фанта 0,5л", imageName: "Fanta", priceImage: "CashImage", priceName: 25, weightImage: "WeightImage", weightName: 500, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Спрайт 0,5л", imageName: "Sprite", priceImage: "CashImage", priceName: 25, weightImage: "WeightImage", weightName: 500, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Моршинська газ. 0,5л", imageName: "MorshunskaGaz", priceImage: "CashImage", priceName: 35, weightImage: "WeightImage", weightName: 500, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Моршинська негаз. 0,5л", imageName: "MorshunskaNeGaz", priceImage: "CashImage", priceName: 35, weightImage: "WeightImage", weightName: 500, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Карлсберг Безалкогольний 0,5л", imageName: "CarlsbergWithOutAlc", priceImage: "CashImage", priceName: 35, weightImage: "WeightImage", weightName: 500, aboutName: "", grLabel: "гр.")]
 }

@@ -27,11 +27,11 @@ extension DrinksModel {
         switch type {
             
         case .alcohol:
-            imageName = "HotDishesIcon"
+            imageName = "Fragolino"
             name  = "Алкогольні напої"
             
         case .withOutAlcohol:
-            imageName = "HotDishesIcon"
+            imageName = "ColaFantaSprite"
             name  = "Безалкогольні напої"
 
         }

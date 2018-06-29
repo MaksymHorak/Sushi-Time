@@ -26,19 +26,19 @@ extension MenuModel {
         switch type {
             
         case .sushiViewController:
-            imageName = "SushiMoveButton"
+            imageName = "SushiImg"
             name  = "Суші"
             
         case .pizzaViewController:
-            imageName = "PizzaInMenuImage"
+            imageName = "PizzaImg"
             name  = "Піца"
             
         case .drinksViewController:
-            imageName = "DrinksIcon"
+            imageName = "DrinksImg"
             name  = "Напої"
             
         case .attachmentsViewController:
-            imageName = "TestSushiPhoto"
+            imageName = "AttachmentsImg"
             name = "Додатки"
             
             

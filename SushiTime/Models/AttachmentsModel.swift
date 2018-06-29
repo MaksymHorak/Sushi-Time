@@ -10,7 +10,7 @@ import Foundation
 
 enum AttachmentsItemType {
     
-    case pepper
+    case attachmentsForPizza, attachmentsForSushi
 }
 
 struct AttachmentsModel {
@@ -26,9 +26,12 @@ extension AttachmentsModel {
         self.type = type
         switch type {
             
-        case .pepper:
+        case .attachmentsForPizza:
             imageName = "HotDishesIcon"
-            name  = "Перець"
+            name  = "Додатки до піци"
+        case .attachmentsForSushi:
+            imageName = "AttachmentsSushi"
+            name  = "Додатки до суші"
 
             
         }

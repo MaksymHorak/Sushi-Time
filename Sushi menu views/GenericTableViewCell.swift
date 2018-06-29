@@ -32,6 +32,7 @@ class GenericTableViewCell: UITableViewCell {
     @IBOutlet var weightItemImageView: UIImageView!
     @IBOutlet weak var weightItemLabelView: UILabel!
 
+    @IBOutlet weak var grLabel: UILabel!
     
     open override func setSelected(_ selected: Bool, animated: Bool){
         
@@ -52,6 +53,7 @@ extension GenericTableViewCell {
         
         priceItemImageView.image = UIImage(named: viewModel.priceImage)
         priceItemLabelView.text = String(viewModel.priceName)
+        grLabel.text = String(viewModel.grLabel)
         
 //        Int(priceItemLabelView.text!)
 //        priceItemLabelView.text: Int

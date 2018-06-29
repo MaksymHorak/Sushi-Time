@@ -21,7 +21,8 @@ class AttachmentsTableViewController: UIViewController {
         
     }
     var items: [AttachmentsModel]{
-        return [AttachmentsModel(type: .pepper)]
+        return [AttachmentsModel(type: .attachmentsForPizza),
+                AttachmentsModel(type: .attachmentsForSushi)]
     }
     @IBAction func cartButton(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -76,7 +77,8 @@ extension AttachmentsTableViewController: UITableViewDelegate, UITableViewDataSo
         if let vc = sb.instantiateViewController(withIdentifier: "GenericTableViewController") as? OrderDetailsViewController {
             switch type {
                 
-            case .pepper: vc.dataSource = AttachmentsViewModel()
+            case .attachmentsForPizza: vc.dataSource = AttachmentsForPizzaViewModel()
+            case .attachmentsForSushi: vc.dataSource = AttachmentsForSushiViewModel()
                 
                 
                 // default: break

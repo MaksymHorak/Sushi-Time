@@ -9,9 +9,8 @@
 import Foundation
 
 struct HotDishesViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Удон з грибами шиітаке", imageName: "Home", priceImage: "CashImage", priceName: 5, weightImage: "WeightImage", weightName: 5, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Удон з овочами", imageName: "Home", priceImage: "CashImage", priceName: 5,weightImage: "WeightImage", weightName: 5, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Удон з куркою та грибами", imageName: "Home", priceImage: "CashImage", priceName: 5,weightImage: "WeightImage", weightName: 5, aboutName: "гункан")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Удон з грибами шиітаке", imageName: "UdonWithShytiake", priceImage: "CashImage", priceName: 50, weightImage: "WeightImage", weightName: 190, aboutName: "• Болгарський перець \n• Гриби шиітаке \n• Локшина удон\n• Соус Теріякі\n• Морква\n• Цибуля\n• Кунжут", grLabel: "гр."),
+                                              OrderDetailItem(name: "Удон з куркою та грибами", imageName: "UdonWithChicken", priceImage: "CashImage", priceName: 74,weightImage: "WeightImage", weightName: 220, aboutName: "• Болгарський перець \n• Гриби шиітаке \n• Локшина удон\n• Соус Теріякі\n• Морква\n• Цибуля\n• Курка\n• Кунжут", grLabel: "гр.")]
     
     
 }

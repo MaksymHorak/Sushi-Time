@@ -22,7 +22,8 @@ class CheckuotViewController: UIViewController {
     @IBOutlet var priceName: UILabel!
     @IBOutlet var name: UILabel!
 
-    let hrn = "ГРН"
+    @IBOutlet weak var weightImage: UIImageView!
+    @IBOutlet weak var grLabel: UILabel!
     var selectedItem: OrderDetailItem?
     
     override func viewDidLoad() {
@@ -32,6 +33,8 @@ class CheckuotViewController: UIViewController {
         priceName.text = String(selectedItem!.priceName)
         weightName.text = String(selectedItem!.weightName)
         aboutName.text = String(selectedItem!.aboutName)
+        grLabel.text = String(selectedItem!.grLabel)
+        weightImage.image = UIImage(named: selectedItem!.weightImage)
     }
     
     @IBAction func addToCardPressed(_ sender: Any) {

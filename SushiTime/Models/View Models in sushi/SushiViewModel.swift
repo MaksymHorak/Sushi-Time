@@ -10,13 +10,13 @@
 import Foundation
 
 struct SushiViewModel: OrderDetailProvider {
-    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Гункан з салатом чука вакаме", imageName: "HunkanWithSalatChuka", priceImage: "CashImage", priceName: 31, weightImage: "WeightImage", weightName: 50, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Гункан спайс з крабовим міксом", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Гункан з ікрою масаго", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Гункан спайс з вугрем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Гункан спайс з лососем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Гункан спайс з тунцем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Нугірі з лососем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Нігірі з тунцем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан"),
-                                              OrderDetailItem(name: "Нігірі з вугрем", imageName: "Home", priceImage: "CashImage", priceName: 1, weightImage: "WeightImage", weightName: 8, aboutName: "гункан")]
+    var itemsToDisplay: [OrderDetailItem]  = [OrderDetailItem(name: "Гункан з салатом чука вакаме", imageName: "HunkanWithSalatChuka", priceImage: "CashImage", priceName: 31, weightImage: "WeightImage", weightName: 50, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Гункан спайс з крабовим міксом", imageName: "HunkanSpiceWithCrabs", priceImage: "CashImage", priceName: 35, weightImage: "WeightImage", weightName: 50, aboutName: "• Крабовий мікс \n• Соус спайс", grLabel: "гр."),
+                                              OrderDetailItem(name: "Гункан з ікрою масаго", imageName: "HunkanMasago", priceImage: "CashImage", priceName: 36, weightImage: "WeightImage", weightName: 50, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Гункан спайс з вугрем", imageName: "HunkanWithVuhor", priceImage: "CashImage", priceName: 48, weightImage: "WeightImage", weightName: 50, aboutName: "• Копчений вугор \n• Соус спайс", grLabel: "гр."),
+                                              OrderDetailItem(name: "Гункан спайс з лососем", imageName: "HunkanSpiceWithLosos", priceImage: "CashImage", priceName: 44, weightImage: "WeightImage", weightName: 50, aboutName: "• Лосось \n• Соус спайс", grLabel: "гр."),
+                                              OrderDetailItem(name: "Гункан спайс з тунцем", imageName: "HunkanWithTunez", priceImage: "CashImage", priceName: 44, weightImage: "WeightImage", weightName: 50, aboutName: "• Тунець \n• Соус спайс", grLabel: "гр."),
+                                              OrderDetailItem(name: "Нігірі з лососем", imageName: "NihiriWithLosos", priceImage: "CashImage", priceName: 36, weightImage: "WeightImage", weightName: 50, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Нігірі з тунцем", imageName: "NihiriWithTunez", priceImage: "CashImage", priceName: 36, weightImage: "WeightImage", weightName: 50, aboutName: "", grLabel: "гр."),
+                                              OrderDetailItem(name: "Нігірі з вугрем", imageName: "NihiriWithVuhor", priceImage: "CashImage", priceName: 46, weightImage: "WeightImage", weightName: 50, aboutName: "", grLabel: "гр.")]
 }
