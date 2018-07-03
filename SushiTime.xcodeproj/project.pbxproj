@@ -39,6 +39,7 @@
 		6395233B1FB624CA0080CCD9 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395233A1FB624CA0080CCD9 /* PizzaModel.swift */; };
 		6395237E1FB874950080CCD9 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395237D1FB874940080CCD9 /* GenericTableViewCell.swift */; };
 		6395239E1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395239D1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift */; };
+		63A4C7BA20EAD0DD006781B7 /* CustomNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4C7B920EAD0DD006781B7 /* CustomNaviController.swift */; };
 		63C4C15620B41334001FD1E5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4C15520B41334001FD1E5 /* GradientView.swift */; };
 		63C4C15820B41501001FD1E5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4C15720B41501001FD1E5 /* CartViewController.swift */; };
 		63CCDC5720557A4000F02D19 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCDC5620557A4000F02D19 /* UIColor.swift */; };
@@ -104,6 +105,7 @@
 		6395233A1FB624CA0080CCD9 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		6395237D1FB874940080CCD9 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		6395239D1FBB3FEE0080CCD9 /* WebSiteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebSiteTableViewController.swift; path = SushiTime/Controllers/WebSiteTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		63A4C7B920EAD0DD006781B7 /* CustomNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNaviController.swift; sourceTree = "<group>"; };
 		63C4C15520B41334001FD1E5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		63C4C15720B41501001FD1E5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		63CCDC5620557A4000F02D19 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				63CCDC5620557A4000F02D19 /* UIColor.swift */,
 				63C4C15520B41334001FD1E5 /* GradientView.swift */,
 				63FFE53C20B196E20039877D /* internet.swift */,
+				63A4C7B920EAD0DD006781B7 /* CustomNaviController.swift */,
 				6333A56F20DE1C10007BD5B2 /* FinishTestViewController.swift */,
 			);
 			path = Extension;
@@ -543,6 +546,7 @@
 				63CE373E209666D30044F42B /* DrinksModel.swift in Sources */,
 				639523371FB6213D0080CCD9 /* PizzaTableViewCell.swift in Sources */,
 				63CE373C209666840044F42B /* DrinksTableViewController.swift in Sources */,
+				63A4C7BA20EAD0DD006781B7 /* CustomNaviController.swift in Sources */,
 				6340054420D19AC800D9CA1D /* CartTableViewCell.swift in Sources */,
 				63DA53BE1FAE4BB7001E3D6B /* SideMenuTableViewCell.swift in Sources */,
 				63DA53D81FB12A9B001E3D6B /* MenuModel.swift in Sources */,

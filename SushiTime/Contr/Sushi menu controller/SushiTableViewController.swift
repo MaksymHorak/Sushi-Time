@@ -15,6 +15,13 @@ class SushiTableViewController: UIViewController {
         
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+       
+    }
+
+    
     fileprivate enum Constants {
         static let hotDishesSegueIdentifire = "HotDishes"
         static let soupsSegueIdentifire = "soups"

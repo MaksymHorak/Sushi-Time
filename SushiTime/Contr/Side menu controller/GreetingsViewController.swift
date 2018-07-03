@@ -13,6 +13,11 @@ import SafariServices
 
 
 class GreetingsViewController: UIViewController  {
+    @IBOutlet weak var sushiView: UIView!
+    @IBOutlet weak var DrinksView: UIView!
+    @IBOutlet weak var pizzaView: UIView!
+    @IBOutlet weak var sushiTimeLogoImg: UIImageView!
+    @IBOutlet weak var mainImg: UIImageView!
     
     @IBOutlet weak var moreMenuButton: UIButton!
     @IBOutlet weak var pizzaButton: UIButton!
@@ -34,14 +39,15 @@ class GreetingsViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
          setUpSideMenu()
-        // Do any additional setup after loading the view.
-        pizzaButtonCenter = pizzaButton.center
-        sushiButtonCenter = sushiButton.center
-        drinksButtonCenter = drinksButton.center
-//
-        sushiButton.center = moreMenuButton.center
-        pizzaButton.center = moreMenuButton.center
-        drinksButton.center = moreMenuButton.center
+        mainImg.alpha = 0
+        sushiTimeLogoImg.alpha = 0
+        moreMenuButton.alpha = 0
+        
+        sushiView.alpha = 0
+        DrinksView.alpha = 0
+        pizzaView.alpha = 0
+        
+
     }
 
     
@@ -50,53 +56,65 @@ class GreetingsViewController: UIViewController  {
     @IBAction func DrinksClicked(_ sender: UIButton) {
         let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "DrinksTableViewController")as! DrinksTableViewController
-        self.navigationController?.pushViewController(drinksVC, animated: true)
+        self.navigationController?.pushViewController(drinksVC, animated: false)
 
     }
     
     @IBAction func SushiClicked(_ sender: UIButton) {
         let sushiStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let sushiVC = sushiStoryboard.instantiateViewController(withIdentifier: "SushiTableViewController")as! SushiTableViewController
-        self.navigationController?.pushViewController(sushiVC, animated: true)
+        self.navigationController?.pushViewController(sushiVC, animated: false)
     }
     
     @IBAction func PizzaClicked(_ sender: UIButton) {
         let pizzaStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let pizzaVC = pizzaStoryboard.instantiateViewController(withIdentifier: "PizzaTableViewController")as! PizzaTableViewController
-        self.navigationController?.pushViewController(pizzaVC, animated: true)
+        self.navigationController?.pushViewController(pizzaVC, animated: false)
     }
     
     @IBAction func moreClicked(_ sender: UIButton) {
-        if moreMenuButton.currentImage == #imageLiteral(resourceName: "SideMenuMenu") {
-            UIView.animate(withDuration: 0.3, animations: {
-                //animation here!
-                self.pizzaButton.alpha = 1
+        if moreMenuButton.currentImage == #imageLiteral(resourceName: "Menunew") {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.DrinksView.alpha = 0.7
                 self.drinksButton.alpha = 1
-                self.sushiButton.alpha = 1
-                
-                self.pizzaButton.center = self.pizzaButtonCenter
-                self.drinksButton.center = self.drinksButtonCenter
-                self.sushiButton.center = self.sushiButtonCenter
-            })
+            }) { (true) in
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.sushiView.alpha = 0.7
+                    self.sushiButton.alpha = 1
+                }) { (true) in
+                    UIView.animate(withDuration: 0.2, animations: {
+                        self.pizzaView.backgroundColor = .black
+                        self.pizzaView.alpha = 0.7
+                        self.pizzaButton.alpha = 1
+                    }) { (true) in
+                        
+                    }
+                }
+            }
+
         } else {
-            UIView.animate(withDuration: 0.3, animations: {
-                self.pizzaButton.alpha = 0
-                self.drinksButton.alpha = 0
-                self.sushiButton.alpha = 0
-                
-                self.sushiButton.center = self.moreMenuButton.center
-                self.pizzaButton.center = self.moreMenuButton.center
-                self.drinksButton.center = self.moreMenuButton.center
-            })
+            UIView.animate(withDuration: 1, animations: {
+                self.DrinksView.alpha = 0
+            }) { (true) in
+            }
+            
+            UIView.animate(withDuration: 1, animations: {
+                self.sushiView.alpha = 0
+            }) { (true) in
+            }
+            
+            UIView.animate(withDuration: 1, animations: {
+                self.pizzaView.alpha = 0
+            }) { (true) in
+            }
         }
-    
         
-    if sender.currentImage == #imageLiteral(resourceName: "SideMenuMenu") {
-            sender.setImage(#imageLiteral(resourceName: "MenuButtonOn"), for: .normal)
+        
+        if sender.currentImage == #imageLiteral(resourceName: "Menunew"){
+            sender.setImage(#imageLiteral(resourceName: "MenunewPressed"), for: .normal)
         } else {
-            sender.setImage(#imageLiteral(resourceName: "SideMenuMenu"), for: .normal)
+            sender.setImage(#imageLiteral(resourceName: "Menunew"), for: .normal)
         }
-        
     }
     
     func setUpSideMenu() {
@@ -168,5 +186,21 @@ extension GreetingsViewController: SideMenuTableViewControllerDelegate {
         SideMenuManager.default.menuLeftNavigationController?.dismiss(animated: true, completion: nil)
         
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.mainImg.alpha = 1
+        }) { (true) in
+            UIView.animate(withDuration: 1, animations: {
+                self.sushiTimeLogoImg.alpha = 1
+            }, completion: { (true) in
+                UIView.animate(withDuration: 1, animations: {
+                    self.moreMenuButton.alpha = 1
+                }, completion: { (true) in
+                    
+                })
+            })
+        }
+    }
 }
