@@ -35,6 +35,42 @@
                                     <constraint firstAttribute="height" constant="155" id="vHN-VB-rek"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u56-ew-CYm">
+                                <rect key="frame" x="137" y="586" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B1q-ap-sko"/>
+                                    <constraint firstAttribute="height" constant="100" id="tqh-dB-7Sp"/>
+                                    <constraint firstAttribute="width" secondItem="u56-ew-CYm" secondAttribute="height" multiplier="1:1" id="zCD-WW-Ful"/>
+                                </constraints>
+                                <state key="normal" image="SushiMoveButton"/>
+                                <connections>
+                                    <action selector="SushiClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m5-nC-SXQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-zd-3JF">
+                                <rect key="frame" x="16" y="651" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0f0-aR-dRZ"/>
+                                    <constraint firstAttribute="width" secondItem="RU2-zd-3JF" secondAttribute="height" multiplier="1:1" id="cix-wJ-Rnp"/>
+                                    <constraint firstAttribute="height" constant="100" id="tGd-dW-98Q"/>
+                                </constraints>
+                                <state key="normal" image="DrinksMoveButton"/>
+                                <connections>
+                                    <action selector="DrinksClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6n-EH-zmV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-CN-xZz">
+                                <rect key="frame" x="259" y="651" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0bk-CN-xZz" secondAttribute="height" multiplier="1:1" id="cCh-ZH-sVj"/>
+                                    <constraint firstAttribute="height" constant="100" id="dwt-th-Op6"/>
+                                    <constraint firstAttribute="width" constant="100" id="e42-5U-6Xt"/>
+                                </constraints>
+                                <state key="normal" image="PizzaMoveButton"/>
+                                <connections>
+                                    <action selector="PizzaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8f-Cy-07o"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-bZ-Ykp">
                                 <rect key="frame" x="148" y="709" width="79" height="69"/>
                                 <constraints>
@@ -47,102 +83,23 @@
                                     <action selector="moreClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZ7-DO-PNl"/>
                                 </connections>
                             </button>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRm-Xt-GZP">
-                                <rect key="frame" x="137" y="558" width="100" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u56-ew-CYm">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="SushiMoveButton"/>
-                                        <connections>
-                                            <action selector="SushiClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m5-nC-SXQ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="0EL-Vt-x1n"/>
-                                    <constraint firstAttribute="height" constant="100" id="EbD-1z-v6P"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eau-ju-T2I">
-                                <rect key="frame" x="16" y="660" width="100" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-zd-3JF">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="DrinksMoveButton"/>
-                                        <connections>
-                                            <action selector="DrinksClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6n-EH-zmV"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="eau-ju-T2I" secondAttribute="height" multiplier="1:1" id="OYb-cl-gHX"/>
-                                    <constraint firstAttribute="width" constant="100" id="cqK-0T-irJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="wRT-Bd-U58"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEX-Qc-dgt">
-                                <rect key="frame" x="259" y="660" width="100" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-CN-xZz">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="PizzaMoveButton"/>
-                                        <connections>
-                                            <action selector="PizzaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8f-Cy-07o"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="oEX-Qc-dgt" secondAttribute="height" multiplier="1:1" id="3jX-WY-I1w"/>
-                                    <constraint firstAttribute="width" constant="100" id="FMS-WX-ZNW"/>
-                                    <constraint firstAttribute="height" constant="100" id="d4N-cJ-ICV"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcw-4D-PXY">
-                                <rect key="frame" x="137" y="271" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="test"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="0bk-CN-xZz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-27" id="9d6-Hm-UAR"/>
                             <constraint firstItem="B5g-Jb-78m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C87-es-P3U"/>
-                            <constraint firstItem="oRm-Xt-GZP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DH0-A9-QR7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bk-CN-xZz" secondAttribute="trailing" constant="16" id="JxA-sz-h4R"/>
+                            <constraint firstItem="RU2-zd-3JF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-27" id="MfG-vG-6c4"/>
                             <constraint firstItem="eZq-FR-u2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MiJ-ed-6Js"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oRm-Xt-GZP" secondAttribute="bottom" constant="120" id="Q0k-5v-QQX"/>
                             <constraint firstItem="eZq-FR-u2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="Slp-JZ-qpf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oEX-Qc-dgt" secondAttribute="bottom" constant="18" id="VsG-FL-5aZ"/>
-                            <constraint firstItem="eau-ju-T2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wk4-xb-HmX"/>
                             <constraint firstItem="B5g-Jb-78m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xyn-u9-en8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B5g-Jb-78m" secondAttribute="trailing" id="d8p-g0-Fg6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eau-ju-T2I" secondAttribute="bottom" constant="18" id="mde-FR-XT8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oEX-Qc-dgt" secondAttribute="trailing" constant="16" id="no3-9j-KOu"/>
+                            <constraint firstItem="RU2-zd-3JF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oEt-yf-VAQ"/>
                             <constraint firstAttribute="bottom" secondItem="B5g-Jb-78m" secondAttribute="bottom" id="p2q-7l-fCV"/>
                             <constraint firstItem="XBY-bZ-Ykp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rUE-R6-3wu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u56-ew-CYm" secondAttribute="bottom" constant="92" id="sVc-qb-qWX"/>
+                            <constraint firstItem="u56-ew-CYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tR1-23-EIy"/>
                             <constraint firstItem="XBY-bZ-Ykp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvA-6v-2Ov"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-FR-u2t" secondAttribute="trailing" constant="56" id="xVX-04-hSv"/>
                         </constraints>
@@ -150,29 +107,26 @@
                     </view>
                     <navigationItem key="navigationItem" id="0nI-Oz-w6Q">
                         <barButtonItem key="backBarButtonItem" title="На головну" id="YNl-We-d2v"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="TabBarButton" id="fmr-5i-6Zb">
-                            <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="MenuMainMenuTest" style="done" id="fmr-5i-6Zb">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="barButtonItemPressed:" destination="BYZ-38-t0r" id="jpS-Bz-n5d"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ShoppingCart" springLoaded="YES" id="oiT-1Z-oC8">
-                            <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ShoppingBagMainMenu" springLoaded="YES" id="oiT-1Z-oC8">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="bSB-x3-yjH" kind="show" id="IJh-TX-4kN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="DrinksView" destination="eau-ju-T2I" id="Img-HV-Z6h"/>
                         <outlet property="drinksButton" destination="RU2-zd-3JF" id="01J-vX-FKT"/>
                         <outlet property="mainImg" destination="B5g-Jb-78m" id="ASu-eo-0kr"/>
                         <outlet property="moreMenuButton" destination="XBY-bZ-Ykp" id="NAg-eQ-09c"/>
                         <outlet property="pizzaButton" destination="0bk-CN-xZz" id="n7N-TX-6tZ"/>
-                        <outlet property="pizzaView" destination="oEX-Qc-dgt" id="qM7-vl-Xmd"/>
                         <outlet property="sushiButton" destination="u56-ew-CYm" id="FJA-6m-Q2b"/>
                         <outlet property="sushiTimeLogoImg" destination="eZq-FR-u2t" id="Tdf-DZ-8gr"/>
-                        <outlet property="sushiView" destination="oRm-Xt-GZP" id="IPx-KK-ChI"/>
                         <segue destination="SQp-gQ-Sac" kind="show" identifier="Menu" animates="NO" id="D0x-4F-5Z8"/>
                         <segue destination="Hug-Fg-nbd" kind="show" identifier="AboutUs" animates="NO" id="k3U-Ia-ToH"/>
                         <segue destination="QBM-v5-Vwi" kind="show" identifier="Shares" animates="NO" id="A3X-Sq-nrm"/>
@@ -191,6 +145,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpA-SN-0fy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-R3-Ecr">
                                 <rect key="frame" x="0.0" y="88" width="375" height="627"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -438,15 +396,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6ux-uA-AHV" firstAttribute="trailing" secondItem="NpA-SN-0fy" secondAttribute="trailing" id="830-O2-kcn"/>
                             <constraint firstAttribute="bottom" secondItem="oRu-gZ-PQ8" secondAttribute="bottom" id="DH5-us-RA4"/>
                             <constraint firstItem="G9v-Jg-Tly" firstAttribute="trailing" secondItem="6ux-uA-AHV" secondAttribute="trailing" id="H9c-EH-hEv"/>
                             <constraint firstItem="6ux-uA-AHV" firstAttribute="trailing" secondItem="Pa1-R3-Ecr" secondAttribute="trailing" id="HGs-aX-98Z"/>
+                            <constraint firstAttribute="bottom" secondItem="NpA-SN-0fy" secondAttribute="bottom" id="KqI-Qs-QfW"/>
                             <constraint firstItem="Pa1-R3-Ecr" firstAttribute="leading" secondItem="6ux-uA-AHV" secondAttribute="leading" id="Stq-Oq-sxi"/>
                             <constraint firstItem="oRu-gZ-PQ8" firstAttribute="trailing" secondItem="6ux-uA-AHV" secondAttribute="trailing" id="SvE-4g-b0e"/>
                             <constraint firstItem="oRu-gZ-PQ8" firstAttribute="leading" secondItem="6ux-uA-AHV" secondAttribute="leading" id="U7M-mU-QCQ"/>
                             <constraint firstItem="G9v-Jg-Tly" firstAttribute="leading" secondItem="6ux-uA-AHV" secondAttribute="leading" id="UBX-yn-8TF"/>
                             <constraint firstItem="oRu-gZ-PQ8" firstAttribute="top" secondItem="G9v-Jg-Tly" secondAttribute="bottom" constant="-1" id="bGC-0D-X2S"/>
+                            <constraint firstItem="NpA-SN-0fy" firstAttribute="leading" secondItem="6ux-uA-AHV" secondAttribute="leading" id="bhP-4v-LeC"/>
                             <constraint firstItem="Pa1-R3-Ecr" firstAttribute="top" secondItem="6ux-uA-AHV" secondAttribute="top" id="g0T-7w-V6G"/>
+                            <constraint firstItem="NpA-SN-0fy" firstAttribute="top" secondItem="uik-tm-J3s" secondAttribute="top" id="oiC-VO-40d"/>
                             <constraint firstItem="6ux-uA-AHV" firstAttribute="bottom" secondItem="Pa1-R3-Ecr" secondAttribute="bottom" constant="63" id="q36-Oe-joT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ux-uA-AHV"/>
@@ -2067,12 +2029,13 @@
         <image name="ContactsMapImg" width="540" height="334"/>
         <image name="DrinksMoveButton" width="75" height="75"/>
         <image name="ImageAboutUs" width="445" height="287"/>
+        <image name="MenuMainMenuTest" width="25" height="25"/>
         <image name="Menunew" width="79" height="69"/>
         <image name="PizzaMoveButton" width="75" height="75"/>
         <image name="SharesIconTime" width="187" height="187"/>
+        <image name="ShoppingBagMainMenu" width="25" height="25"/>
         <image name="ShoppingCart" width="25" height="25"/>
         <image name="SushiMoveButton" width="75" height="75"/>
-        <image name="TabBarButton" width="25" height="25"/>
         <image name="TestImg" width="433" height="57"/>
         <image name="WeightImage" width="25" height="25"/>
         <image name="callImage" width="100" height="100"/>
@@ -5097,7 +5060,6 @@ AAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAACwIk
         <image name="placeholder" width="256" height="256"/>
         <image name="stopwatch" width="256" height="256"/>
         <image name="sushiTimeLogo" width="528" height="341"/>
-        <image name="test" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5m5-1h-fdn"/>

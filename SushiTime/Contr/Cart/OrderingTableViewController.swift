@@ -30,7 +30,7 @@ class OrderingTableViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapView(gesture:)))
         view.addGestureRecognizer(tapGesture)
         
-        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймаємо замовлення: \n З понеділка по неділю 10:00 - 23:30 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, але алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймаємо замовлення: \n З понеділка по неділю 10:00 - 23:30 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ок", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
@@ -52,7 +52,7 @@ class OrderingTableViewController: UIViewController {
     //actions
     
     @IBAction func alert(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймання замовлень: \n З понеділка по неділю 10:00 - 23:20 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, але алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймання замовлень: \n З понеділка по неділю 10:00 - 23:20 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ок", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
@@ -86,10 +86,14 @@ class OrderingTableViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else {
-
-            let cartStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let orderingVC = cartStoryboard.instantiateViewController(withIdentifier: "FinishTestViewController")as! FinishTestViewController
-            self.navigationController?.pushViewController(orderingVC, animated: true)
+            let email = emailTextField.text
+            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText()) { success in
+                if success {
+                    // все заебись
+                }  else {
+                    // все хуево
+                }
+            }
             
     }
     }

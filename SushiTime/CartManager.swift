@@ -16,4 +16,13 @@ class CartManager: NSObject {
     func calculateOveral() -> Int {
         return cartItems.compactMap({ $0.count * $0.priceName }).reduce(0,+)
     }
+    
+    func formText() -> String {
+        return cartItems.compactMap({ item in
+            """
+            Name:                             Quantity:              Total:
+            \(item.name)                      \(item.count)          \(item.count * item.priceName) \n
+            """
+        }).reduce("", +) + "\n" + "total Price = \(calculateOveral())"
+    }
 }
