@@ -87,7 +87,7 @@ class OrderingTableViewController: UIViewController {
                 alert.dismiss(animated: true, completion: nil) }
         } else {
             let email = emailTextField.text
-            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText()) { success in
+            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email)) { success in
                 if success {
                     // все заебись
                 }  else {
