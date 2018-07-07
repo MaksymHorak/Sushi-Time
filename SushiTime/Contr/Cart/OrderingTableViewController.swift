@@ -90,22 +90,21 @@ class OrderingTableViewController: UIViewController {
             SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email)) { success in
                 if success {
                     DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Заебись", message: nil, preferredStyle: .alert)
-                        self.present(alert, animated: true, completion: nil)
-                        let when = DispatchTime.now() + 1.5
-                        DispatchQueue.main.asyncAfter(deadline: when){
-                            alert.dismiss(animated: true, completion: nil) }
+                        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "FinishTestViewController")as! FinishTestViewController
+                        self.navigationController?.pushViewController(drinksVC, animated: false)
                     }
 
                     print("ok")// все заебись
                 }  else {
                     DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Хуйня", message: nil, preferredStyle: .alert)
+                        let alert = UIAlertController(title: "Щось пішло не так, спробуйте пізніше!", message: nil, preferredStyle: .alert)
                         self.present(alert, animated: true, completion: nil)
                         let when = DispatchTime.now() + 1.5
                         DispatchQueue.main.asyncAfter(deadline: when){
                             alert.dismiss(animated: true, completion: nil) }
                     }
+                    
                   print("No")  // все хуево
                 }
             }

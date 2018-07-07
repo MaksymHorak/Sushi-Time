@@ -10,26 +10,18 @@ import UIKit
 
 class FinishTestViewController: UIViewController {
 
+    @IBOutlet weak var finishText: UILabel!
+    @IBOutlet weak var successImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func toMainPageButton(_ sender: UIButton) {
+        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "GreetingsViewController")as! GreetingsViewController
+        self.navigationController?.pushViewController(drinksVC, animated: false)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

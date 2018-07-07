@@ -1758,7 +1758,6 @@
                         <outlet property="sticksTextField" destination="X8S-TD-zOC" id="dbS-Xm-AOt"/>
                         <outlet property="streetTextField" destination="Ooz-i3-Bjh" id="dTM-or-whP"/>
                         <outlet property="telephoneTestField" destination="15B-1r-ooa" id="i7E-iI-SLE"/>
-                        <segue destination="qxj-2x-7F0" kind="push" id="fWo-dz-4mA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItB-2e-iTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2002,21 +2001,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyu-IJ-3rX">
-                                <rect key="frame" x="122" y="372.66666666666669" width="131" height="67"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше замовлення успішно сформовано, очікуйте підтвердження від оператора. Дякуємо що обрали Suhi Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyu-IJ-3rX">
+                                <rect key="frame" x="10" y="242.33333333333334" width="355" height="103.66666666666666"/>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuccessImg" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-zp-l9C">
+                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPY-AQ-Se6">
+                                <rect key="frame" x="125" y="749" width="125" height="33"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="53d-nB-XB8"/>
+                                    <constraint firstAttribute="width" constant="125" id="AUm-lv-cVl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
+                                <state key="normal" title="На головну">
+                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toMainPageButton:" destination="qxj-2x-7F0" eventType="touchUpInside" id="Qq0-Zm-V6c"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gyu-IJ-3rX" firstAttribute="centerY" secondItem="Vra-Oe-iua" secondAttribute="centerY" id="ABn-sF-AXz"/>
-                            <constraint firstItem="gyu-IJ-3rX" firstAttribute="centerX" secondItem="Vra-Oe-iua" secondAttribute="centerX" id="sdT-4h-u6w"/>
+                            <constraint firstItem="gmY-AO-H0X" firstAttribute="trailing" secondItem="gyu-IJ-3rX" secondAttribute="trailing" constant="10" id="7xh-hW-gQZ"/>
+                            <constraint firstItem="HKj-zp-l9C" firstAttribute="centerX" secondItem="Vra-Oe-iua" secondAttribute="centerX" id="AdL-Nr-Vaq"/>
+                            <constraint firstAttribute="bottom" secondItem="QPY-AQ-Se6" secondAttribute="bottom" constant="30" id="JhJ-iE-rRc"/>
+                            <constraint firstItem="HKj-zp-l9C" firstAttribute="centerY" secondItem="Vra-Oe-iua" secondAttribute="centerY" id="Rc7-Un-3NT"/>
+                            <constraint firstItem="HKj-zp-l9C" firstAttribute="top" secondItem="gyu-IJ-3rX" secondAttribute="bottom" constant="10" id="Vvf-x0-oNw"/>
+                            <constraint firstItem="gyu-IJ-3rX" firstAttribute="leading" secondItem="gmY-AO-H0X" secondAttribute="leading" constant="10" id="hd7-9v-2dR"/>
+                            <constraint firstItem="QPY-AQ-Se6" firstAttribute="centerX" secondItem="Vra-Oe-iua" secondAttribute="centerX" id="vDL-4t-nJy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gmY-AO-H0X"/>
                     </view>
                     <navigationItem key="navigationItem" id="IfZ-xT-PZT"/>
+                    <connections>
+                        <outlet property="finishText" destination="gyu-IJ-3rX" id="Dk9-Eg-Hka"/>
+                        <outlet property="successImage" destination="HKj-zp-l9C" id="xlE-eZ-yc4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWo-X8-5PL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2035,6 +2067,7 @@
         <image name="SharesIconTime" width="187" height="187"/>
         <image name="ShoppingBagMainMenu" width="25" height="25"/>
         <image name="ShoppingCart" width="25" height="25"/>
+        <image name="SuccessImg" width="100" height="100"/>
         <image name="SushiMoveButton" width="75" height="75"/>
         <image name="TestImg" width="433" height="57"/>
         <image name="WeightImage" width="25" height="25"/>
