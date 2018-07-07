@@ -87,7 +87,7 @@ class OrderingTableViewController: UIViewController {
                 alert.dismiss(animated: true, completion: nil) }
         } else {
             let email = emailTextField.text
-            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email, name: nameTextField.text!, street: streetTextField.text!, house: houseTextField.text!)) { success in
+            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email, name: nameTextField.text!, street: streetTextField.text!, house: houseTextField.text!, enter: entranceTextField.text, level: levelTextField.text)) { success in
                 if success {
                     DispatchQueue.main.async {
                         let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)

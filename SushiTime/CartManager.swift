@@ -17,7 +17,7 @@ class CartManager: NSObject {
         return cartItems.compactMap({ $0.count * $0.priceName }).reduce(0,+)
     }
     
-    func formText(phoneNumber: String, email: String?, name: String, street: String, house: String) -> String {
+    func formText(phoneNumber: String, email: String?, name: String, street: String, house: String, enter: String?, level: String?) -> String {
         var html = """
         <table border="1" width="30%" height="100">
         <tr>
@@ -47,6 +47,28 @@ class CartManager: NSObject {
         <td>Будинок:</td>       <td colspan="2" >\(house)</td>
         </tr>
         <tr>
+        """
+        if let enter = enter {
+            html +=
+            """
+            <tr>
+            <td>Під'їзд:</td>       <td colspan="2" >\(enter)</td>
+            </tr>
+            """
+        }
+        html +=
+        """
+        """
+        if let level = level {
+            html +=
+            """
+            <tr>
+            <td>Поверх:</td>       <td colspan="2" >\(level)</td>
+            </tr>
+            """
+        }
+        html +=
+        """
         <td>Name:</td>           <td>Quantity:</td>            <td>Total:</td>
         </tr>
 
