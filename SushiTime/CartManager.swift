@@ -17,11 +17,15 @@ class CartManager: NSObject {
         return cartItems.compactMap({ $0.count * $0.priceName }).reduce(0,+)
     }
     
-    func formText(phoneNumber: String, email: String?) -> String {
+    func formText(phoneNumber: String, email: String?, name: String) -> String {
         var html = """
         <table border="1" width="30%" height="100">
         <tr>
         <td colspan="3" align="center" >Sushi Time Доставка</td>
+        </tr>
+        
+        <tr>
+        <td>Ім'я:</td>       <td colspan="2" >\(name)</td>
         </tr>
 
         <tr>
