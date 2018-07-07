@@ -89,9 +89,24 @@ class OrderingTableViewController: UIViewController {
             let email = emailTextField.text
             SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email)) { success in
                 if success {
-                    // все заебись
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Заебись", message: nil, preferredStyle: .alert)
+                        self.present(alert, animated: true, completion: nil)
+                        let when = DispatchTime.now() + 1.5
+                        DispatchQueue.main.asyncAfter(deadline: when){
+                            alert.dismiss(animated: true, completion: nil) }
+                    }
+
+                    print("ok")// все заебись
                 }  else {
-                    // все хуево
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Хуйня", message: nil, preferredStyle: .alert)
+                        self.present(alert, animated: true, completion: nil)
+                        let when = DispatchTime.now() + 1.5
+                        DispatchQueue.main.asyncAfter(deadline: when){
+                            alert.dismiss(animated: true, completion: nil) }
+                    }
+                  print("No")  // все хуево
                 }
             }
             

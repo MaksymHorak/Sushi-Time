@@ -20,7 +20,7 @@ struct SendMailManager {
   
     func sendMailWithData(userEmail: String?, text: String, completionHandler: @escaping (_ success: Bool) -> Void ) {
         //+ "&msgTo=\(userEmail)"
-        let urlStr = baseURL + "?apikey=" + apiKey + "&msgTo=zakharov.paul@live.com" + "&from=developer.zakharov@gmail.com" + "&subject=SushiOrder" + "&bodyHtml=" + text
+        let urlStr = baseURL + "?apikey=" + apiKey + "&msgTo=testsushitime@hotmail.com" + "&from=developer.zakharov@gmail.com" + "&subject=SushiOrder" + "&bodyHtml=" + text
         let url = URL(string: urlStr.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -30,6 +30,7 @@ struct SendMailManager {
                 if let success = json?["success"] as? Bool {
                     completionHandler(success)
                 }
+                return
                 print(json)
             }
             completionHandler(false)
