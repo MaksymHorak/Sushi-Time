@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let reachability = Reachability()!
+        if reachability.connection == .none {
+            let sb = UIStoryboard(name: "NoConnection", bundle: nil)
+            let vc = sb.instantiateInitialViewController() as! NoConnectionViewController
+            window?.rootViewController = vc
+        }
+        print(reachability.connection )
         // Override point for customization after application launch.
                 UINavigationBar.appearance().barTintColor = UIColor.black //Color in slide menu
         return true

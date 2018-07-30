@@ -8,6 +8,6 @@ target 'SushiTime' do
 
   # Pods for SushiTime
 pod ’SideMenu’
-pod 'BWTVController'
-pod 'RealmSwift'
+pod 'mailcore2-ios'
+
 end

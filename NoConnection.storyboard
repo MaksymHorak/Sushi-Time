@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0lu-Qi-5zH">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HanZi.ttf">
+            <string>HanZi</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--No Connection View Controller-->
+        <scene sceneID="SWj-S3-jKH">
+            <objects>
+                <viewController id="0lu-Qi-5zH" customClass="NoConnectionViewController" customModule="SushiTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4T-1K-RUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Start" translatesAutoresizingMaskIntoConstraints="NO" id="ZiM-Mv-YV4">
+                                <rect key="frame" x="16" y="20" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ⓒ Maksym Horak 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGd-V2-VwT">
+                                <rect key="frame" x="280" y="763" width="90" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="gpG-Tg-KbN"/>
+                                    <constraint firstAttribute="width" constant="90" id="ltv-DZ-coE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перевiрте Ваше пiдключення до iнтернету." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6x-KQ-uFy">
+                                <rect key="frame" x="0.0" y="352" width="375" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="kyE-je-WdD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
+                                <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B6x-KQ-uFy" secondAttribute="trailing" id="Ds3-dN-tN7"/>
+                            <constraint firstItem="Rwo-dd-tch" firstAttribute="bottom" secondItem="bGd-V2-VwT" secondAttribute="bottom" constant="5" id="JnE-05-15t"/>
+                            <constraint firstItem="Rwo-dd-tch" firstAttribute="trailing" secondItem="bGd-V2-VwT" secondAttribute="trailing" constant="5" id="Wfi-vR-o78"/>
+                            <constraint firstItem="B6x-KQ-uFy" firstAttribute="centerY" secondItem="Z4T-1K-RUa" secondAttribute="centerY" id="mnc-MA-Apj"/>
+                            <constraint firstItem="B6x-KQ-uFy" firstAttribute="leading" secondItem="Z4T-1K-RUa" secondAttribute="leading" id="okz-P1-avd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rwo-dd-tch"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIA-SM-Q4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="204.67980295566502"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Start" width="518" height="518"/>
+    </resources>
+</document>

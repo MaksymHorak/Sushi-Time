@@ -11,32 +11,23 @@ import Foundation
 struct SendMailManager {
     
     static let shared = SendMailManager()
-    
-    let session = URLSession.shared
-    
-    let apiKey = "3e29ca75-580a-4f70-8d16-4c2d2677e7ab"
-    
-    let baseURL = "https://api.elasticemail.com/v2/email/send"
   
     func sendMailWithData(userEmail: String?, text: String, completionHandler: @escaping (_ success: Bool) -> Void ) {
-        //+ "&msgTo=\(userEmail)"
-        let urlStr = baseURL + "?apikey=" + apiKey + "&msgTo=testsushitime@hotmail.com" + "&from=horak.maksym@gmail.com" + "&subject=SushiOrder" + "&bodyHtml=" + text
-        let url = URL(string: urlStr.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        session.dataTask(with: request) { (data, resp, error) in
-            guard error == nil, let data = data else { completionHandler(false); return }
-            if let json = try? JSONSerialization.jsonObject(with: data, options: [.allowFragments]) as? [String: Any] {
-                if let success = json?["success"] as? Bool {
-                    completionHandler(success)
-                }
-                
-                print(json)
-                return
-            }
-            completionHandler(false)
-            
-        }.resume()
+        let session = MCOSMTPSession()
+        session.hostname = "smtp.gmail.com"
+        session.port = 465
+        session.username = "sudhitimelviv@gmail.com"
+        session.password = "q12we34rt5"
+        session.connectionType = MCOConnectionType.TLS
+        let builder = MCOMessageBuilder()
+        builder.header.from = MCOAddress(mailbox: "sudhitimelviv@gmail.com")
+        builder.header.to = [MCOAddress(mailbox: userEmail!), MCOAddress(mailbox: "sudhitimelviv@gmail.com")]
+        builder.header.subject = "Sushi Order"
+        builder.htmlBody = text
+        let op = session.sendOperation(with: builder.data())
+        op?.start(){ error in
+            completionHandler(error == nil)
+        }
     }
     
     
