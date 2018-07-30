@@ -26,6 +26,7 @@ struct SendMailManager {
         builder.htmlBody = text
         let op = session.sendOperation(with: builder.data())
         op?.start(){ error in
+            print(error?.localizedDescription)
             completionHandler(error == nil)
         }
     }

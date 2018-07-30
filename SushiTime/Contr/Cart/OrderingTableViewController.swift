@@ -56,11 +56,16 @@ class OrderingTableViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ок", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
     
     @IBAction func finishOrder(_ sender: UIButton) {
         if nameTextField.text == "" {
-            let alert = UIAlertController(title: "Поле 'Ім'я' не заповнено", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Поле Ім'я не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
@@ -68,25 +73,35 @@ class OrderingTableViewController: UIViewController {
             
         }
         else if telephoneTestField.text == "" {
-            let alert = UIAlertController(title: "Поле 'Телефон' не заповнено", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Поле Телефон не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else if streetTextField.text == "" {
-            let alert = UIAlertController(title: "Поле 'Вулиця' не заповнено", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Поле Вулиця не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else if houseTextField.text == "" {
-            let alert = UIAlertController(title: "Поле 'Будинок' не заповнено", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Поле Будинок не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else {
-            let email = emailTextField.text
+            let email = emailTextField.text!
+            if !isValidEmail(testStr: email) {
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Email введено невірно.", message: nil, preferredStyle: .alert)
+                    self.present(alert, animated: true, completion: nil)
+                    let when = DispatchTime.now() + 1.5
+                    DispatchQueue.main.asyncAfter(deadline: when){
+                        alert.dismiss(animated: true, completion: nil) }
+                }
+                return
+            }
             SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email, name: nameTextField.text!, street: streetTextField.text!, house: houseTextField.text!, enter: entranceTextField.text, level: levelTextField.text)) { success in
                 if success {
                     DispatchQueue.main.async {

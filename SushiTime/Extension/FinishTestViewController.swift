@@ -19,9 +19,7 @@ class FinishTestViewController: UIViewController {
     }
 
     @IBAction func toMainPageButton(_ sender: UIButton) {
-        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "GreetingsViewController")as! GreetingsViewController
-        self.navigationController?.pushViewController(drinksVC, animated: false)
+        navigationController?.popToRootViewController(animated: true)
     }
 
 }

@@ -34,6 +34,14 @@ class PickupViewController: UIViewController {
         // Do any additional setup after loading the view.
         overalLbl.text = "\(CartManager.shared.calculateOveral()) грн"
     }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addObservers()
@@ -60,11 +68,38 @@ class PickupViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else {
-            
-            let cartStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let orderingVC = cartStoryboard.instantiateViewController(withIdentifier: "FinishTestViewController")as! FinishTestViewController
-            self.navigationController?.pushViewController(orderingVC, animated: true)
-            
+            let email = emailTextField.text!
+            if !isValidEmail(testStr: email) {
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Email введено невірно.", message: nil, preferredStyle: .alert)
+                    self.present(alert, animated: true, completion: nil)
+                    let when = DispatchTime.now() + 1.5
+                    DispatchQueue.main.asyncAfter(deadline: when){
+                        alert.dismiss(animated: true, completion: nil) }
+                }
+                return
+            }
+            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formTextPickup(name: nameTextField.text!, telephone: telephoneTextField.text!, email: email, persons: timeTextField.text, sticks: sticksTextField.text, pay: payTextField.text)) { success in
+                if success {
+                    DispatchQueue.main.async {
+                        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "FinishTestViewController")as! FinishTestViewController
+                        self.navigationController?.pushViewController(drinksVC, animated: false)
+                    }
+                    
+                    print("ok")// все заебись
+                }  else {
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Щось пішло не так, спробуйте пізніше!", message: nil, preferredStyle: .alert)
+                        self.present(alert, animated: true, completion: nil)
+                        let when = DispatchTime.now() + 1.5
+                        DispatchQueue.main.asyncAfter(deadline: when){
+                            alert.dismiss(animated: true, completion: nil) }
+                    }
+                    
+                    print("No")  // все хуево
+                }
+            }
         }
     }
     
