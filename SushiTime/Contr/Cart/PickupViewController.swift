@@ -22,9 +22,17 @@ class PickupViewController: UIViewController {
     
     @IBOutlet weak var overalLbl: UILabel!
     
+    @IBOutlet weak var loadingBG: UIImageView!
+    @IBOutlet weak var loadingLbl: UILabel!
+    @IBOutlet weak var loadingSpiner: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadingBG.alpha = 0
+        loadingLbl.alpha = 0
+        loadingSpiner.alpha = 0
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapView(gesture:)))
         view.addGestureRecognizer(tapGesture)
         
@@ -53,7 +61,14 @@ class PickupViewController: UIViewController {
     }
 
     @IBAction func orderButton(_ sender: UIButton) {
+        loadingBG.alpha = 1
+        loadingLbl.alpha = 1
+        loadingSpiner.alpha = 1
+        
         if nameTextField.text == "" {
+            loadingBG.alpha = 0
+            loadingLbl.alpha = 0
+            loadingSpiner.alpha = 0
             let alert = UIAlertController(title: "Поле Ім'я не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
@@ -62,12 +77,16 @@ class PickupViewController: UIViewController {
             
         }
         else if telephoneTextField.text == "" {
+            loadingBG.alpha = 0
+            loadingLbl.alpha = 0
+            loadingSpiner.alpha = 0
             let alert = UIAlertController(title: "Поле Телефон не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else {
+            
             let email = emailTextField.text!
             if !isValidEmail(testStr: email) {
                 DispatchQueue.main.async {
@@ -79,8 +98,11 @@ class PickupViewController: UIViewController {
                 }
                 return
             }
-            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formTextPickup(name: nameTextField.text!, telephone: telephoneTextField.text!, email: email, persons: timeTextField.text, sticks: sticksTextField.text, pay: payTextField.text)) { success in
+            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formTextPickup(name: nameTextField.text!, telephone: telephoneTextField.text!, email: email, time: timeTextField.text, persons: timeTextField.text, sticks: sticksTextField.text, pay: payTextField.text)) { success in
                 if success {
+                    self.loadingBG.alpha = 0
+                    self.loadingLbl.alpha = 0
+                    self.loadingSpiner.alpha = 0
                     DispatchQueue.main.async {
                         let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "FinishTestViewController")as! FinishTestViewController
@@ -89,6 +111,9 @@ class PickupViewController: UIViewController {
                     
                     print("ok")// все заебись
                 }  else {
+                    self.loadingBG.alpha = 0
+                    self.loadingLbl.alpha = 0
+                    self.loadingSpiner.alpha = 0
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Щось пішло не так, спробуйте пізніше!", message: nil, preferredStyle: .alert)
                         self.present(alert, animated: true, completion: nil)

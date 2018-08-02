@@ -17,6 +17,7 @@ class OrderingTableViewController: UIViewController {
     @IBOutlet weak var streetTextField: UITextField!
     @IBOutlet weak var houseTextField: UITextField!
     @IBOutlet weak var entranceTextField: UITextField!
+    @IBOutlet weak var appartmentsTextField: UITextField!
     @IBOutlet weak var levelTextField: UITextField!
     @IBOutlet weak var personsCountTextField: UITextField!
     @IBOutlet weak var sticksTextField: UITextField!
@@ -24,9 +25,17 @@ class OrderingTableViewController: UIViewController {
     
     @IBOutlet weak var overalLbl: UILabel!
 
+    @IBOutlet weak var loadingBG: UIImageView!
+    @IBOutlet weak var loadingLbl: UILabel!
+    @IBOutlet weak var loadingSpiner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadingBG.alpha = 0
+        loadingLbl.alpha = 0
+        loadingSpiner.alpha = 0
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapView(gesture:)))
         view.addGestureRecognizer(tapGesture)
         
@@ -43,6 +52,7 @@ class OrderingTableViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addObservers()
+        self.activityIndicator.stopAnimating()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -62,9 +72,30 @@ class OrderingTableViewController: UIViewController {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
-    
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     @IBAction func finishOrder(_ sender: UIButton) {
+        
+        loadingBG.alpha = 1
+        loadingLbl.alpha = 1
+        loadingSpiner.alpha = 1
+        
+//        activityIndicator.alpha = 0
+//        activityIndicator.backgroundColor = (UIColor.black)
+//        activityIndicator.center = self.view.center
+//        activityIndicator.hidesWhenStopped = true
+//        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+//        view.addSubview(activityIndicator)
+//
+//        activityIndicator.startAnimating()
+        //UIApplication.shared.beginIgnoringInteractionEvents()
+        
+        
         if nameTextField.text == "" {
+           // self.activityIndicator.stopAnimating()
+            loadingBG.alpha = 0
+            loadingLbl.alpha = 0
+            loadingSpiner.alpha = 0
+            
             let alert = UIAlertController(title: "Поле Ім'я не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
@@ -73,24 +104,39 @@ class OrderingTableViewController: UIViewController {
             
         }
         else if telephoneTestField.text == "" {
+            loadingBG.alpha = 0
+            loadingLbl.alpha = 0
+            loadingSpiner.alpha = 0
+          //  self.activityIndicator.stopAnimating()
             let alert = UIAlertController(title: "Поле Телефон не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else if streetTextField.text == "" {
+            loadingBG.alpha = 0
+            loadingLbl.alpha = 0
+            loadingSpiner.alpha = 0
+           // self.activityIndicator.stopAnimating()
             let alert = UIAlertController(title: "Поле Вулиця не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else if houseTextField.text == "" {
+            loadingBG.alpha = 0
+            loadingLbl.alpha = 0
+            loadingSpiner.alpha = 0
+          //  self.activityIndicator.stopAnimating()
             let alert = UIAlertController(title: "Поле Будинок не заповнено", message: nil, preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             let when = DispatchTime.now() + 1.5
             DispatchQueue.main.asyncAfter(deadline: when){
                 alert.dismiss(animated: true, completion: nil) }
         } else {
+//            loadingBG.alpha = 0
+//            loadingLbl.alpha = 0
+//            loadingSpiner.alpha = 0
             let email = emailTextField.text!
             if !isValidEmail(testStr: email) {
                 DispatchQueue.main.async {
@@ -102,9 +148,15 @@ class OrderingTableViewController: UIViewController {
                 }
                 return
             }
-            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email, name: nameTextField.text!, street: streetTextField.text!, house: houseTextField.text!, enter: entranceTextField.text, level: levelTextField.text)) { success in
+            SendMailManager.shared.sendMailWithData(userEmail: email, text: CartManager.shared.formText(phoneNumber: telephoneTestField.text!, email: email, name: nameTextField.text!, street: streetTextField.text!, house: houseTextField.text!, enter: entranceTextField.text, level: levelTextField.text, appartments: appartmentsTextField.text, persons: personsCountTextField.text, sticks: sticksTextField.text, pay: payTextField.text)) { success in
                 if success {
+                    self.loadingBG.alpha = 0
+                    self.loadingLbl.alpha = 0
+                    self.loadingSpiner.alpha = 0
+                 //   self.activityIndicator.stopAnimating()
+                    UIApplication.shared.endIgnoringInteractionEvents()
                     DispatchQueue.main.async {
+                        
                         let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "FinishTestViewController")as! FinishTestViewController
                         self.navigationController?.pushViewController(drinksVC, animated: false)
@@ -112,6 +164,10 @@ class OrderingTableViewController: UIViewController {
 
                     print("ok")// все заебись
                 }  else {
+                    self.loadingBG.alpha = 0
+                    self.loadingLbl.alpha = 0
+                    self.loadingSpiner.alpha = 0
+                 //   self.activityIndicator.stopAnimating()
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Щось пішло не так, спробуйте пізніше!", message: nil, preferredStyle: .alert)
                         self.present(alert, animated: true, completion: nil)
@@ -153,12 +209,9 @@ class OrderingTableViewController: UIViewController {
     let contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frame.height, right: 0)
     scrollView.contentInset = contentInset
     
-}
+    }
     func keyboardWillHide(notification: Notification) {
     scrollView.contentInset = UIEdgeInsets.zero
-}
+    }
     
-
-
 }
-

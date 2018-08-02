@@ -13,6 +13,18 @@ import SafariServices
 
 
 class GreetingsViewController: UIViewController  {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        mainImg.alpha = 0
+        sushiTimeLogoImg.alpha = 0
+        moreMenuButton.alpha = 0
+        
+        sushiButton.alpha = 0
+        drinksButton.alpha = 0
+        pizzaButton.alpha = 0
+        setUpSideMenu()
+    }
     @IBOutlet weak var sushiTimeLogoImg: UIImageView!
     @IBOutlet weak var mainImg: UIImageView!
     
@@ -22,7 +34,9 @@ class GreetingsViewController: UIViewController  {
     @IBOutlet weak var drinksButton: UIButton!
     
     @IBAction func moreClicked(_ sender: UIButton) {
+        
         if moreMenuButton.currentImage == #imageLiteral(resourceName: "Menunew") {
+            
             UIView.animate(withDuration: 0.2, animations: {
                 // self.DrinksView.alpha = 0.7
                 self.drinksButton.alpha = 1
@@ -66,17 +80,7 @@ class GreetingsViewController: UIViewController  {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        mainImg.alpha = 0
-        sushiTimeLogoImg.alpha = 0
-        moreMenuButton.alpha = 0
-        
-        sushiButton.alpha = 0
-        drinksButton.alpha = 0
-        pizzaButton.alpha = 0
-        setUpSideMenu()
-    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         

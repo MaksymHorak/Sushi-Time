@@ -77,12 +77,14 @@ extension CartViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == .delete {
             CartManager.shared.cartItems.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
 
             overalLbl.text = "\(CartManager.shared.calculateOveral()) грн"
         }
+        
         
     }
     
