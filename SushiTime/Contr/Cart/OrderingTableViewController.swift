@@ -39,8 +39,8 @@ class OrderingTableViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapView(gesture:)))
         view.addGestureRecognizer(tapGesture)
         
-        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймаємо замовлення: \n З понеділка по неділю 10:00 - 23:30 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ок", style: UIAlertActionStyle.default, handler: nil))
+        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймаємо замовлення: \n З понеділка по неділю 10:00 - 23:30 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
 
@@ -62,8 +62,8 @@ class OrderingTableViewController: UIViewController {
     //actions
     
     @IBAction func alert(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймання замовлень: \n З понеділка по неділю 10:00 - 23:20 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ок", style: UIAlertActionStyle.default, handler: nil))
+        let alert = UIAlertController(title: "Умови замовлення та доставки", message: "Приймання замовлень: \n З понеділка по неділю 10:00 - 23:20 \n \n Години доставки замовлень: \n З понеділка по неділю 10:00 - 00:00 \n \n Доставка кур'єром (75 Грн) \n Після замовлення на суму більше 150 грн. доставка безкоштовна, алкогольні напої не входять в загальну вартість замовлення. ", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     func isValidEmail(testStr:String) -> Bool {
@@ -187,11 +187,11 @@ class OrderingTableViewController: UIViewController {
         view.endEditing(true)
     }
     func addObservers() {
-        NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: nil) {
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) {
             notification in
             self.keyboardWillShow(notification: notification)
         }
-        NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: nil) {
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil) {
             notification in
             self.keyboardWillHide(notification: notification)
         }
@@ -203,7 +203,7 @@ class OrderingTableViewController: UIViewController {
     
     func keyboardWillShow(notification: Notification) {
         guard let userInfo = notification.userInfo,
-            let frame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            let frame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
                 return
         }
     let contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frame.height, right: 0)
