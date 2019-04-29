@@ -170,7 +170,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="850" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baV-yX-ldT">
-                                                            <rect key="frame" x="117.00000000000001" y="45" width="23.666666666666671" height="15"/>
+                                                            <rect key="frame" x="117" y="45" width="20.333333333333343" height="14"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -195,7 +195,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-RK-lnC">
-                                                            <rect key="frame" x="117" y="70" width="29" height="15"/>
+                                                            <rect key="frame" x="117" y="71" width="27" height="14"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -225,7 +225,7 @@
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exU-LQ-06o">
-                                                                    <rect key="frame" x="66" y="14.666666666666664" width="22" height="21"/>
+                                                                    <rect key="frame" x="62.666666666666679" y="15" width="28.666666666666664" height="20"/>
                                                                     <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -265,13 +265,13 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="грн." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-7f-oGB">
-                                                            <rect key="frame" x="141.66666666666666" y="48" width="22.333333333333343" height="11"/>
+                                                            <rect key="frame" x="138.33333333333334" y="48" width="17" height="11"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="9"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="гр.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0V-eL-11I">
-                                                            <rect key="frame" x="147" y="73" width="19" height="11"/>
+                                                            <rect key="frame" x="145" y="73" width="16.666666666666657" height="11"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="9"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -922,7 +922,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В нас скоро розпочнуться нові та цікаві літні акції, очікуйте." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-lo-Yg7">
-                                <rect key="frame" x="16" y="463" width="343" height="62.333333333333371"/>
+                                <rect key="frame" x="16" y="463" width="343" height="39.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -973,52 +973,52 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контактна інформація" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYm-bD-zyL">
-                                <rect key="frame" x="5" y="108" width="370" height="21"/>
+                                <rect key="frame" x="5" y="108" width="370" height="20"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Якщо у вас виникли питання чи пропозиції дзвоніть або пишіть нам на електронну пошту." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNO-26-CgC">
-                                <rect key="frame" x="5" y="137" width="370" height="61"/>
+                                <rect key="frame" x="5" y="136" width="370" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stopwatch" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-4p-XSp">
-                                <rect key="frame" x="5" y="206" width="25" height="25"/>
+                                <rect key="frame" x="5" y="205" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="ZFt-bT-h3C"/>
                                     <constraint firstAttribute="width" constant="25" id="a5l-su-UUv"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Hwg-BI-ZuD">
-                                <rect key="frame" x="5" y="239" width="25" height="25"/>
+                                <rect key="frame" x="5" y="238" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="S7j-I2-gCq"/>
                                     <constraint firstAttribute="width" constant="25" id="Sa7-l7-wkN"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gmail" translatesAutoresizingMaskIntoConstraints="NO" id="dQp-Kv-nna">
-                                <rect key="frame" x="5" y="272" width="25" height="25"/>
+                                <rect key="frame" x="5" y="271" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="D8i-os-gnG"/>
                                     <constraint firstAttribute="height" constant="25" id="nCM-qV-oqa"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="м.Львів вул.Торф'яна 8А" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k07-gK-cfV">
-                                <rect key="frame" x="38" y="211" width="337" height="19.666666666666657"/>
+                                <rect key="frame" x="38" y="210" width="337" height="19.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Працюємо з Пн. по Нд. з 10:00 до 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfG-5r-aFP">
-                                <rect key="frame" x="38" y="245.33333333333334" width="337" height="17.000000000000028"/>
+                                <rect key="frame" x="38" y="244.33333333333334" width="337" height="17.000000000000028"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info@sushitime.lviv.ua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-EU-MGe">
-                                <rect key="frame" x="38" y="274.33333333333331" width="337" height="19"/>
+                                <rect key="frame" x="38" y="273.33333333333331" width="337" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1168,7 +1168,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-5Q-mPu">
-                                                            <rect key="frame" x="117" y="42" width="34" height="21"/>
+                                                            <rect key="frame" x="117.00000000000001" y="42" width="28.666666666666671" height="20"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1193,19 +1193,19 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8E-D3-WGX">
-                                                            <rect key="frame" x="117" y="73" width="29" height="15"/>
+                                                            <rect key="frame" x="117" y="72" width="27" height="14"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="грн." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OD-N4-kFq">
-                                                            <rect key="frame" x="151" y="48" width="25" height="12.666666666666664"/>
+                                                            <rect key="frame" x="145.66666666666666" y="48" width="18.666666666666657" height="12.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="10"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="гр.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAe-lq-p9d">
-                                                            <rect key="frame" x="147" y="76" width="19" height="11"/>
+                                                            <rect key="frame" x="145" y="75" width="16.666666666666657" height="11"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="9"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1623,13 +1623,13 @@
                                                 <rect key="frame" x="169" y="343.66666666666669" width="37" height="37"/>
                                             </activityIndicatorView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGy-ae-NNV">
-                                                <rect key="frame" x="148.66666666666666" y="388.66666666666669" width="78" height="15"/>
+                                                <rect key="frame" x="148.66666666666666" y="388.66666666666669" width="61.333333333333343" height="14"/>
                                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-VV-dSg" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
-                                                <rect key="frame" x="75" y="573" width="225" height="45"/>
+                                                <rect key="frame" x="75" y="572" width="225" height="45"/>
                                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="225" id="d0o-hf-3if"/>
@@ -1649,13 +1649,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Додаткова інформація" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eb-zl-vlr">
-                                                <rect key="frame" x="10" y="628" width="355" height="21"/>
+                                                <rect key="frame" x="10" y="627" width="355" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-PP-lgt">
-                                                <rect key="frame" x="214" y="516" width="161" height="21"/>
+                                                <rect key="frame" x="214" y="516" width="161" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="161" id="yqH-LE-bsp"/>
                                                 </constraints>
@@ -1673,13 +1673,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+75 грн. у разі замовлення до 150 грн." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T72-cc-SWk">
-                                                <rect key="frame" x="0.0" y="542" width="375" height="21"/>
+                                                <rect key="frame" x="0.0" y="541" width="375" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEh-T5-wFr">
-                                                <rect key="frame" x="10" y="657" width="355" height="30"/>
+                                                <rect key="frame" x="10" y="656" width="355" height="30"/>
                                                 <state key="normal" title="Умови замовлення та доставки">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -2069,13 +2069,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше замовлення успішно сформовано, очікуйте підтвердження від оператора. Дякуємо що обрали Suhi Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyu-IJ-3rX">
-                                <rect key="frame" x="10" y="242.33333333333334" width="355" height="103.66666666666666"/>
+                                <rect key="frame" x="10" y="328.33333333333331" width="355" height="59.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuccessImg" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-zp-l9C">
-                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
+                                <rect key="frame" x="179.66666666666666" y="398" width="16" height="16"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPY-AQ-Se6" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
                                 <rect key="frame" x="125" y="749" width="125" height="33"/>
