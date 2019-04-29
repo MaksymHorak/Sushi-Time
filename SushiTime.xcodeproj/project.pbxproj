@@ -728,6 +728,11 @@
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SushiTime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Self.SushiTime;
@@ -750,6 +755,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/SushiTime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

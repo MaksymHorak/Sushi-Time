@@ -20,7 +20,7 @@ class GreetingsViewController: UIViewController  {
         sushiTimeLogoImg.alpha = 0
         moreMenuButton.alpha = 0
         
-        shadowBG.alpha = 0
+      //  shadowBG.alpha = 0
         sushiButton.alpha = 0
         drinksButton.alpha = 0
         pizzaButton.alpha = 0
@@ -29,7 +29,7 @@ class GreetingsViewController: UIViewController  {
     @IBOutlet weak var sushiTimeLogoImg: UIImageView!
     @IBOutlet weak var mainImg: UIImageView!
     
-    @IBOutlet weak var shadowBG: UIImageView!
+  //  @IBOutlet weak var shadowBG: UIImageView!
     @IBOutlet weak var moreMenuButton: UIButton!
     @IBOutlet weak var pizzaButton: UIButton!
     @IBOutlet weak var sushiButton: UIButton!
@@ -40,7 +40,7 @@ class GreetingsViewController: UIViewController  {
         if moreMenuButton.currentImage == #imageLiteral(resourceName: "Menunew") {
             
             UIView.animate(withDuration: 0.2, animations: {
-                self.shadowBG.alpha = 0.6
+              //  self.shadowBG.alpha = 0.6
                 self.drinksButton.alpha = 1
             }) { (true) in
                 UIView.animate(withDuration: 0.2, animations: {
@@ -60,7 +60,7 @@ class GreetingsViewController: UIViewController  {
         } else {
             UIView.animate(withDuration: 1, animations: {
                 self.drinksButton.alpha = 0
-                self.shadowBG.alpha = 0
+             //   self.shadowBG.alpha = 0
             }) { (true) in
             }
             

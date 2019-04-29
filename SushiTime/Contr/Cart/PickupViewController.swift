@@ -109,7 +109,7 @@ class PickupViewController: UIViewController {
                         self.navigationController?.pushViewController(drinksVC, animated: false)
                     }
                     
-                    print("ok")// все заебись
+                    print("ok")// all it's ok
                 }  else {
                     self.loadingBG.alpha = 0
                     self.loadingLbl.alpha = 0
@@ -122,7 +122,7 @@ class PickupViewController: UIViewController {
                             alert.dismiss(animated: true, completion: nil) }
                     }
                     
-                    print("No")  // все хуево
+                    print("No")  // something wrong
                 }
             }
         }
