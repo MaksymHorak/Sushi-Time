@@ -23,15 +23,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImage" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-Jb-78m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBG" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-Jb-78m">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sushiTimeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-FR-u2t">
-                                <rect key="frame" x="56" y="108" width="263" height="155"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drago3" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-FR-u2t">
+                                <rect key="frame" x="16" y="235" width="343" height="343"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="263" id="7Ui-CH-bBe"/>
-                                    <constraint firstAttribute="width" secondItem="eZq-FR-u2t" secondAttribute="height" multiplier="263:155" id="eN5-dt-wde"/>
-                                    <constraint firstAttribute="height" constant="155" id="vHN-VB-rek"/>
+                                    <constraint firstAttribute="width" constant="343" id="7Ui-CH-bBe"/>
+                                    <constraint firstAttribute="width" secondItem="eZq-FR-u2t" secondAttribute="height" multiplier="263:155" constant="-238.99354838709678" id="eN5-dt-wde"/>
+                                    <constraint firstAttribute="height" constant="343" id="vHN-VB-rek"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u56-ew-CYm" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
@@ -82,6 +82,11 @@
                                     <action selector="moreClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZ7-DO-PNl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-dN-brC">
+                                <rect key="frame" x="0.0" y="572" width="154" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="contactsBtn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,8 +95,8 @@
                             <constraint firstItem="B5g-Jb-78m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C87-es-P3U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bk-CN-xZz" secondAttribute="trailing" constant="16" id="JxA-sz-h4R"/>
                             <constraint firstItem="RU2-zd-3JF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MfG-vG-6c4"/>
-                            <constraint firstItem="eZq-FR-u2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MiJ-ed-6Js"/>
-                            <constraint firstItem="eZq-FR-u2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="Slp-JZ-qpf"/>
+                            <constraint firstItem="eZq-FR-u2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="MiJ-ed-6Js"/>
+                            <constraint firstItem="eZq-FR-u2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Slp-JZ-qpf"/>
                             <constraint firstItem="B5g-Jb-78m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xyn-u9-en8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B5g-Jb-78m" secondAttribute="trailing" id="d8p-g0-Fg6"/>
                             <constraint firstItem="RU2-zd-3JF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oEt-yf-VAQ"/>
@@ -100,7 +105,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u56-ew-CYm" secondAttribute="bottom" constant="92" id="sVc-qb-qWX"/>
                             <constraint firstItem="u56-ew-CYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tR1-23-EIy"/>
                             <constraint firstItem="XBY-bZ-Ykp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvA-6v-2Ov"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-FR-u2t" secondAttribute="trailing" constant="56" id="xVX-04-hSv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-FR-u2t" secondAttribute="trailing" constant="16" id="xVX-04-hSv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -134,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285.50724637681162" y="-4.0178571428571423"/>
+            <point key="canvasLocation" x="284" y="-4.4334975369458132"/>
         </scene>
         <!--Корзина-->
         <scene sceneID="kKk-LQ-5ed">
@@ -922,7 +927,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В нас скоро розпочнуться нові та цікаві літні акції, очікуйте." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-lo-Yg7">
-                                <rect key="frame" x="16" y="463" width="343" height="39.666666666666686"/>
+                                <rect key="frame" x="16" y="463" width="343" height="62.333333333333371"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -973,52 +978,52 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контактна інформація" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYm-bD-zyL">
-                                <rect key="frame" x="5" y="108" width="370" height="20"/>
+                                <rect key="frame" x="5" y="108" width="370" height="21"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Якщо у вас виникли питання чи пропозиції дзвоніть або пишіть нам на електронну пошту." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNO-26-CgC">
-                                <rect key="frame" x="5" y="136" width="370" height="61"/>
+                                <rect key="frame" x="5" y="137" width="370" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stopwatch" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-4p-XSp">
-                                <rect key="frame" x="5" y="205" width="25" height="25"/>
+                                <rect key="frame" x="5" y="206" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="ZFt-bT-h3C"/>
                                     <constraint firstAttribute="width" constant="25" id="a5l-su-UUv"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Hwg-BI-ZuD">
-                                <rect key="frame" x="5" y="238" width="25" height="25"/>
+                                <rect key="frame" x="5" y="239" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="S7j-I2-gCq"/>
                                     <constraint firstAttribute="width" constant="25" id="Sa7-l7-wkN"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gmail" translatesAutoresizingMaskIntoConstraints="NO" id="dQp-Kv-nna">
-                                <rect key="frame" x="5" y="271" width="25" height="25"/>
+                                <rect key="frame" x="5" y="272" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="D8i-os-gnG"/>
                                     <constraint firstAttribute="height" constant="25" id="nCM-qV-oqa"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="м.Львів вул.Торф'яна 8А" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k07-gK-cfV">
-                                <rect key="frame" x="38" y="210" width="337" height="19.666666666666657"/>
+                                <rect key="frame" x="38" y="211" width="337" height="19.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Працюємо з Пн. по Нд. з 10:00 до 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfG-5r-aFP">
-                                <rect key="frame" x="38" y="244.33333333333334" width="337" height="17.000000000000028"/>
+                                <rect key="frame" x="38" y="245.33333333333334" width="337" height="17.000000000000028"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info@sushitime.lviv.ua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-EU-MGe">
-                                <rect key="frame" x="38" y="273.33333333333331" width="337" height="19"/>
+                                <rect key="frame" x="38" y="274.33333333333331" width="337" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1623,13 +1628,13 @@
                                                 <rect key="frame" x="169" y="343.66666666666669" width="37" height="37"/>
                                             </activityIndicatorView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGy-ae-NNV">
-                                                <rect key="frame" x="148.66666666666666" y="388.66666666666669" width="61.333333333333343" height="14"/>
+                                                <rect key="frame" x="148.66666666666666" y="388.66666666666669" width="77.333333333333343" height="14"/>
                                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-VV-dSg" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
-                                                <rect key="frame" x="75" y="572" width="225" height="45"/>
+                                                <rect key="frame" x="75" y="573" width="225" height="45"/>
                                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="225" id="d0o-hf-3if"/>
@@ -1649,13 +1654,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Додаткова інформація" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eb-zl-vlr">
-                                                <rect key="frame" x="10" y="627" width="355" height="21"/>
+                                                <rect key="frame" x="10" y="628" width="355" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-PP-lgt">
-                                                <rect key="frame" x="214" y="516" width="161" height="20"/>
+                                                <rect key="frame" x="214" y="516" width="161" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="161" id="yqH-LE-bsp"/>
                                                 </constraints>
@@ -1673,13 +1678,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+75 грн. у разі замовлення до 150 грн." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T72-cc-SWk">
-                                                <rect key="frame" x="0.0" y="541" width="375" height="21"/>
+                                                <rect key="frame" x="0.0" y="542" width="375" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEh-T5-wFr">
-                                                <rect key="frame" x="10" y="656" width="355" height="30"/>
+                                                <rect key="frame" x="10" y="657" width="355" height="30"/>
                                                 <state key="normal" title="Умови замовлення та доставки">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1935,7 +1940,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beR-Dh-CnW">
-                                                <rect key="frame" x="214" y="369" width="161" height="20"/>
+                                                <rect key="frame" x="214" y="369" width="161" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="161" id="voV-bo-Wkp"/>
                                                 </constraints>
@@ -1957,7 +1962,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMH-pa-tnl">
-                                                <rect key="frame" x="148.66666666666666" y="398" width="61.333333333333343" height="14"/>
+                                                <rect key="frame" x="148.66666666666666" y="398" width="77.333333333333343" height="14"/>
                                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2069,13 +2074,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше замовлення успішно сформовано, очікуйте підтвердження від оператора. Дякуємо що обрали Suhi Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyu-IJ-3rX">
-                                <rect key="frame" x="10" y="328.33333333333331" width="355" height="59.666666666666686"/>
+                                <rect key="frame" x="10" y="242.33333333333334" width="355" height="103.66666666666666"/>
                                 <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                 <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuccessImg" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-zp-l9C">
-                                <rect key="frame" x="179.66666666666666" y="398" width="16" height="16"/>
+                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPY-AQ-Se6" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
                                 <rect key="frame" x="125" y="749" width="125" height="33"/>
@@ -2123,7 +2128,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BGImage" width="222.33332824707031" height="333.33334350585938"/>
         <image name="CashImage" width="25" height="25"/>
         <image name="ContactsMapImg" width="540" height="334"/>
         <image name="DrinksImg" width="250" height="259"/>
@@ -2140,6 +2144,8 @@
         <image name="TestImg" width="433" height="57"/>
         <image name="WeightImage" width="25" height="25"/>
         <image name="callImage" width="100" height="100"/>
+        <image name="contactsBtn" width="234" height="110.5"/>
+        <image name="drago3" width="652.5" height="670"/>
         <image name="gmail" width="256" height="256"/>
         <image name="imageView:xOv-xq-e1X:image" width="208" height="208">
             <mutableData key="keyedArchiveRepresentation">
@@ -5158,6 +5164,7 @@ JAACwCsAAsAwAALAPQACwEAAAsBNAALAUgACwFoAAsBdAALAYgACwGoAAsBtAALAfwACwIIAAsCHAAAA
 AAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAACwIk
 </mutableData>
         </image>
+        <image name="mainBG" width="250" height="500"/>
         <image name="placeholder" width="256" height="256"/>
         <image name="stopwatch" width="256" height="256"/>
         <image name="sushiTimeLogo" width="528.66668701171875" height="341.33334350585938"/>
