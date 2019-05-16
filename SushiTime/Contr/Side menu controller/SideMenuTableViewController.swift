@@ -31,7 +31,7 @@ class SideMenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
-        //self.view.backgroundColor = UIColor.black
+       // self.view.backgroundColor = UIColor.white
         
     }
 

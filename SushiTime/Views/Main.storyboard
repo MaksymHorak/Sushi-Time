@@ -23,88 +23,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBG" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-Jb-78m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testBG1" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-Jb-78m">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drago3" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-FR-u2t">
-                                <rect key="frame" x="16" y="235" width="343" height="343"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-FR-u2t">
+                                <rect key="frame" x="16" y="234.66666666666663" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="7Ui-CH-bBe"/>
                                     <constraint firstAttribute="width" secondItem="eZq-FR-u2t" secondAttribute="height" multiplier="263:155" constant="-238.99354838709678" id="eN5-dt-wde"/>
                                     <constraint firstAttribute="height" constant="343" id="vHN-VB-rek"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u56-ew-CYm" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
-                                <rect key="frame" x="137.66666666666666" y="586" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIX-r5-OKE">
+                                <rect key="frame" x="-154" y="698" width="154" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="B1q-ap-sko"/>
-                                    <constraint firstAttribute="height" constant="100" id="tqh-dB-7Sp"/>
-                                    <constraint firstAttribute="width" secondItem="u56-ew-CYm" secondAttribute="height" multiplier="1:1" id="zCD-WW-Ful"/>
+                                    <constraint firstAttribute="width" secondItem="hIX-r5-OKE" secondAttribute="height" multiplier="77:40" id="1qy-C5-0HI"/>
+                                    <constraint firstAttribute="width" constant="154" id="a1C-ty-3QW"/>
+                                    <constraint firstAttribute="height" constant="80" id="jCs-di-yS1"/>
                                 </constraints>
-                                <state key="normal" image="SushiImg"/>
-                                <connections>
-                                    <action selector="SushiClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m5-nC-SXQ"/>
-                                </connections>
+                                <state key="normal" image="deliveryBtn"/>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-zd-3JF" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
-                                <rect key="frame" x="16" y="678" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-Kg-xKb">
+                                <rect key="frame" x="-154" y="618" width="154" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="0f0-aR-dRZ"/>
-                                    <constraint firstAttribute="width" secondItem="RU2-zd-3JF" secondAttribute="height" multiplier="1:1" id="cix-wJ-Rnp"/>
-                                    <constraint firstAttribute="height" constant="100" id="tGd-dW-98Q"/>
+                                    <constraint firstAttribute="width" secondItem="FNR-Kg-xKb" secondAttribute="height" multiplier="77:40" id="9RF-ln-s4p"/>
+                                    <constraint firstAttribute="height" constant="80" id="YRI-HV-WTr"/>
+                                    <constraint firstAttribute="width" constant="154" id="rE6-XD-Xnx"/>
                                 </constraints>
-                                <state key="normal" image="DrinksImg"/>
-                                <connections>
-                                    <action selector="DrinksClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6n-EH-zmV"/>
-                                </connections>
+                                <state key="normal" image="menuBtn"/>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-CN-xZz" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
-                                <rect key="frame" x="259" y="678" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-dN-brC">
+                                <rect key="frame" x="-154" y="778" width="154" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="0bk-CN-xZz" secondAttribute="height" multiplier="1:1" id="cCh-ZH-sVj"/>
-                                    <constraint firstAttribute="height" constant="100" id="dwt-th-Op6"/>
-                                    <constraint firstAttribute="width" constant="100" id="e42-5U-6Xt"/>
+                                    <constraint firstAttribute="width" constant="154" id="9bF-g5-I7S"/>
+                                    <constraint firstAttribute="width" secondItem="Diu-dN-brC" secondAttribute="height" multiplier="77:40" id="Dd1-B4-NEC"/>
+                                    <constraint firstAttribute="height" constant="80" id="Vjj-9R-idr"/>
                                 </constraints>
-                                <state key="normal" image="PizzaImg"/>
-                                <connections>
-                                    <action selector="PizzaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8f-Cy-07o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-bZ-Ykp" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
-                                <rect key="frame" x="148" y="709" width="79" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="Pt2-3J-XzG"/>
-                                    <constraint firstAttribute="width" constant="79" id="x4M-GK-2HL"/>
-                                </constraints>
-                                <color key="tintColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="Menunew"/>
-                                <connections>
-                                    <action selector="moreClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZ7-DO-PNl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-dN-brC">
-                                <rect key="frame" x="0.0" y="572" width="154" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contactsBtn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0bk-CN-xZz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9d6-Hm-UAR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Diu-dN-brC" secondAttribute="trailing" constant="375" id="19H-H7-b3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FNR-Kg-xKb" secondAttribute="trailing" constant="375" id="4US-GW-2yt"/>
                             <constraint firstItem="B5g-Jb-78m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C87-es-P3U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bk-CN-xZz" secondAttribute="trailing" constant="16" id="JxA-sz-h4R"/>
-                            <constraint firstItem="RU2-zd-3JF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MfG-vG-6c4"/>
-                            <constraint firstItem="eZq-FR-u2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="MiJ-ed-6Js"/>
+                            <constraint firstItem="Diu-dN-brC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="80" id="Dc3-HA-DaT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hIX-r5-OKE" secondAttribute="trailing" constant="375" id="EhO-o1-idl"/>
+                            <constraint firstItem="hIX-r5-OKE" firstAttribute="top" secondItem="FNR-Kg-xKb" secondAttribute="bottom" id="FDq-aX-9GA"/>
                             <constraint firstItem="eZq-FR-u2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Slp-JZ-qpf"/>
+                            <constraint firstItem="eZq-FR-u2t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WsX-JV-iQR"/>
                             <constraint firstItem="B5g-Jb-78m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xyn-u9-en8"/>
+                            <constraint firstItem="Diu-dN-brC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-154" id="YaI-Fy-u7f"/>
+                            <constraint firstItem="hIX-r5-OKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-154" id="acu-Ep-muY"/>
+                            <constraint firstItem="Diu-dN-brC" firstAttribute="top" secondItem="hIX-r5-OKE" secondAttribute="bottom" id="cpA-Sl-a9C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B5g-Jb-78m" secondAttribute="trailing" id="d8p-g0-Fg6"/>
-                            <constraint firstItem="RU2-zd-3JF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oEt-yf-VAQ"/>
+                            <constraint firstItem="FNR-Kg-xKb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-154" id="dgX-FN-Aw1"/>
                             <constraint firstAttribute="bottom" secondItem="B5g-Jb-78m" secondAttribute="bottom" id="p2q-7l-fCV"/>
-                            <constraint firstItem="XBY-bZ-Ykp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rUE-R6-3wu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u56-ew-CYm" secondAttribute="bottom" constant="92" id="sVc-qb-qWX"/>
-                            <constraint firstItem="u56-ew-CYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tR1-23-EIy"/>
-                            <constraint firstItem="XBY-bZ-Ykp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvA-6v-2Ov"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-FR-u2t" secondAttribute="trailing" constant="16" id="xVX-04-hSv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -125,12 +100,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="drinksButton" destination="RU2-zd-3JF" id="01J-vX-FKT"/>
+                        <outlet property="contactsMoveImage" destination="Diu-dN-brC" id="a2l-X2-BRn"/>
+                        <outlet property="deliveryMoveImage" destination="hIX-r5-OKE" id="EXO-Hw-iy8"/>
+                        <outlet property="dragonLogoImg" destination="eZq-FR-u2t" id="2Fi-N9-p8i"/>
                         <outlet property="mainImg" destination="B5g-Jb-78m" id="ASu-eo-0kr"/>
-                        <outlet property="moreMenuButton" destination="XBY-bZ-Ykp" id="NAg-eQ-09c"/>
-                        <outlet property="pizzaButton" destination="0bk-CN-xZz" id="n7N-TX-6tZ"/>
-                        <outlet property="sushiButton" destination="u56-ew-CYm" id="FJA-6m-Q2b"/>
-                        <outlet property="sushiTimeLogoImg" destination="eZq-FR-u2t" id="Tdf-DZ-8gr"/>
+                        <outlet property="menuMoveImage" destination="FNR-Kg-xKb" id="pB6-16-T0o"/>
                         <segue destination="SQp-gQ-Sac" kind="show" identifier="Menu" animates="NO" id="D0x-4F-5Z8"/>
                         <segue destination="Hug-Fg-nbd" kind="show" identifier="AboutUs" animates="NO" id="k3U-Ia-ToH"/>
                         <segue destination="QBM-v5-Vwi" kind="show" identifier="Shares" animates="NO" id="A3X-Sq-nrm"/>
@@ -151,11 +125,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpA-SN-0fy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-R3-Ecr">
                                 <rect key="frame" x="0.0" y="88" width="375" height="627"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GenericTableViewCell" rowHeight="100" id="HGI-0y-6d1" customClass="CartTableViewCell" customModule="SushiTime" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -175,7 +149,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="850" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baV-yX-ldT">
-                                                            <rect key="frame" x="117" y="45" width="20.333333333333343" height="14"/>
+                                                            <rect key="frame" x="117.00000000000001" y="45" width="23.666666666666671" height="14"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -200,7 +174,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-RK-lnC">
-                                                            <rect key="frame" x="117" y="71" width="27" height="14"/>
+                                                            <rect key="frame" x="117" y="71" width="29" height="14"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -230,7 +204,7 @@
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exU-LQ-06o">
-                                                                    <rect key="frame" x="62.666666666666679" y="15" width="28.666666666666664" height="20"/>
+                                                                    <rect key="frame" x="66" y="14.666666666666664" width="22.333333333333329" height="21"/>
                                                                     <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -270,19 +244,19 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="грн." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-7f-oGB">
-                                                            <rect key="frame" x="138.33333333333334" y="48" width="17" height="11"/>
+                                                            <rect key="frame" x="141.66666666666666" y="48" width="22.333333333333343" height="11"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="9"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="гр.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0V-eL-11I">
-                                                            <rect key="frame" x="145" y="73" width="16.666666666666657" height="11"/>
+                                                            <rect key="frame" x="147" y="73" width="18.666666666666657" height="11"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="9"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.53998541831970215" green="0.80942940711975098" blue="0.76946562528610229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="baV-yX-ldT" firstAttribute="leading" secondItem="WbV-EV-gMB" secondAttribute="trailing" constant="2" id="1e8-5p-Dac"/>
@@ -311,15 +285,16 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
-                                                            <color key="value" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
-                                                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="kGd-3P-9qz" secondAttribute="bottom" constant="5" id="R6Z-NB-XBW"/>
                                                 <constraint firstAttribute="trailing" secondItem="kGd-3P-9qz" secondAttribute="trailing" constant="10" id="dTJ-yN-qgT"/>
@@ -349,7 +324,7 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRu-gZ-PQ8" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="762" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.53998541831970215" green="0.80942940711975098" blue="0.76946562528610229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HfV-HR-UNx"/>
                                 </constraints>
@@ -382,7 +357,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="NGX-xW-JFr" secondAttribute="bottom" constant="15" id="Hfn-Eg-0id"/>
                                     <constraint firstAttribute="trailing" secondItem="NGX-xW-JFr" secondAttribute="trailing" constant="25" id="cJB-nQ-bJw"/>
@@ -1173,7 +1148,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-5Q-mPu">
-                                                            <rect key="frame" x="117.00000000000001" y="42" width="28.666666666666671" height="20"/>
+                                                            <rect key="frame" x="117.00000000000001" y="42" width="33.666666666666671" height="21"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="17"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1198,19 +1173,19 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8E-D3-WGX">
-                                                            <rect key="frame" x="117" y="72" width="27" height="14"/>
+                                                            <rect key="frame" x="117" y="73" width="29" height="14"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="грн." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OD-N4-kFq">
-                                                            <rect key="frame" x="145.66666666666666" y="48" width="18.666666666666657" height="12.666666666666664"/>
+                                                            <rect key="frame" x="150.66666666666666" y="48" width="24.666666666666657" height="12.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="10"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="гр.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAe-lq-p9d">
-                                                            <rect key="frame" x="145" y="75" width="16.666666666666657" height="11"/>
+                                                            <rect key="frame" x="147" y="76" width="18.666666666666657" height="11"/>
                                                             <fontDescription key="fontDescription" name="HanZi" family="Han Zi" pointSize="9"/>
                                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1635,7 +1610,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-VV-dSg" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="573" width="225" height="45"/>
-                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.53998541831970215" green="0.80942940711975098" blue="0.76946562528610229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="225" id="d0o-hf-3if"/>
                                                     <constraint firstAttribute="height" constant="45" id="guY-Ic-tZf"/>
@@ -1693,7 +1668,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="X8S-TD-zOC" firstAttribute="leading" secondItem="HK3-tz-9Em" secondAttribute="leading" constant="20" id="0cA-vb-xSo"/>
                                             <constraint firstAttribute="trailing" secondItem="gUd-QV-UUj" secondAttribute="trailing" constant="8" id="1Ey-42-zCz"/>
@@ -1772,7 +1747,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.61753523349999995" green="0.81302839520000003" blue="0.78096312280000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0yN-QJ-1Nv" firstAttribute="trailing" secondItem="Rga-MU-cJn" secondAttribute="trailing" id="EaF-Y9-hF1"/>
                             <constraint firstAttribute="bottom" secondItem="0yN-QJ-1Nv" secondAttribute="bottom" id="Yzd-J8-RrJ"/>
@@ -1912,7 +1887,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbG-ZV-ghx" customClass="BounceButton" customModule="SushiTime" customModuleProvider="target">
                                                 <rect key="frame" x="77" y="400" width="221" height="40"/>
-                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.53998541831970215" green="0.80942940711975098" blue="0.76946562528610229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="221" id="AL3-wv-o7L"/>
                                                     <constraint firstAttribute="height" constant="40" id="jNe-SU-C9r"/>
@@ -1971,7 +1946,7 @@
                                                 <rect key="frame" x="169" y="343.66666666666669" width="37" height="37"/>
                                             </activityIndicatorView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="X80-J4-PMb" firstAttribute="leading" secondItem="3LX-j3-Sc1" secondAttribute="leading" constant="20" id="0l2-yc-4hv"/>
                                             <constraint firstItem="epi-qG-5Nf" firstAttribute="leading" secondItem="3LX-j3-Sc1" secondAttribute="leading" id="1Dn-WX-WHq"/>
@@ -2035,7 +2010,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.61753523349761963" green="0.81302839517593384" blue="0.78096312284469604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3LX-j3-Sc1" firstAttribute="width" secondItem="iMb-sA-upR" secondAttribute="width" id="FeE-no-Sim"/>
                             <constraint firstAttribute="bottom" secondItem="ZmY-lh-6gE" secondAttribute="bottom" id="GcM-xZ-2VH"/>
@@ -2130,22 +2105,18 @@
     <resources>
         <image name="CashImage" width="25" height="25"/>
         <image name="ContactsMapImg" width="540" height="334"/>
-        <image name="DrinksImg" width="250" height="259"/>
         <image name="ImageAboutUs" width="445" height="287.5"/>
         <image name="Loading" width="50" height="50"/>
         <image name="MenuMainMenuTest" width="25" height="25"/>
-        <image name="Menunew" width="79.333335876464844" height="69.333335876464844"/>
-        <image name="PizzaImg" width="130" height="130"/>
         <image name="SharesIconTime" width="187.5" height="187.5"/>
         <image name="ShoppingBagMainMenu" width="25" height="25"/>
         <image name="ShoppingCart" width="25" height="25"/>
         <image name="SuccessImg" width="100" height="100"/>
-        <image name="SushiImg" width="474" height="374.5"/>
         <image name="TestImg" width="433" height="57"/>
         <image name="WeightImage" width="25" height="25"/>
         <image name="callImage" width="100" height="100"/>
-        <image name="contactsBtn" width="234" height="110.5"/>
-        <image name="drago3" width="652.5" height="670"/>
+        <image name="contactsBtn" width="251" height="128.5"/>
+        <image name="deliveryBtn" width="251" height="128.5"/>
         <image name="gmail" width="256" height="256"/>
         <image name="imageView:xOv-xq-e1X:image" width="208" height="208">
             <mutableData key="keyedArchiveRepresentation">
@@ -5164,10 +5135,11 @@ JAACwCsAAsAwAALAPQACwEAAAsBNAALAUgACwFoAAsBdAALAYgACwGoAAsBtAALAfwACwIIAAsCHAAAA
 AAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAACwIk
 </mutableData>
         </image>
-        <image name="mainBG" width="250" height="500"/>
+        <image name="menuBtn" width="251" height="128.5"/>
         <image name="placeholder" width="256" height="256"/>
         <image name="stopwatch" width="256" height="256"/>
         <image name="sushiTimeLogo" width="528.66668701171875" height="341.33334350585938"/>
+        <image name="testBG1" width="562.5" height="1218"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5m5-1h-fdn"/>

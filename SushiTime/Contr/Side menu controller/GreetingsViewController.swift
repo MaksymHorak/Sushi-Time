@@ -17,89 +17,132 @@ class GreetingsViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainImg.alpha = 0
-        sushiTimeLogoImg.alpha = 0
-        moreMenuButton.alpha = 0
-        
-      //  shadowBG.alpha = 0
-        sushiButton.alpha = 0
-        drinksButton.alpha = 0
-        pizzaButton.alpha = 0
+        dragonLogoImg.alpha = 0
         setUpSideMenu()
+        
+        
+        //        moreMenuButton.alpha = 0
+        //      //  shadowBG.alpha = 0
+        //        sushiButton.alpha = 0
+        //        drinksButton.alpha = 0
+        //        pizzaButton.alpha = 0
+        
     }
-    @IBOutlet weak var sushiTimeLogoImg: UIImageView!
+    @IBOutlet weak var dragonLogoImg: UIImageView!
     @IBOutlet weak var mainImg: UIImageView!
     
   //  @IBOutlet weak var shadowBG: UIImageView!
-    @IBOutlet weak var moreMenuButton: UIButton!
-    @IBOutlet weak var pizzaButton: UIButton!
-    @IBOutlet weak var sushiButton: UIButton!
-    @IBOutlet weak var drinksButton: UIButton!
+//    @IBOutlet weak var moreMenuButton: UIButton!
+//    @IBOutlet weak var pizzaButton: UIButton!
+//    @IBOutlet weak var sushiButton: UIButton!
+//    @IBOutlet weak var drinksButton: UIButton!
     
-    @IBAction func moreClicked(_ sender: UIButton) {
-        
-        if moreMenuButton.currentImage == #imageLiteral(resourceName: "Menunew") {
-            
-            UIView.animate(withDuration: 0.2, animations: {
-              //  self.shadowBG.alpha = 0.6
-                self.drinksButton.alpha = 1
-            }) { (true) in
-                UIView.animate(withDuration: 0.2, animations: {
-                    //  self.sushiView.alpha = 0.7
-                    self.sushiButton.alpha = 1
-                }) { (true) in
-                    UIView.animate(withDuration: 0.2, animations: {
-                        
-                        //  self.pizzaView.alpha = 0.7
-                        self.pizzaButton.alpha = 1
-                    }) { (true) in
-                        
-                    }
-                }
-            }
-            
-        } else {
-            UIView.animate(withDuration: 1, animations: {
-                self.drinksButton.alpha = 0
-             //   self.shadowBG.alpha = 0
-            }) { (true) in
-            }
-            
-            UIView.animate(withDuration: 1, animations: {
-                self.sushiButton.alpha = 0
-            }) { (true) in
-            }
-            
-            UIView.animate(withDuration: 1, animations: {
-                self.pizzaButton.alpha = 0
-            }) { (true) in
-            }
-        }
-        
-        
-        if sender.currentImage == #imageLiteral(resourceName: "Menunew"){
-            sender.setImage(#imageLiteral(resourceName: "MenunewPressed"), for: .normal)
-        } else {
-            sender.setImage(#imageLiteral(resourceName: "Menunew"), for: .normal)
-        }
-    }
+    @IBOutlet weak var menuMoveImage: UIButton!
+    @IBOutlet weak var deliveryMoveImage: UIButton!
+    @IBOutlet weak var contactsMoveImage: UIButton!
     
-
+    
+    
+//    @IBAction func moreClicked(_ sender: UIButton) {
+//
+//        if moreMenuButton.currentImage == #imageLiteral(resourceName: "Menunew") {
+//
+//            UIView.animate(withDuration: 0.2, animations: {
+//              //  self.shadowBG.alpha = 0.6
+//                self.drinksButton.alpha = 1
+//            }) { (true) in
+//                UIView.animate(withDuration: 0.2, animations: {
+//                    //  self.sushiView.alpha = 0.7
+//                    self.sushiButton.alpha = 1
+//                }) { (true) in
+//                    UIView.animate(withDuration: 0.2, animations: {
+//
+//                        //  self.pizzaView.alpha = 0.7
+//                        self.pizzaButton.alpha = 1
+//                    }) { (true) in
+//
+//                    }
+//                }
+//            }
+//
+//        } else {
+//            UIView.animate(withDuration: 1, animations: {
+//                self.drinksButton.alpha = 0
+//             //   self.shadowBG.alpha = 0
+//            }) { (true) in
+//            }
+//
+//            UIView.animate(withDuration: 1, animations: {
+//                self.sushiButton.alpha = 0
+//            }) { (true) in
+//            }
+//
+//            UIView.animate(withDuration: 1, animations: {
+//                self.pizzaButton.alpha = 0
+//            }) { (true) in
+//            }
+//        }
+//
+//
+//        if sender.currentImage == #imageLiteral(resourceName: "Menunew"){
+//            sender.setImage(#imageLiteral(resourceName: "MenunewPressed"), for: .normal)
+//        } else {
+//            sender.setImage(#imageLiteral(resourceName: "Menunew"), for: .normal)
+//        }
+//    }
+//
+//
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
+
         
         UIView.animate(withDuration: 1, animations: {
             self.mainImg.alpha = 1
         }) { (true) in
             UIView.animate(withDuration: 1, animations: {
-                self.sushiTimeLogoImg.alpha = 1
+                self.dragonLogoImg.alpha = 1
             }, completion: { (true) in
                 UIView.animate(withDuration: 1, animations: {
-                    self.moreMenuButton.alpha = 1
+                    //here can be oner one something
+                    self.menuMoveImage.frame.origin.y -= 80
+                    self.menuMoveImage.frame.origin.x += 154
                 }, completion: { (true) in
-                    
+                    UIView.animate(withDuration: 1, animations: {
+                        self.deliveryMoveImage.frame.origin.y -= 80
+                        self.deliveryMoveImage.frame.origin.x += 154
+                    }, completion: { (true) in
+                        UIView.animate(withDuration: 1, animations: {
+                            self.contactsMoveImage.frame.origin.y -= 80
+                            self.contactsMoveImage.frame.origin.x += 154
+                        })
+                    })
                 })
-            })
-        }
+            }) 
+            }
+//        UIView.animate(withDuration: 1, animations: {
+//            self.menuMoveImage.frame.origin.y -= 80
+//             self.menuMoveImage.frame.origin.x += 154
+//        }) { (finished) in
+//
+//            if finished {
+//                UIView.animate(withDuration: 1, animations: {
+//                    self.deliveryMoveImage.frame.origin.y -= 80
+//                    self.deliveryMoveImage.frame.origin.x += 154
+//                }) { (finished) in
+//
+//                    if finished {
+//                        UIView.animate(withDuration: 1, animations: {
+//                            self.contactsMoveImage.frame.origin.y -= 80
+//                            self.contactsMoveImage.frame.origin.x += 154
+//                        })
+//                    }
+//
+//                }
+//
+//            }
+//        }
+    
     }
     
     fileprivate enum Constants {
@@ -115,24 +158,24 @@ class GreetingsViewController: UIViewController  {
     
     
     
-    @IBAction func DrinksClicked(_ sender: UIButton) {
-        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "DrinksTableViewController")as! DrinksTableViewController
-        self.navigationController?.pushViewController(drinksVC, animated: false)
-
-    }
-    
-    @IBAction func SushiClicked(_ sender: UIButton) {
-        let sushiStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let sushiVC = sushiStoryboard.instantiateViewController(withIdentifier: "SushiTableViewController")as! SushiTableViewController
-        self.navigationController?.pushViewController(sushiVC, animated: false)
-    }
-    
-    @IBAction func PizzaClicked(_ sender: UIButton) {
-        let pizzaStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let pizzaVC = pizzaStoryboard.instantiateViewController(withIdentifier: "PizzaTableViewController")as! PizzaTableViewController
-        self.navigationController?.pushViewController(pizzaVC, animated: false)
-    }
+//    @IBAction func DrinksClicked(_ sender: UIButton) {
+//        let drinksStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let drinksVC = drinksStoryboard.instantiateViewController(withIdentifier: "DrinksTableViewController")as! DrinksTableViewController
+//        self.navigationController?.pushViewController(drinksVC, animated: false)
+//
+//    }
+//
+//    @IBAction func SushiClicked(_ sender: UIButton) {
+//        let sushiStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let sushiVC = sushiStoryboard.instantiateViewController(withIdentifier: "SushiTableViewController")as! SushiTableViewController
+//        self.navigationController?.pushViewController(sushiVC, animated: false)
+//    }
+//
+//    @IBAction func PizzaClicked(_ sender: UIButton) {
+//        let pizzaStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let pizzaVC = pizzaStoryboard.instantiateViewController(withIdentifier: "PizzaTableViewController")as! PizzaTableViewController
+//        self.navigationController?.pushViewController(pizzaVC, animated: false)
+//    }
     
 
     
@@ -145,8 +188,7 @@ class GreetingsViewController: UIViewController  {
             SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
         }
         SideMenuManager.default.menuFadeStatusBar = false
-
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+ SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         
        // let toolbar = UIToolbar()
@@ -193,7 +235,7 @@ extension GreetingsViewController: SideMenuTableViewControllerDelegate {
 
         case .webSite:
             SideMenuManager.default.menuLeftNavigationController?.dismiss(animated: true) {
-                let svc = SFSafariViewController(url: URL(string: "http://www.sushitime.lviv.ua")!)
+                let svc = SFSafariViewController(url: URL(string: "http://www.xochatime.com")!)
                 self.present(svc, animated: true, completion: nil)
             }
         
